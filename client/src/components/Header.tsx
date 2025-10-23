@@ -58,7 +58,10 @@ export default function Header() {
           {/* Logo */}
           <Link href="/">
             <div className="flex items-center space-x-3 cursor-pointer">
-              <div className="text-2xl font-bold">{APP_TITLE}</div>
+              <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center flex-shrink-0">
+                <span className="text-[#0D1B3E] font-bold text-lg">LC4</span>
+              </div>
+              <div className="text-xl font-bold">{APP_TITLE}</div>
             </div>
           </Link>
 
