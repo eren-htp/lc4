@@ -1,4 +1,4 @@
-export { COOKIE_NAME, ONE_YEAR_MS } from "@shared/const";
+export { COOKIE_NAME, ONE_YEAR_MS, COMPANY_INFO, AGENCIES, PAINT_CATEGORIES, FLOOR_CATEGORIES, WALL_CATEGORIES } from "@shared/const";
 
 export const APP_TITLE = import.meta.env.VITE_APP_TITLE || "App";
 

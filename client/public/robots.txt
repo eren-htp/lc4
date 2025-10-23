@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lc4-peinture.fr/sitemap.xml
+
