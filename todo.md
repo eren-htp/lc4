@@ -39,3 +39,12 @@
 - [x] Modifier package.json pour séparer build client et serveur
 - [x] Créer vercel.json avec configuration statique
 
+
+
+## Modifications demandées
+- [x] Retirer la section "Nos agences" de la page Contact (l'entreprise fait des livraisons, pas plusieurs agences)
+- [x] Simplifier la page Contact avec uniquement formulaire + infos de contact
+- [x] Ajouter section "Zone de livraison" à la page Contact
+- [x] Mettre à jour la page d'accueil pour refléter que c'est une zone de livraison (pas des agences)
+- [x] Modifier les boutons "Trouver une agence" en "Nous contacter"
+

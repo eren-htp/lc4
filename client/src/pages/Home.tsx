@@ -67,7 +67,7 @@ export default function Home() {
                 className="inline-flex items-center gap-2 bg-white text-[#0D1B3E] px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all shadow-lg"
               >
                 <MapPin className="w-5 h-5" />
-                Trouver une agence
+                Nous contacter
               </Link>
               
               <Link 
@@ -166,49 +166,46 @@ export default function Home() {
           </div>
         </section>
 
-        {/* SECTION NOS AGENCES */}
-        <section className="py-16 md:py-24 bg-white">
-          <div className="container mx-auto px-4 max-w-7xl">
+        {/* SECTION ZONE DE LIVRAISON */}
+        <section className="py-16 md:py-20 bg-gray-50">
+          <div className="container mx-auto px-4 max-w-5xl">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0D1B3E] mb-4">
-                Nos agences
+                Zone de livraison
               </h2>
               <p className="text-lg text-gray-600">
-                Retrouvez nos 4 agences spécialisées près de chez vous
+                Nous livrons dans toute l'Alsace et les environs
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-              {AGENCIES.map((agency) => (
-                <div 
-                  key={agency.id}
-                  className="bg-white border-2 border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow"
-                >
-                  {/* Nom */}
-                  <h3 className="text-xl font-bold text-[#0D1B3E] mb-4">
-                    {agency.name}
-                  </h3>
-                  
-                  {/* Adresse */}
-                  <div className="flex items-start gap-2 mb-2">
-                    <MapPin className="w-4 h-4 text-gray-400 flex-shrink-0 mt-1" />
-                    <p className="text-sm text-gray-600">
-                      {agency.address}
-                    </p>
-                  </div>
-                  
-                  {/* Téléphone */}
-                  <div className="flex items-center gap-2">
-                    <Phone className="w-4 h-4 text-gray-400 flex-shrink-0" />
-                    <a 
-                      href={`tel:${agency.phone}`}
-                      className="text-sm text-gray-600 hover:text-[#0D1B3E] transition"
-                    >
-                      {agency.phone}
-                    </a>
-                  </div>
-                </div>
-              ))}
+            <div className="flex flex-wrap justify-center gap-6 mb-12">
+              <div className="bg-white border-2 border-gray-200 rounded-xl p-8 hover:shadow-lg transition-all hover:border-[#0D1B3E] min-w-[200px] text-center">
+                <MapPin className="w-8 h-8 text-[#0D1B3E] mx-auto mb-3" />
+                <h3 className="text-xl font-bold text-[#0D1B3E]">
+                  Strasbourg
+                </h3>
+              </div>
+              
+              <div className="bg-white border-2 border-gray-200 rounded-xl p-8 hover:shadow-lg transition-all hover:border-[#0D1B3E] min-w-[200px] text-center">
+                <MapPin className="w-8 h-8 text-[#0D1B3E] mx-auto mb-3" />
+                <h3 className="text-xl font-bold text-[#0D1B3E]">
+                  Souffelweyersheim
+                </h3>
+              </div>
+              
+              <div className="bg-white border-2 border-gray-200 rounded-xl p-8 hover:shadow-lg transition-all hover:border-[#0D1B3E] min-w-[200px] text-center">
+                <MapPin className="w-8 h-8 text-[#0D1B3E] mx-auto mb-3" />
+                <h3 className="text-xl font-bold text-[#0D1B3E]">
+                  Haguenau
+                </h3>
+              </div>
+              
+              <div className="bg-white border-2 border-gray-200 rounded-xl p-8 hover:shadow-lg transition-all hover:border-[#0D1B3E] min-w-[200px] text-center">
+                <MapPin className="w-8 h-8 text-[#0D1B3E] mx-auto mb-3" />
+                <h3 className="text-xl font-bold text-[#0D1B3E]">
+                  Schweighouse
+                </h3>
+              </div>
             </div>
 
             <div className="text-center">
@@ -216,7 +213,7 @@ export default function Home() {
                 href="/contact"
                 className="inline-flex items-center gap-2 bg-[#0D1B3E] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#1a2744] transition-all shadow-lg"
               >
-                Voir toutes nos agences
+                Nous contacter
                 <ArrowRight className="w-5 h-5" />
               </Link>
             </div>
@@ -239,7 +236,7 @@ export default function Home() {
                 href="/contact"
                 className="inline-flex items-center gap-2 bg-white text-[#0D1B3E] px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all shadow-lg"
               >
-                Venir en agence
+                Nous contacter
               </Link>
               
               <a 

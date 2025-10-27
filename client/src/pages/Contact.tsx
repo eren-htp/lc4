@@ -1,5 +1,5 @@
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
-import { COMPANY_INFO, AGENCIES } from "@/const";
+import { COMPANY_INFO } from "@/const";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
@@ -24,13 +24,13 @@ export default function Contact() {
           <div className="relative z-10 text-center px-4">
             <h1 className="text-5xl md:text-6xl font-bold mb-4">Contactez-nous</h1>
             <p className="text-xl md:text-2xl max-w-3xl mx-auto">
-              Nos équipes sont à votre écoute pour répondre à toutes vos questions
+              Notre équipe est à votre écoute pour répondre à toutes vos questions
             </p>
           </div>
         </section>
 
         {/* Informations de contact */}
-        <section className="py-20 bg-white">
+        <section className="py-20 bg-gray-50">
           <div className="container mx-auto px-4 max-w-6xl">
             <div className="grid md:grid-cols-3 gap-8 mb-16">
               <Card className="text-center">
@@ -76,74 +76,6 @@ export default function Contact() {
                   <p className="text-sm text-gray-600 mt-2">Fermé le dimanche</p>
                 </CardContent>
               </Card>
-            </div>
-          </div>
-        </section>
-
-        {/* Nos agences */}
-        <section className="py-20 bg-gray-50">
-          <div className="container mx-auto px-4 max-w-7xl">
-            <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold text-[#0D1B3E] mb-4">Nos agences en Alsace</h2>
-              <p className="text-lg text-gray-600">
-                Retrouvez nos 4 agences spécialisées près de chez vous
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {AGENCIES.map((agency) => (
-                <Card key={agency.id} className="hover:shadow-xl transition-shadow">
-                  <CardHeader>
-                    <CardTitle className="text-2xl text-[#0D1B3E] flex items-center gap-2">
-                      <MapPin className="h-6 w-6" />
-                      {agency.name}
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent className="space-y-4">
-                    <div className="flex items-start gap-3">
-                      <MapPin className="h-5 w-5 text-gray-400 flex-shrink-0 mt-1" />
-                      <div>
-                        <p className="font-medium text-gray-700">Adresse</p>
-                        <p className="text-gray-600">{agency.address}</p>
-                      </div>
-                    </div>
-
-                    <div className="flex items-start gap-3">
-                      <Phone className="h-5 w-5 text-gray-400 flex-shrink-0 mt-1" />
-                      <div>
-                        <p className="font-medium text-gray-700">Téléphone</p>
-                        <a 
-                          href={`tel:${agency.phone}`}
-                          className="text-[#0D1B3E] hover:underline"
-                        >
-                          {agency.phone}
-                        </a>
-                      </div>
-                    </div>
-
-                    <div className="flex items-start gap-3">
-                      <Clock className="h-5 w-5 text-gray-400 flex-shrink-0 mt-1" />
-                      <div>
-                        <p className="font-medium text-gray-700">Horaires</p>
-                        <p className="text-gray-600">Lun - Ven : 8h - 18h</p>
-                        <p className="text-gray-600">Sam : 9h - 12h</p>
-                      </div>
-                    </div>
-
-                    <div className="pt-4">
-                      <a 
-                        href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(agency.address)}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <Button className="w-full bg-[#0D1B3E] hover:bg-[#1a2744]">
-                          Voir sur la carte
-                        </Button>
-                      </a>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
             </div>
           </div>
         </section>
@@ -260,6 +192,30 @@ export default function Contact() {
                 </form>
               </CardContent>
             </Card>
+          </div>
+        </section>
+
+        {/* Zone de livraison */}
+        <section className="py-20 bg-gray-50">
+          <div className="container mx-auto px-4 max-w-4xl text-center">
+            <h2 className="text-4xl font-bold text-[#0D1B3E] mb-6">Zone de livraison</h2>
+            <p className="text-lg text-gray-600 mb-8">
+              Nous livrons dans toute l'Alsace et les environs
+            </p>
+            <div className="flex flex-wrap justify-center gap-4">
+              <div className="bg-white px-6 py-3 rounded-full shadow-md">
+                <span className="text-[#0D1B3E] font-semibold">Strasbourg</span>
+              </div>
+              <div className="bg-white px-6 py-3 rounded-full shadow-md">
+                <span className="text-[#0D1B3E] font-semibold">Souffelweyersheim</span>
+              </div>
+              <div className="bg-white px-6 py-3 rounded-full shadow-md">
+                <span className="text-[#0D1B3E] font-semibold">Haguenau</span>
+              </div>
+              <div className="bg-white px-6 py-3 rounded-full shadow-md">
+                <span className="text-[#0D1B3E] font-semibold">Schweighouse</span>
+              </div>
+            </div>
           </div>
         </section>
       </main>
