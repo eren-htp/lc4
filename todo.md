@@ -21,3 +21,11 @@
 - [x] Mettre à jour les liens dans le Footer
 - [x] Mettre à jour les liens dans la page d'accueil
 
+
+
+## Bugs
+- [x] Créer fichier .env avec les variables d'environnement manquantes
+- [x] Corriger les erreurs de variables non définies dans index.html
+- [x] Commenter le script analytics dans index.html (optionnel)
+- [x] Créer documentation ENV_SETUP.md
+
