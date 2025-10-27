@@ -33,3 +33,9 @@
 
 - [x] Retirer les variables d'environnement de index.html pour éviter les warnings de build
 
+
+
+- [x] Configurer Vercel pour déploiement statique uniquement (sans serveur Node.js)
+- [x] Modifier package.json pour séparer build client et serveur
+- [x] Créer vercel.json avec configuration statique
+
