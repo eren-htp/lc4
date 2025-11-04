@@ -59,9 +59,9 @@ export default function Header() {
           <Link href="/" className="flex items-center gap-2">
             <img 
               src="/logo.png" 
-              alt="LC4 Peinture" 
-              className="h-12 w-auto"
-            />
+              alt="LC4 PEINTURE & DECORATION" 
+              className="h-12 w-auto" />
+            
           </Link>
 
           {/* Desktop Navigation */}

@@ -3,6 +3,7 @@ import { MapPin, Paintbrush, Home as HomeIcon, Frame, Wrench, Phone, ArrowRight 
 import { APP_TITLE, COMPANY_INFO, AGENCIES } from "@/const";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import InfiniteLogoSlider from "@/components/InfiniteLogoSlider";
 
 export default function Home() {
   const services = [
@@ -38,22 +39,19 @@ export default function Home() {
       
       <main className="flex-1">
         {/* HERO SECTION */}
-        <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden">
-          {/* Background avec pattern */}
-          <div className="absolute inset-0 bg-gradient-to-br from-[#0D1B3E] to-[#1a2744]">
-            <div 
-              className="absolute inset-0 opacity-10" 
-              style={{
-                backgroundImage: 'radial-gradient(circle, white 1px, transparent 1px)',
-                backgroundSize: '30px 30px'
-              }}
-            />
-          </div>
+        <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden h-[80vh]">
+          {/* Background Image */}
+          <img 
+            src="/images/DSC00194.JPG" 
+            alt="Intérieur du magasin LC4 Peinture avec des pots de peinture" 
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-[#0D1B3E]/70" />
           
           {/* Contenu */}
           <div className="relative z-10 container mx-auto px-4 text-center">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6">
-              {APP_TITLE}
+              LC4 peinture
             </h1>
             
             <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto mb-8 leading-relaxed">
@@ -79,26 +77,29 @@ export default function Home() {
             </div>
             
             <div className="flex flex-col items-center gap-3">
-              <p className="text-gray-300 text-sm font-medium">Livraison sur :</p>
-              <div className="flex flex-wrap items-center justify-center gap-3">
-                {AGENCIES.map((agency) => (
-                  <span 
-                    key={agency.id}
-                    className="px-4 py-2 bg-[#0D1B3E]/60 backdrop-blur-sm text-white text-sm rounded-full border border-white/20"
-                  >
-                    {agency.name}
-                  </span>
-                ))}
-              </div>
+              <p className="text-gray-300 text-sm font-medium">Notre agence :</p>
+              <span 
+                className="px-4 py-2 bg-[#0D1B3E]/60 backdrop-blur-sm text-white text-sm rounded-full border border-white/20"
+              >
+                Mundolsheim
+              </span>
             </div>
           </div>
         </section>
+
+        {/* SECTION PARTENAIRES */}
+        <InfiniteLogoSlider logos={[
+          "/images/logo-onip.png",
+          "/images/logo-blancolor.png",
+          "/images/logo-altek.png",
+          "/images/logo-tarkett.png",
+        ]} />
 
         {/* SECTION BIENVENUE */}
         <section className="py-16 md:py-24 bg-white">
           <div className="container mx-auto px-4 max-w-5xl">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0D1B3E] text-center mb-6">
-              Bienvenue chez {APP_TITLE}
+              Bienvenue chez LC4
             </h2>
             
             <div className="space-y-4 text-center">
@@ -107,7 +108,7 @@ export default function Home() {
               </p>
               
               <p className="text-lg text-gray-600 leading-relaxed">
-                Avec nos <strong className="text-[#0D1B3E]">4 agences</strong> de proximité dans le <strong className="text-[#0D1B3E]">Bas-Rhin</strong>, nous vous proposons un accompagnement personnalisé et des produits performants adaptés à chaque projet.
+                Avec nos <strong className="text-[#0D1B3E]">{AGENCIES.length} agences</strong> de proximité dans le <strong className="text-[#0D1B3E]">Bas-Rhin</strong>, nous vous proposons un accompagnement personnalisé et des produits performants adaptés à chaque projet.
               </p>
               
               <p className="text-lg text-gray-600 leading-relaxed">
@@ -166,59 +167,42 @@ export default function Home() {
           </div>
         </section>
 
-        {/* SECTION ZONE DE LIVRAISON */}
-        <section className="py-16 md:py-20 bg-gray-50">
-          <div className="container mx-auto px-4 max-w-5xl">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-[#0D1B3E] mb-4">
-                Zone de livraison
-              </h2>
-              <p className="text-lg text-gray-600">
-                Nous livrons dans toute l'Alsace et les environs
-              </p>
-            </div>
-
-            <div className="flex flex-wrap justify-center gap-6 mb-12">
-              <div className="bg-white border-2 border-gray-200 rounded-xl p-8 hover:shadow-lg transition-all hover:border-[#0D1B3E] min-w-[200px] text-center">
-                <MapPin className="w-8 h-8 text-[#0D1B3E] mx-auto mb-3" />
-                <h3 className="text-xl font-bold text-[#0D1B3E]">
-                  Strasbourg
-                </h3>
-              </div>
-              
-              <div className="bg-white border-2 border-gray-200 rounded-xl p-8 hover:shadow-lg transition-all hover:border-[#0D1B3E] min-w-[200px] text-center">
-                <MapPin className="w-8 h-8 text-[#0D1B3E] mx-auto mb-3" />
-                <h3 className="text-xl font-bold text-[#0D1B3E]">
-                  Souffelweyersheim
-                </h3>
-              </div>
-              
-              <div className="bg-white border-2 border-gray-200 rounded-xl p-8 hover:shadow-lg transition-all hover:border-[#0D1B3E] min-w-[200px] text-center">
-                <MapPin className="w-8 h-8 text-[#0D1B3E] mx-auto mb-3" />
-                <h3 className="text-xl font-bold text-[#0D1B3E]">
-                  Haguenau
-                </h3>
-              </div>
-              
-              <div className="bg-white border-2 border-gray-200 rounded-xl p-8 hover:shadow-lg transition-all hover:border-[#0D1B3E] min-w-[200px] text-center">
-                <MapPin className="w-8 h-8 text-[#0D1B3E] mx-auto mb-3" />
-                <h3 className="text-xl font-bold text-[#0D1B3E]">
-                  Schweighouse
-                </h3>
-              </div>
-            </div>
-
-            <div className="text-center">
-              <Link 
-                href="/contact"
-                className="inline-flex items-center gap-2 bg-[#0D1B3E] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#1a2744] transition-all shadow-lg"
-              >
-                Nous contacter
-                <ArrowRight className="w-5 h-5" />
-              </Link>
-            </div>
-          </div>
-        </section>
+		        {/* SECTION ZONE DE LIVRAISON */}
+		        <section className="py-16 md:py-20 bg-gray-50">
+		          <div className="container mx-auto px-4 max-w-5xl">
+		            <div className="text-center mb-12">
+		              <h2 className="text-3xl md:text-4xl font-bold text-[#0D1B3E] mb-4">
+		                Nos agences
+		              </h2>
+		              <p className="text-lg text-gray-600">
+		                Retrouvez-nous dans l'une de nos {AGENCIES.length} agences en Alsace
+		              </p>
+		            </div>
+		
+		            <div className="flex flex-wrap justify-center gap-6 mb-12">
+		              {AGENCIES.map((agency) => (
+		                <div key={agency.id} className="bg-white border-2 border-gray-200 rounded-xl p-8 hover:shadow-lg transition-all hover:border-[#0D1B3E] min-w-[200px] text-center">
+		                  <MapPin className="w-8 h-8 text-[#0D1B3E] mx-auto mb-3" />
+		                  <h3 className="text-xl font-bold text-[#0D1B3E]">
+		                    {agency.name}
+		                  </h3>
+		                  <p className="text-gray-600 text-sm mt-2">{agency.address}</p>
+		                  <p className="text-gray-600 text-sm">Tél: {agency.phone}</p>
+		                </div>
+		              ))}
+		            </div>
+		
+		            <div className="text-center">
+		              <Link 
+		                href="/nos-agences"
+		                className="inline-flex items-center gap-2 bg-[#0D1B3E] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#1a2744] transition-all shadow-lg"
+		              >
+		                Voir les horaires et plus d'infos
+		                <ArrowRight className="w-5 h-5" />
+		              </Link>
+		            </div>
+		          </div>
+		        </section>
 
         {/* SECTION CTA FINALE */}
         <section className="py-16 md:py-20 bg-[#0D1B3E]">

@@ -19,7 +19,7 @@ export default function QuiSommesNous() {
     {
       icon: Users,
       title: "Proximité",
-      description: "4 agences en Alsace pour être toujours proche de vous et répondre rapidement à vos besoins.",
+      description: "Nos agences en Alsace nous permettent d'être toujours proches de vous et de répondre rapidement à vos besoins.",
     },
     {
       icon: TrendingUp,
@@ -43,14 +43,12 @@ export default function QuiSommesNous() {
       
       <main className="flex-1">
         {/* Hero Section */}
-        <section 
-          className="relative h-[50vh] flex items-center justify-center text-white"
-          style={{
-            backgroundImage: "url('https://placehold.co/1920x600/0D1B3E/FFFFFF?text=Qui+sommes-nous')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
+        <section className="relative h-[50vh] flex items-center justify-center text-white">
+          <img 
+            src="/images/DSC00252.JPG" 
+            alt="Showroom LC4 Peinture" 
+            className="absolute inset-0 w-full h-full object-cover"
+          />
           <div className="absolute inset-0 bg-[#0D1B3E]/70"></div>
           <div className="relative z-10 text-center px-4">
             <h1 className="text-5xl md:text-6xl font-bold">Qui sommes-nous ?</h1>
@@ -60,24 +58,30 @@ export default function QuiSommesNous() {
         {/* Histoire */}
         <section className="py-20">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <h2 className="text-4xl font-bold mb-8 text-[#0D1B3E] text-center">Notre histoire</h2>
-              <div className="prose prose-lg max-w-none text-gray-700">
-                <p className="text-lg leading-relaxed mb-6">
-                  Fondée en Alsace, <strong>{APP_TITLE}</strong> s'est imposée comme un acteur majeur dans le domaine 
-                  de la peinture et des revêtements. Notre entreprise familiale a su évoluer au fil des années tout en 
-                  conservant ses valeurs fondamentales : qualité, proximité et expertise.
-                </p>
-                <p className="text-lg leading-relaxed mb-6">
-                  Avec nos <strong>4 agences</strong> stratégiquement implantées à Strasbourg, Souffelweyersheim, 
-                  Haguenau et Schweighouse-sur-Moder, nous couvrons l'ensemble du territoire alsacien. Cette présence 
-                  locale nous permet d'être au plus près de nos clients et de répondre rapidement à leurs besoins.
-                </p>
-                <p className="text-lg leading-relaxed">
-                  Que vous soyez artisan peintre, architecte, entreprise du bâtiment, collectivité ou particulier, 
-                  nous mettons notre savoir-faire et notre expérience à votre service pour mener à bien tous vos projets 
-                  de peinture, de revêtements de sols et de revêtements muraux.
-                </p>
+            <div className="max-w-6xl mx-auto">
+              <h2 className="text-4xl font-bold mb-12 text-[#0D1B3E] text-center">Notre histoire</h2>
+              <div className="grid md:grid-cols-2 gap-12 items-center">
+                <div className="prose prose-lg max-w-none text-gray-700">
+                    <p className="text-lg leading-relaxed mb-6">
+                        Fondée en Alsace, <strong>{APP_TITLE}</strong> s'est imposée comme un acteur majeur dans le domaine 
+                        de la peinture et des revêtements. Notre entreprise familiale a su évoluer au fil des années tout en 
+                        conservant ses valeurs fondamentales : qualité, proximité et expertise.
+                    </p>
+                    <p className="text-lg leading-relaxed mb-6">
+                        Avec nos agences stratégiquement implantées en Alsace, nous couvrons l'ensemble du territoire alsacien. Cette présence 
+                        locale nous permet d'être au plus près de nos clients et de répondre rapidement à leurs besoins.
+                    </p>
+                    <p className="text-lg leading-relaxed">
+                        Que vous soyez artisan peintre, architecte, entreprise du bâtiment, collectivité ou particulier, 
+                        nous mettons notre savoir-faire et notre expérience à votre service pour mener à bien tous vos projets 
+                        de peinture, de revêtements de sols et de revêtements muraux.
+                    </p>
+                </div>
+                <img 
+                    src="/images/DSC00197.JPG" 
+                    alt="Comptoir de vente LC4 Peinture" 
+                    className="w-full h-auto object-cover rounded-lg shadow-xl"
+                />
               </div>
             </div>
           </div>

@@ -1,4 +1,4 @@
-import { AGENCIES } from "@/const";
+import { AGENCIES, OPENING_HOURS } from "@/const";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -12,18 +12,16 @@ export default function NosAgences() {
       
       <main className="flex-1">
         {/* Hero Section */}
-        <section 
-          className="relative h-[50vh] flex items-center justify-center text-white"
-          style={{
-            backgroundImage: "url('https://placehold.co/1920x600/0D1B3E/FFFFFF?text=Nos+Agences')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
+        <section className="relative h-[50vh] flex items-center justify-center text-white">
+          <img 
+            src="/images/DSC00161.JPG" 
+            alt="Intérieur d'une agence LC4 Peinture" 
+            className="absolute inset-0 w-full h-full object-cover"
+          />
           <div className="absolute inset-0 bg-[#0D1B3E]/70"></div>
           <div className="relative z-10 text-center px-4">
             <h1 className="text-5xl md:text-6xl font-bold mb-4">Nos agences en Alsace</h1>
-            <p className="text-xl md:text-2xl">4 agences pour vous servir au plus près de chez vous</p>
+            <p className="text-xl md:text-2xl">{AGENCIES.length} agences pour vous servir au plus près de chez vous</p>
           </div>
         </section>
 
@@ -46,7 +44,7 @@ export default function NosAgences() {
         {/* Liste des agences */}
         <section className="py-20">
           <div className="container mx-auto px-4">
-            <h2 className="text-4xl font-bold mb-12 text-[#0D1B3E] text-center">Nos 4 agences</h2>
+            <h2 className="text-4xl font-bold mb-12 text-[#0D1B3E] text-center">Nos {AGENCIES.length} agences et zones de livraison</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
               {AGENCIES.map((agency) => (
                 <Card key={agency.id} className="hover:shadow-xl transition-shadow">
@@ -89,8 +87,18 @@ export default function NosAgences() {
                       <Clock className="h-5 w-5 text-[#0D1B3E] mt-0.5 flex-shrink-0" />
                       <div>
                         <p className="font-semibold text-gray-900">Horaires</p>
-                        <p className="text-gray-600">Lundi - Vendredi : 8h00 - 18h00</p>
-                        <p className="text-gray-600">Samedi : 9h00 - 12h00</p>
+                        {agency.id === 1 ? (
+                          Object.entries(OPENING_HOURS).map(([day, hours]) => (
+                            <p key={day} className="text-gray-600 capitalize">
+                              {day} : {hours}
+                            </p>
+                          ))
+                        ) : (
+                          <>
+                            <p className="text-gray-600">Lundi - Vendredi : 8h00 - 18h00</p>
+                            <p className="text-gray-600">Samedi : 9h00 - 12h00</p>
+                          </>
+                        )}
                       </div>
                     </div>
                     
@@ -116,17 +124,26 @@ export default function NosAgences() {
         {/* Info supplémentaire */}
         <section className="py-20 bg-gray-50">
           <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-3xl font-bold mb-6 text-[#0D1B3E]">Une présence locale pour un service optimal</h2>
-              <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Nos 4 agences en Alsace vous garantissent une proximité et une réactivité sans faille. 
-                Chaque agence dispose d'un showroom où vous pouvez découvrir nos produits, toucher les matières, 
-                visualiser les couleurs et bénéficier des conseils de nos experts.
-              </p>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                Que vous soyez professionnel ou particulier, n'hésitez pas à nous rendre visite. 
-                Nos équipes se feront un plaisir de vous accueillir et de vous accompagner dans votre projet.
-              </p>
+            <div className="max-w-6xl mx-auto">
+              <div className="grid md:grid-cols-2 gap-12 items-center">
+                <img 
+                  src="/images/DSC00163.JPG" 
+                  alt="Rayon de peintures LC4 Peinture" 
+                  className="w-full h-auto object-cover rounded-lg shadow-xl"
+                />
+                <div className="text-left">
+<h2 className="text-3xl font-bold mb-6 text-[#0D1B3E]">Une présence locale pour un service optimal</h2>
+                  <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                    Notre agence principale à Mundolsheim et nos {AGENCIES.length - 1} zones de livraison vous garantissent une proximité et une réactivité sans faille. 
+                    Chaque agence dispose d'un showroom où vous pouvez découvrir nos produits, toucher les matières, 
+                    visualiser les couleurs et bénéficier des conseils de nos experts.
+                  </p>
+                  <p className="text-lg text-gray-700 leading-relaxed">
+                    Que vous soyez professionnel ou particulier, n'hésitez pas à nous rendre visite. 
+                    Nos équipes se feront un plaisir de vous accueillir et de vous accompagner dans votre projet.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </section>

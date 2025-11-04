@@ -1,16 +1,26 @@
 export const COOKIE_NAME = "app_session_id";
 export const ONE_YEAR_MS = 1000 * 60 * 60 * 24 * 365;
 
-export const APP_TITLE = "LC4 Peinture";
+export const APP_TITLE = "LC4 PEINTURE & DECORATION";
 export const APP_LOGO = "/logo.svg";
 
 export const COMPANY_INFO = {
-  name: "LC4 Peinture",
-  slogan: "Votre spécialiste en peinture et revêtements en Alsace",
-  description: "LC4 Peinture est votre partenaire de confiance pour tous vos projets de peinture, revêtements de sols et revêtements muraux à Strasbourg et dans toute l'Alsace.",
-  phone: "+33 3 88 XX XX XX",
+  name: "LC4 PEINTURE & DECORATION",
+  slogan: "Magasin de peinture à Mundolsheim",
+  description: "L'achat, la vente, la distribution de tous produits et accessoires permettant tous travaux intérieurs ou extérieures, sur tout support, et toute matières et de tout produits du second œuvre. Nous sommes notés 5 étoiles sur 5 avec 73 avis Google.",
+  phone: "03 88 04 71 96",
   email: "contact@lc4-peinture.fr",
-  address: "Adresse à définir, Strasbourg, Alsace",
+  address: "3 Rue Alexandre Volta, 67450 Mundolsheim",
+};
+
+export const OPENING_HOURS = {
+  lundi: "07:00–17:00",
+  mardi: "07:00–17:00",
+  mercredi: "07:00–17:00",
+  jeudi: "07:00–17:00",
+  vendredi: "07:00–17:00",
+  samedi: "07:30–12:00",
+  dimanche: "Fermé",
 };
 
 export const COLORS = {
@@ -22,31 +32,38 @@ export const COLORS = {
 export const AGENCIES = [
   {
     id: 1,
-    name: "Strasbourg",
-    address: "67000 Strasbourg",
-    phone: "+33 3 88 XX XX XX",
-    email: "strasbourg@lc4-peinture.fr",
+    name: "Mundolsheim",
+    address: "3 Rue Alexandre Volta, 67450 Mundolsheim",
+    phone: "03 88 04 71 96",
+    email: "contact@lc4-peinture.fr",
   },
   {
     id: 2,
-    name: "Souffelweyersheim",
-    address: "67460 Souffelweyersheim",
-    phone: "+33 3 88 XX XX XX",
-    email: "souffelweyersheim@lc4-peinture.fr",
+    name: "Strasbourg",
+    address: "67000 Strasbourg",
+    phone: "03 88 04 71 96", // Utilisation du nouveau numéro
+    email: "contact@lc4-peinture.fr", // Utilisation du nouvel email
   },
   {
     id: 3,
-    name: "Haguenau",
-    address: "67500 Haguenau",
-    phone: "+33 3 88 XX XX XX",
-    email: "haguenau@lc4-peinture.fr",
+    name: "Souffelweyersheim",
+    address: "67460 Souffelweyersheim",
+    phone: "03 88 04 71 96",
+    email: "contact@lc4-peinture.fr",
   },
   {
     id: 4,
+    name: "Haguenau",
+    address: "67500 Haguenau",
+    phone: "03 88 04 71 96",
+    email: "contact@lc4-peinture.fr",
+  },
+  {
+    id: 5,
     name: "Schweighouse",
     address: "67590 Schweighouse-sur-Moder",
-    phone: "+33 3 88 XX XX XX",
-    email: "schweighouse@lc4-peinture.fr",
+    phone: "03 88 04 71 96",
+    email: "contact@lc4-peinture.fr",
   },
 ];
 
