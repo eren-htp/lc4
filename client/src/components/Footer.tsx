@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* À propos */}
           <div>
-            <h3 className="text-xl font-bold mb-4">"LC4"</h3>
+            <h3 className="text-xl font-bold mb-4">LC4</h3>
             <p className="text-gray-300 text-sm mb-4">{COMPANY_INFO.slogan}</p>
             <p className="text-gray-300 text-sm">{COMPANY_INFO.description}</p>
           </div>
@@ -87,7 +87,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-white/20 mt-8 pt-8 text-center text-gray-300 text-sm">
-          <p>&copy; {new Date().getFullYear()} "LC4". Tous droits réservés.</p>
+          <p>&copy; {new Date().getFullYear()} LC4. Tous droits réservés.</p>
         </div>
       </div>
     </footer>

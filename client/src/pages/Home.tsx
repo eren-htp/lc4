@@ -65,7 +65,7 @@ export default function Home() {
             </h1>
             
             <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto mb-8 leading-relaxed">
-Découvrez nos produits haut de gamme<br />\npour vos projets résidentiels et professionnels
+Découvrez nos produits haut de gamme pour vos projets résidentiels et professionnels
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
@@ -86,7 +86,7 @@ Découvrez nos produits haut de gamme<br />\npour vos projets résidentiels et p
             </div>
             
             <div className="flex flex-col items-center gap-3">
-              <p className="text-gray-300 text-sm font-medium">Nos zones de service :</p>
+              <p className="text-gray-300 text-sm font-medium">Nos secteurs d’intervention :</p>
               <div className="flex flex-wrap justify-center gap-2">
                 {["Mundolsheim", "Strasbourg", "Souffelweyersheim", "Haguenau", "Schweighouse"].map((city, index) => (
                   <span 
@@ -189,7 +189,7 @@ Découvrez nos produits haut de gamme<br />\npour vos projets résidentiels et p
 		          <div className="container mx-auto px-4 max-w-5xl">
 		            <div className="text-center mb-12">
 		              <h2 className="text-3xl md:text-4xl font-bold text-[#0D1B3E] mb-4">
-		                Nos zones de service
+		                Nos secteurs d’intervention
 		              </h2>
 		              <p className="text-lg text-gray-600">
 		                Nous intervenons dans les villes suivantes pour vos projets de peinture et décoration :
