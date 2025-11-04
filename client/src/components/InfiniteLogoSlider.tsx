@@ -25,7 +25,7 @@ const InfiniteLogoSlider: React.FC<InfiniteLogoSliderProps> = ({ logos }) => {
           .slider-track {
             display: flex;
             width: 200%; /* La largeur est doublée pour l'effet de boucle */
-            animation: slide 40s linear infinite; /* Augmenter la durée pour une vitesse plus lente */
+            animation: slide 20s linear infinite; /* Augmenter la durée pour une vitesse plus lente */
           }
 
           .logo-item {
