@@ -36,7 +36,7 @@ function Router() {
   );
 }
 
-function App() {
+function LC4() {
   return (
     <ErrorBoundary>
       <ThemeProvider
@@ -53,5 +53,5 @@ function App() {
   );
 }
 
-export default App;
+export default LC4;
 

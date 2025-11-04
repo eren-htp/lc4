@@ -72,7 +72,7 @@ const Contact: React.FC = () => {
             <ContactCard
               icon={<Phone className="w-6 h-6" />}
               title="Téléphone"
-              content={<>Appelez-nous du lundi au vendredi<br /><span className="text-2xl font-bold text-blue-600">{COMPANY_INFO.phone}</span></>}
+              content={<>LC4 du lundi au vendredi<br /><span className="text-2xl font-bold text-blue-600">{COMPANY_INFO.phone}</span></>}
               color="bg-yellow-50"
             />
             <ContactCard

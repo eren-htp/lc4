@@ -104,7 +104,7 @@ export default function PeintureCategory() {
                   <div className="flex flex-col sm:flex-row gap-4">
                     <a href={`tel:${COMPANY_INFO.phone}`}>
                       <Button size="lg" className="bg-white text-[#0D1B3E] hover:bg-gray-100">
-                        Appelez-nous
+                        LC4
                       </Button>
                     </a>
                     <a href={`mailto:${COMPANY_INFO.email}`}>
