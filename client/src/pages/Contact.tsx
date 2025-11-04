@@ -3,6 +3,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { COMPANY_INFO, AGENCIES, OPENING_HOURS } from '@shared/const';
 import { Phone, Mail, MapPin, Star, Clock, Map, Check, Lightbulb, Car, Accessibility } from 'lucide-react';
+import ModalRappel from '../components/ModalRappel';
 
 // Définir les options pour le dropdown "Solution souhaitée"
 const serviceOptions = [
@@ -25,6 +26,7 @@ const ContactCard: React.FC<{ icon: React.ReactNode, title: string, content: Rea
 );
 
 const Contact: React.FC = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -64,7 +66,7 @@ const Contact: React.FC = () => {
           </p>
         </div>
 
-        <div className="container mx-auto px-4 py-12">
+        <div className="max-w-7xl mx-auto px-4 py-12">
           {/* Cartes d'information de contact */}
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
             <ContactCard
@@ -158,6 +160,7 @@ const Contact: React.FC = () => {
                     <Mail className="w-5 h-5 mr-2" /> Envoyer ma demande
                   </button>
                   <button type="button"
+                    onClick={() => setIsModalOpen(true)}
                     className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-yellow-500 hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"
                   >
                     <Phone className="w-5 h-5 mr-2" /> Être rappelé
@@ -192,13 +195,12 @@ const Contact: React.FC = () => {
               {/* Zone d'intervention */}
               <div className="p-6 border rounded-lg shadow-md bg-green-50">
                 <h3 className="text-xl font-bold mb-4 flex items-center">
-                  <Map className="w-6 h-6 mr-2 text-green-600" /> Zone d'intervention
+                  <Map className="w-6 h-6 mr-2 text-green-600" /> Nos zones de service
                 </h3>
-                <p className="mb-3">Nous intervenons principalement dans la région de Strasbourg et ses alentours :</p>
+                <p className="mb-3">Nous vous servons dans les zones suivantes :</p>
                 <ul className="space-y-1">
-                  <li className="flex items-center"><Check className="w-4 h-4 text-green-500 mr-2" />{mainAgency?.name} (Agence principale)</li>
-                  {otherZones.map((zone, index) => (
-                    <li key={index} className="flex items-center"><Check className="w-4 h-4 text-green-500 mr-2" />{zone} (Zone de livraison)</li>
+                  {["Mundolsheim", "Strasbourg", "Souffelweyersheim", "Haguenau", "Schweighouse"].map((city, index) => (
+                    <li key={index} className="flex items-center"><Check className="w-4 h-4 text-green-500 mr-2" />{city}</li>
                   ))}
                 </ul>
               </div>
@@ -255,6 +257,7 @@ const Contact: React.FC = () => {
         </div>
       </main>
       <Footer />
+      <ModalRappel isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </div>
   );
 };
