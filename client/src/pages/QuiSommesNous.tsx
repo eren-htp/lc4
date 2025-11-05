@@ -1,5 +1,5 @@
 import { APP_TITLE } from "@/const";
-import { Award, Target, Users, TrendingUp, Clock, Warehouse, Handshake, MessageSquare } from "lucide-react";
+import { Award, Target, Users, TrendingUp, Clock, Warehouse, Handshake, MessageSquare, PaintBucket, Layers3, BrickWall } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import NumberCounter from "@/components/NumberCounter";
@@ -134,28 +134,31 @@ export default function QuiSommesNous() {
                   trois domaines complémentaires qui constituent le cœur de notre activité.
                 </p>
                 <div className="grid md:grid-cols-3 gap-6 my-8">
-                  <div className="bg-white p-6 rounded-lg shadow-md">
-                    <h3 className="text-xl font-bold text-[#0D1B3E] mb-3">Peintures</h3>
-                    <p className="text-gray-600">
-                      Peintures intérieures et extérieures, laques, façades, bois, métal, sols et toitures. 
-                      Nous proposons une gamme complète de peintures professionnelles adaptées à tous les supports.
-                    </p>
-                  </div>
-                  <div className="bg-white p-6 rounded-lg shadow-md">
-                    <h3 className="text-xl font-bold text-[#0D1B3E] mb-3">Revêtements de sols</h3>
-                    <p className="text-gray-600">
-                      Parquets, stratifiés, PVC, textiles et solutions techniques. Des revêtements durables 
-                      et esthétiques pour tous les environnements résidentiels et professionnels.
-                    </p>
-                  </div>
-                  <div className="bg-white p-6 rounded-lg shadow-md">
-                    <h3 className="text-xl font-bold text-[#0D1B3E] mb-3">Revêtements muraux</h3>
-                    <p className="text-gray-600">
-                      Collections exclusives et tendances pour habiller vos murs avec style. 
-                      Des papiers peints haut de gamme aux solutions techniques innovantes.
-                    </p>
-                  </div>
-                </div>
+	                  <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+	                    <PaintBucket className="h-10 w-10 text-[#0D1B3E] mb-4" />
+	                    <h3 className="text-xl font-bold text-[#0D1B3E] mb-3">Peintures</h3>
+	                    <p className="text-gray-600">
+	                      Peintures intérieures et extérieures, laques, façades, bois, métal, sols et toitures. 
+	                      Nous proposons une gamme complète de peintures professionnelles adaptées à tous les supports.
+	                    </p>
+	                  </div>
+	                  <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+	                    <Layers3 className="h-10 w-10 text-[#0D1B3E] mb-4" />
+	                    <h3 className="text-xl font-bold text-[#0D1B3E] mb-3">Revêtements de sols</h3>
+	                    <p className="text-gray-600">
+	                      Parquets, stratifiés, PVC, textiles et solutions techniques. Des revêtements durables 
+	                      et esthétiques pour tous les environnements résidentiels et professionnels.
+	                    </p>
+	                  </div>
+	                  <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+	                    <BrickWall className="h-10 w-10 text-[#0D1B3E] mb-4" />
+	                    <h3 className="text-xl font-bold text-[#0D1B3E] mb-3">Revêtements muraux</h3>
+	                    <p className="text-gray-600">
+	                      Collections exclusives et tendances pour habiller vos murs avec style. 
+	                      Des papiers peints haut de gamme aux solutions techniques innovantes.
+	                    </p>
+	                  </div>
+	                </div>
               </div>
             </div>
           </div>
