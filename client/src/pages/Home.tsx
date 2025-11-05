@@ -115,8 +115,8 @@ Découvrez nos produits haut de gamme pour vos projets résidentiels et professi
               Nos partenaires
             </h2>
             <InfiniteLogoSlider logos={partnerLogos} />
-			           107			          </div>
-108			        </section>        </FadeInOnScroll>
+			           			          </div>
+			        </section>        </FadeInOnScroll>
 		
 		        {/* SECTION BIENVENUE */}
 		        <FadeInOnScroll>
