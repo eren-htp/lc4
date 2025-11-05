@@ -183,9 +183,60 @@ Découvrez nos produits haut de gamme pour vos projets résidentiels et professi
 	          </div>
 	        </section>
 	
-	        {/* SECTION ZONE DE LIVRAISON */}
-		        {/* SECTION ZONE DE SERVICE */}
-		        <section className="py-16 md:py-20 bg-gray-50">
+		        {/* SECTION AVIS CLIENTS */}
+		        <section className="py-16 md:py-24 bg-white">
+		          <div className="container mx-auto px-4 max-w-7xl">
+		            <div className="text-center mb-12">
+		              <h2 className="text-3xl md:text-4xl font-bold text-[#0D1B3E] mb-4">
+		                Ce que nos clients disent de nous
+		              </h2>
+		              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+		                Avis vérifiés sur Google pour LC4 PEINTURE & DECORATION
+		              </p>
+		            </div>
+		
+		            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+		              {/* Avis 1 */}
+		              <div className="bg-gray-50 p-6 rounded-xl shadow-md border border-gray-200">
+		                <div className="flex items-center mb-3">
+		                  <div className="text-yellow-500 text-2xl mr-2">★★★★★</div>
+		                  <p className="text-sm text-gray-500">il y a 1 jour</p>
+		                </div>
+		                <p className="text-gray-700 italic mb-4">
+		                  "J'ai acheté mon revêtement de sol en résine chez LC4 et j'en suis très content ! La qualité du produit est excellente, et le rendu final est impeccable, exactement ce que je voulais. Je le recommande vivement."
+		                </p>
+		                <p className="font-semibold text-[#0D1B3E]">- eyuphulya61 Inan</p>
+		              </div>
+		
+		              {/* Avis 2 */}
+		              <div className="bg-gray-50 p-6 rounded-xl shadow-md border border-gray-200">
+		                <div className="flex items-center mb-3">
+		                  <div className="text-yellow-500 text-2xl mr-2">★★★★★</div>
+		                  <p className="text-sm text-gray-500">il y a 4 jours</p>
+		                </div>
+		                <p className="text-gray-700 italic mb-4">
+		                  "Excellente qualité et professionnalisme. Je recommande vivement."
+		                </p>
+		                <p className="font-semibold text-[#0D1B3E]">- AYKUT ARIKTEKIN</p>
+		              </div>
+		
+		              {/* Avis 3 */}
+		              <div className="bg-gray-50 p-6 rounded-xl shadow-md border border-gray-200">
+		                <div className="flex items-center mb-3">
+		                  <div className="text-yellow-500 text-2xl mr-2">★★★★★</div>
+		                  <p className="text-gray-500 text-sm">il y a 6 jours</p>
+		                </div>
+		                <p className="text-gray-700 italic mb-4">
+		                  "Je suis extrêmement satisfait de ce fournisseur de peinture. La qualité des matériaux est impeccable, et les responsables sont très compétents et très professionnels. Je recommande vivement leurs services."
+		                </p>
+		                <p className="font-semibold text-[#0D1B3E]">- Sadettin Solak</p>
+		              </div>
+		            </div>
+		          </div>
+		        </section>
+		
+			        {/* SECTION ZONE DE SERVICE */}
+			        <section className="py-16 md:py-20 bg-gray-50">
 		          <div className="container mx-auto px-4 max-w-5xl">
 		            <div className="text-center mb-12">
 		              <h2 className="text-3xl md:text-4xl font-bold text-[#0D1B3E] mb-4">
