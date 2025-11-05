@@ -132,10 +132,20 @@ Découvrez nos produits haut de gamme pour vos projets résidentiels et professi
 	                Notre équipe de professionnels vous conseille et vous accompagne de A à Z, de la sélection des produits à la réalisation de vos chantiers. Nous vous garantissons des produits performants et un service de qualité.
 	              </p>
 	              
-	              <p className="text-lg text-gray-600 leading-relaxed">
-	                Situés à Mundolsheim, nous couvrons les zones de Strasbourg, Souffelweyersheim, Haguenau et Schweighouse. Contactez-nous pour un devis personnalisé.
-	              </p>
-	            </div>
+		              <p className="text-lg text-gray-600 leading-relaxed">
+		                Situés à Mundolsheim, nous couvrons les zones de Strasbourg, Souffelweyersheim, Haguenau et Schweighouse. Contactez-nous pour un devis personnalisé.
+		              </p>
+		            </div>
+		            
+		            <div className="text-center mt-8">
+		              <Link 
+		                href="/qui-sommes-nous"
+		                className="inline-flex items-center gap-2 bg-[#0D1B3E] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#1a2744] transition-all shadow-lg"
+		              >
+		                Découvrez-nous
+		                <ArrowRight className="w-5 h-5" />
+		              </Link>
+		            </div>
 	          </div>
 	        </section>
 	
