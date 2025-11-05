@@ -54,7 +54,7 @@ export default function Home() {
       
       <main className="flex-1">
         {/* HERO SECTION */}
-        <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden h-[80vh]">
+        <section className="relative min-h-[500px] md:min-h-[600px] flex items-center justify-center overflow-hidden h-[70vh] md:h-[80vh]">
           {/* Background Image */}
           <img 
             src="/images/DSC00194.JPG" 
@@ -65,15 +65,15 @@ export default function Home() {
           
           {/* Contenu */}
           <div className="relative z-10 container mx-auto px-4 text-center">
-            <h1 className={`text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 transition-all duration-1000 ${isHeroVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
+            <h1 className={`text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 transition-all duration-1000 ${isHeroVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
               LC4 peinture
             </h1>
             
-            <p className={`text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto mb-8 leading-relaxed transition-all duration-1000 delay-200 ${isHeroVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
+            <p className={`text-lg md:text-2xl text-gray-200 max-w-3xl mx-auto mb-6 leading-relaxed transition-all duration-1000 delay-200 ${isHeroVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
 Découvrez nos produits haut de gamme pour vos projets résidentiels et professionnels
             </p>
             
-            <div className={`flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 transition-all duration-1000 delay-500 ${isHeroVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
+            <div className={`flex flex-col sm:flex-row items-center justify-center gap-4 mb-8 transition-all duration-1000 delay-500 ${isHeroVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
               <button 
                 onClick={() => setIsModalOpen(true)}
                 className="inline-flex items-center gap-2 bg-white text-[#0D1B3E] px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all shadow-lg"
