@@ -58,7 +58,7 @@ export default function RevêtementsMuraux() {
 	              {['DSC00170.JPG', 'DSC00175.JPG'].map((img, index) => (
 	                <div key={index} className="overflow-hidden rounded-lg shadow-lg aspect-square">
 	                  <img 
-	                    src={`/images/products/${img}`}
+	                    src={`/images/${img}`}
 	                    alt={`Produit de revêtement mural/préparation ${index + 1}`}
 	                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
 	                  />

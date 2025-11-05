@@ -57,7 +57,7 @@ export default function RevêtementsSols() {
 			              {['DSC00224.JPG', 'DSC00234.JPG'].map((img, index) => (
 		                <div key={index} className="overflow-hidden rounded-lg shadow-lg aspect-square">
 		                  <img 
-		                    src={`/images/products/${img}`}
+		                    src={`/images/${img}`}
 		                    alt={`Revêtement de sol ${index + 1}`}
 		                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
 		                  />
