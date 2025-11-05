@@ -28,10 +28,29 @@ export default function RevêtementsSols() {
               Solutions innovantes et durables pour tous vos projets de sols
             </p>
           </div>
-        </section>
+	        </section>
 
-        {/* Introduction */}
-        <section className="py-20">
+	        {/* Galerie de Produits */}
+	        <section className="py-20">
+	          <div className="container mx-auto px-4">
+	            <h2 className="text-4xl font-bold mb-12 text-[#0D1B3E] text-center">Nos Produits en Image</h2>
+	            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+	              {/* Images de Revêtements de Sols */}
+	              {['DSC00224.JPG'].map((img, index) => (
+	                <div key={index} className="overflow-hidden rounded-lg shadow-lg aspect-square">
+	                  <img 
+	                    src={`/images/products/${img}`}
+	                    alt={`Revêtement de sol ${index + 1}`}
+	                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+	                  />
+	                </div>
+	              ))}
+	            </div>
+	          </div>
+	        </section>
+
+	        {/* Introduction */}
+	        <section className="py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-4xl font-bold mb-6 text-[#0D1B3E]">Notre gamme de revêtements de sols</h2>
@@ -80,10 +99,10 @@ export default function RevêtementsSols() {
               ))}
             </div>
           </div>
-        </section>
+	        </section>
 
-        {/* Avantages */}
-        <section className="py-20">
+	        {/* Avantages */}
+	        <section className="py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-4xl font-bold mb-12 text-[#0D1B3E] text-center">Pourquoi choisir nos revêtements de sols ?</h2>
