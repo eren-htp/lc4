@@ -37,7 +37,7 @@ const ClickableContactCard: React.FC<{
     href={href} 
     target="_blank" 
     rel="noopener noreferrer" 
-    className="block transition-all duration-300 hover:scale-[1.01] hover:shadow-xl"
+    className="block transition-all duration-300"
   >
     <ContactCard icon={icon} title={title} content={content} color={color} />
   </a>
