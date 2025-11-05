@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import ModalRappel from "@/components/ModalRappel";
 import { useState, useEffect } from "react";
+import FadeInOnScroll from "@/components/FadeInOnScroll";
 import { MapPin, Paintbrush, Home as HomeIcon, Frame, Wrench, Phone, ArrowRight } from "lucide-react";
 import { APP_TITLE, COMPANY_INFO, AGENCIES } from "@/const";
 import Header from "@/components/Header";
@@ -103,21 +104,23 @@ Découvrez nos produits haut de gamme pour vos projets résidentiels et professi
                 ))}
               </div>
             </div>
-          </div>
-	        </section>
+			          </div>
+			        </section>
 	
 		        {/* SECTION PARTENAIRES */}
-        <section className="py-12 bg-white">
+        <FadeInOnScroll>
+          <section className="py-12 bg-white">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0D1B3E] mb-8">
               Nos partenaires
             </h2>
             <InfiniteLogoSlider logos={partnerLogos} />
-          </div>
-        </section>
-	
-	        {/* SECTION BIENVENUE */}
-	        <section className="py-16 md:py-24 bg-white">
+			           107			          </div>
+108			        </section>        </FadeInOnScroll>
+		
+		        {/* SECTION BIENVENUE */}
+		        <FadeInOnScroll>
+          <section className="py-16 md:py-24 bg-white">
 	          <div className="container mx-auto px-4 max-w-5xl">
 	            <h2 className="text-3xl md:text-4xl font-bold text-[#0D1B3E] text-center mb-6">
 	              Bienvenue chez LC4
@@ -147,10 +150,12 @@ Découvrez nos produits haut de gamme pour vos projets résidentiels et professi
 		              </Link>
 		            </div>
 	          </div>
-	        </section>
-	
-	        {/* SECTION PRODUITS ET SERVICES */}
-	        <section className="py-16 md:py-24 bg-gray-50">
+        </section>
+        </FadeInOnScroll>
+		
+		        {/* SECTION PRODUITS ET SERVICES */}
+		        <FadeInOnScroll>
+          <section className="py-16 md:py-24 bg-gray-50">
 	          <div className="container mx-auto px-4 max-w-7xl">
 	            <div className="text-center mb-12">
 	              <h2 className="text-3xl md:text-4xl font-bold text-[#0D1B3E] mb-4">
@@ -196,10 +201,12 @@ Découvrez nos produits haut de gamme pour vos projets résidentiels et professi
 	              })}
 	            </div>
 	          </div>
-	        </section>
-	
+        </section>
+        </FadeInOnScroll>
+		
 		        {/* SECTION AVIS CLIENTS */}
-		        <section className="py-16 md:py-24 bg-white">
+		        <FadeInOnScroll>
+          <section className="py-16 md:py-24 bg-white">
 		          <div className="container mx-auto px-4 max-w-7xl">
 		            <div className="text-center mb-12">
 		              <h2 className="text-3xl md:text-4xl font-bold text-[#0D1B3E] mb-4">
@@ -244,14 +251,15 @@ Découvrez nos produits haut de gamme pour vos projets résidentiels et professi
 		                <p className="text-gray-700 italic mb-4">
 		                  "Je suis extrêmement satisfait de ce fournisseur de peinture. La qualité des matériaux est impeccable, et les responsables sont très compétents et très professionnels. Je recommande vivement leurs services."
 		                </p>
-		                <p className="font-semibold text-[#0D1B3E]">- Sadettin Solak</p>
-		              </div>
-		            </div>
-		          </div>
-		        </section>
-		
-		        {/* SECTION ZONE DE SERVICE */}
-		        <section className="py-16 md:py-20 bg-gray-50">
+		                <p className="font-semibold text-[#0D1B3E]">- Sadettin Sol</p>
+			              </div>
+			            </div>
+			          </div>
+			        </section>
+			        </FadeInOnScroll>
+			
+			        {/* SECTION ZONE DE SERVICE */}		        <FadeInOnScroll>
+          <section className="py-16 md:py-20 bg-gray-50">
 		          <div className="container mx-auto px-4 max-w-5xl">
 		            <div className="text-center mb-12">
 		              <h2 className="text-3xl md:text-4xl font-bold text-[#0D1B3E] mb-4">
@@ -283,10 +291,12 @@ Découvrez nos produits haut de gamme pour vos projets résidentiels et professi
 		              </Link>
 		            </div>
 		          </div>
-		        </section>
-	
-	        {/* SECTION CTA FINALE */}
-	        <section className="py-16 md:py-20 bg-[#0D1B3E]">
+        </section>
+        </FadeInOnScroll>
+		
+		        {/* SECTION CTA FINALE */}
+		        <FadeInOnScroll>
+          <section className="py-16 md:py-20 bg-[#0D1B3E]">
 	          <div className="container mx-auto px-4 max-w-4xl text-center">
 		            <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
 		              Prêt à transformer vos espaces ?
@@ -308,14 +318,14 @@ Découvrez nos produits haut de gamme pour vos projets résidentiels et professi
 		                onClick={() => setIsModalOpen(true)}
 		                className="inline-flex items-center gap-2 border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-[#0D1B3E] transition-all shadow-lg hover:shadow-xl"
 		              >
-		                Demander un devis gratuit
-		              </button>
-		            </div>
-	          </div>		        </section>
-		
-
-		
-		      </main>
+			                Demander un devis gratuit
+			              </button>
+			            </div>
+			          </div>
+			        </section>
+		        </FadeInOnScroll>
+				
+				      </main>
 		      
 		      <Footer />
 		      <ModalRappel isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
