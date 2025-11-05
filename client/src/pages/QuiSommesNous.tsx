@@ -117,10 +117,10 @@ export default function QuiSommesNous() {
 
         {/* Chiffres Clés (Number Counter) */}
         <NumberCounter counters={[
-          { Icon: Clock, label: "Expérience", value: 10, description: "ans d’expertise cumulée" },
-          { Icon: Warehouse, label: "Agence", value: 1, description: "agence en Alsace (Mundolsheim)" },
-          { Icon: Handshake, label: "Partenaires", value: 4, description: "fabricants majeurs" },
-          { Icon: MessageSquare, label: "Clients", value: 50, description: "clients fidèles" }, // J'utilise 50 comme valeur numérique pour l'animation, le label affichera "Des dizaines"
+          { Icon: Clock, label: "Années d’expérience", value: 10, description: "Expertise cumulée dans le domaine" },
+          { Icon: Warehouse, label: "Agence", value: 1, description: "Basée à Mundolsheim, au cœur de l’Alsace" },
+          { Icon: Handshake, label: "Partenaires", value: 4, description: "Fabricants français et européens majeurs" },
+          { Icon: MessageSquare, label: "Clients fidèles", value: 50, description: "Professionnels et particuliers accompagnés" },
         ]} />
 
         {/* Notre expertise */}
