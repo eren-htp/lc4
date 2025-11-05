@@ -25,6 +25,24 @@ const ContactCard: React.FC<{ icon: React.ReactNode, title: string, content: Rea
   </div>
 );
 
+// Composant pour les cartes d'information cliquables
+const ClickableContactCard: React.FC<{ 
+  icon: React.ReactNode, 
+  title: string, 
+  content: React.ReactNode, 
+  color: string, 
+  href: string 
+}> = ({ icon, title, content, color, href }) => (
+  <a 
+    href={href} 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    className="block transition-transform duration-300 hover:scale-[1.02] hover:shadow-2xl"
+  >
+    <ContactCard icon={icon} title={title} content={content} color={color} />
+  </a>
+);
+
 const Contact: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [formData, setFormData] = useState({
@@ -66,36 +84,37 @@ const Contact: React.FC = () => {
           </p>
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 py-12">
-          {/* Cartes d'information de contact */}
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
-            <ContactCard
-              icon={<Phone className="w-6 h-6" />}
-              title="Téléphone"
-              content={<>LC4 du lundi au vendredi<br /><span className="text-2xl font-bold text-blue-600">{COMPANY_INFO.phone}</span></>}
-              color="bg-yellow-50"
-            />
-            <ContactCard
-              icon={<Mail className="w-6 h-6" />}
-              title="Email"
-              content={<>Écrivez-nous à tout moment<br /><span className="text-blue-600">contact@lc4peinture.fr</span></>}
-              color="bg-purple-50"
-            />
-            <ContactCard
-              icon={<MapPin className="w-6 h-6" />}
-              title="Adresse"
-              content={<>Visitez notre agence principale<br />{COMPANY_INFO.address.split(',').map((line, index) => <span key={index} className="block">{line.trim()}</span>)}</>}
-              color="bg-green-50"
-            />
-            <ContactCard
-              icon={<Star className="w-6 h-6" />}
-              title="Avis Google"
-              content={<>Note moyenne sur {COMPANY_INFO.googleReviews.count} avis<br /><span className="text-2xl font-bold text-green-600">{COMPANY_INFO.googleReviews.rating} / 5</span></>}
-              color="bg-pink-50"
-            />
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+	        <div className="max-w-7xl mx-auto px-4 py-12">
+	          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+		            <ClickableContactCard
+	              icon={<Phone className="w-6 h-6" />}
+	              title="Téléphone"
+	              content={<>LC4 du lundi au vendredi<br /><span className="text-2xl font-bold text-blue-600">{COMPANY_INFO.phone}</span></>}
+	              color="bg-yellow-50"
+	              href={`tel:${COMPANY_INFO.phone.replace(/\s/g, '')}`}
+	            />
+	            <ClickableContactCard
+	              icon={<Mail className="w-6 h-6" />}
+	              title="Email"
+	              content={<>Écrivez-nous à tout moment<br /><span className="text-blue-600">contact@lc4peinture.fr</span></>}
+	              color="bg-purple-50"
+	              href={`mailto:${COMPANY_INFO.email}`}
+	            />
+	            <ClickableContactCard
+	              icon={<MapPin className="w-6 h-6" />}
+	              title="Adresse"
+	              content={<>Visitez notre agence principale<br />{COMPANY_INFO.address.split(',').map((line, index) => <span key={index} className="block">{line.trim()}</span>)}</>}
+	              color="bg-green-50"
+	              href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(mapAddress)}`}
+	            />
+	            <ClickableContactCard
+	              icon={<Star className="w-6 h-6" />}
+	              title="Avis Google"
+	              content={<>Note moyenne sur {COMPANY_INFO.googleReviews.count} avis<br /><span className="text-2xl font-bold text-green-600">{COMPANY_INFO.googleReviews.rating} / 5</span></>}
+	              color="bg-pink-50"
+	              href="https://www.google.com/search?q=LC4+PEINTURE+%26+DECORATION+Avis"
+	            />
+	          </div>       <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             {/* Formulaire de demande de devis */}
             <div className="lg:col-span-2 p-8 border rounded-lg shadow-xl">
               <h2 className="text-3xl font-bold mb-6">Demandez votre devis gratuit</h2>
