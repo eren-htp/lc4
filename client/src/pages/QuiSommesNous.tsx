@@ -2,6 +2,7 @@ import { APP_TITLE } from "@/const";
 import { Award, Target, Users, TrendingUp } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import NumberCounter from "@/components/NumberCounter";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function QuiSommesNous() {
@@ -113,6 +114,14 @@ export default function QuiSommesNous() {
             </div>
           </div>
         </section>
+
+        {/* Chiffres Clés (Number Counter) */}
+        <NumberCounter counters={[
+          { emoji: "🕒", label: "Expérience", value: 10, description: "ans d’expertise cumulée" },
+          { emoji: "🧱", label: "Agence", value: 1, description: "agence en Alsace (Mundolsheim)" },
+          { emoji: "🤝", label: "Partenaires", value: 4, description: "fabricants majeurs" },
+          { emoji: "💬", label: "Clients", value: 50, description: "clients fidèles" }, // J'utilise 50 comme valeur numérique pour l'animation, le label affichera "Des dizaines"
+        ]} />
 
         {/* Notre expertise */}
         <section className="py-20">
