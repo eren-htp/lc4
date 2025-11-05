@@ -1,7 +1,7 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, ElementType } from 'react';
 
 interface Counter {
-  emoji: string;
+  Icon: ElementType;
   label: string;
   value: string | number;
   description: string;
@@ -73,7 +73,7 @@ export default function NumberCounter({ counters }: NumberCounterProps) {
           {counters.map((counter, index) => (
             <div key={index} className="text-center">
               <div className="text-5xl md:text-6xl font-extrabold mb-4">
-                {counter.emoji}
+                <counter.Icon className="h-12 w-12 mx-auto text-white" />
               </div>
               <div className="text-4xl md:text-5xl font-bold mb-2">
                 {animatedValues[index]}

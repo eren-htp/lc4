@@ -1,5 +1,5 @@
 import { APP_TITLE } from "@/const";
-import { Award, Target, Users, TrendingUp } from "lucide-react";
+import { Award, Target, Users, TrendingUp, Clock, Warehouse, Handshake, MessageSquare } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import NumberCounter from "@/components/NumberCounter";
@@ -117,10 +117,10 @@ export default function QuiSommesNous() {
 
         {/* Chiffres Clés (Number Counter) */}
         <NumberCounter counters={[
-          { emoji: "🕒", label: "Expérience", value: 10, description: "ans d’expertise cumulée" },
-          { emoji: "🧱", label: "Agence", value: 1, description: "agence en Alsace (Mundolsheim)" },
-          { emoji: "🤝", label: "Partenaires", value: 4, description: "fabricants majeurs" },
-          { emoji: "💬", label: "Clients", value: 50, description: "clients fidèles" }, // J'utilise 50 comme valeur numérique pour l'animation, le label affichera "Des dizaines"
+          { Icon: Clock, label: "Expérience", value: 10, description: "ans d’expertise cumulée" },
+          { Icon: Warehouse, label: "Agence", value: 1, description: "agence en Alsace (Mundolsheim)" },
+          { Icon: Handshake, label: "Partenaires", value: 4, description: "fabricants majeurs" },
+          { Icon: MessageSquare, label: "Clients", value: 50, description: "clients fidèles" }, // J'utilise 50 comme valeur numérique pour l'animation, le label affichera "Des dizaines"
         ]} />
 
         {/* Notre expertise */}
