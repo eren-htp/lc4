@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import ModalRappel from "@/components/ModalRappel";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { MapPin, Paintbrush, Home as HomeIcon, Frame, Wrench, Phone, ArrowRight } from "lucide-react";
 import { APP_TITLE, COMPANY_INFO, AGENCIES } from "@/const";
 import Header from "@/components/Header";
@@ -16,6 +16,11 @@ const partnerLogos = [
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isHeroVisible, setIsHeroVisible] = useState(false);
+
+  useEffect(() => {
+    setIsHeroVisible(true);
+  }, []);
   const services = [
     {
       icon: Paintbrush,
@@ -60,15 +65,15 @@ export default function Home() {
           
           {/* Contenu */}
           <div className="relative z-10 container mx-auto px-4 text-center">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6">
+            <h1 className={`text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 transition-all duration-1000 ${isHeroVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
               LC4 peinture
             </h1>
             
-            <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto mb-8 leading-relaxed">
+            <p className={`text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto mb-8 leading-relaxed transition-all duration-1000 delay-200 ${isHeroVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
 Découvrez nos produits haut de gamme pour vos projets résidentiels et professionnels
             </p>
             
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
+            <div className={`flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 transition-all duration-1000 delay-500 ${isHeroVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
               <button 
                 onClick={() => setIsModalOpen(true)}
                 className="inline-flex items-center gap-2 bg-white text-[#0D1B3E] px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all shadow-lg"
@@ -85,7 +90,7 @@ Découvrez nos produits haut de gamme pour vos projets résidentiels et professi
               </Link>
             </div>
             
-            <div className="flex flex-col items-center gap-3">
+            <div className={`flex flex-col items-center gap-3 transition-all duration-1000 delay-700 ${isHeroVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
               <p className="text-gray-300 text-sm font-medium">Nos secteurs d’intervention :</p>
               <div className="flex flex-wrap justify-center gap-2">
                 {["Mundolsheim", "Strasbourg", "Souffelweyersheim", "Haguenau", "Schweighouse"].map((city, index) => (
