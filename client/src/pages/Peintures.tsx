@@ -16,7 +16,7 @@ export default function Peintures() {
         <section 
           className="relative h-[50vh] flex items-center justify-center text-white"
           style={{
-            backgroundImage: "url('https://placehold.co/1920x600/0D1B3E/FFFFFF?text=Peintures')",
+            backgroundImage: "url('https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/ToBTevbvipMOuVrk.JPG')",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
