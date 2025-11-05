@@ -58,18 +58,20 @@ export default function Peintures() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {PAINT_CATEGORIES.map((category) => (
                 <Card key={category.id} className="hover:shadow-xl transition-shadow">
-                  <div className="flex justify-center mb-4">
-                    <div className="p-4 bg-[#0D1B3E] text-white rounded-full">
-                      <PaintBucket className="h-8 w-8" />
-                    </div>
+<div className="aspect-video overflow-hidden rounded-t-lg">
+                    <img 
+                      src={`https://placehold.co/800x600/0D1B3E/FFFFFF?text=${encodeURIComponent(category.name)}`}
+                      alt={category.name}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
-                  <CardHeader className="text-center">
-                    <CardTitle className="text-xl text-[#0D1B3E]">{category.name}</CardTitle>
-                  </CardHeader>
-                  <CardContent className="text-center">
-                    <CardDescription className="text-base mb-4">
+                  <CardHeader>
+                    <CardTitle className="text-xl">{category.name}</CardTitle>
+                    <CardDescription className="text-base">
                       {category.description}
                     </CardDescription>
+                  </CardHeader>
+                  <CardContent>
                     <Link href={`/peintures/${category.slug}`}>
                       <Button className="w-full bg-[#0D1B3E] hover:bg-[#0D1B3E]/90 group">
                         Découvrir
