@@ -10,7 +10,6 @@ import { APP_TITLE, COMPANY_INFO, AGENCIES } from "@/const";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import PartnerLogoSlider from "@/components/PartnerLogoSlider";
-import ContactAgencySection from "@/components/ContactAgencySection";
 
 
 
@@ -268,9 +267,145 @@ Magasin de Peinture & Décoration
 			        </section>
         </ScrollReveal>
 			
-        {/* SECTION CONTACT + AGENCE UNIFIÉE */}
+			        {/* SECTION CONTACT */}
         <ScrollReveal direction="up" delay={0.2}>
-          <ContactAgencySection />
+          <section className="py-16 md:py-24 bg-gray-50 bg-gradient-animated-dark">
+			          <div className="container mx-auto px-4 max-w-4xl text-center">
+			            <h2 className="text-3xl md:text-4xl font-bold text-[#0D1B3E] mb-4">
+			              Un projet en tête ?
+			            </h2>
+			            <p className="text-lg text-gray-600 mb-8">
+			              Contactez-nous dès aujourd'hui pour un devis gratuit et des conseils personnalisés.
+			            </p>
+			            <Link 
+			              href="/contact"
+			              className="inline-flex items-center gap-2 bg-[#0D1B3E] text-white px-8 py-4 rounded-lg font-semibold hover:bg-[#1a2744] transition-all shadow-lg"
+			            >
+			              Nous contacter
+			              <ArrowRight className="w-5 h-5" />
+			            </Link>
+			          </div>
+			        </section>
+        </ScrollReveal>
+			
+        {/* SECTION AGENCE UNIQUE */}
+        <ScrollReveal direction="up" delay={0.2}>
+          <section className="py-16 md:py-24 bg-gradient-to-b from-gray-50 to-white">
+            <div className="container mx-auto px-4 max-w-5xl">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold text-[#0D1B3E] mb-4">
+                  Notre agence
+                </h2>
+                <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                  Retrouvez-nous dans notre agence principale à Mundolsheim, au cœur de notre secteur géographique.
+                </p>
+              </div>
+
+              {/* Carte agence premium */}
+              <div className="max-w-3xl mx-auto">
+                <div className="bg-white rounded-2xl shadow-2xl border border-gray-100 overflow-hidden transition-all duration-500 hover:shadow-3xl hover:-translate-y-1">
+                  {/* En-tête avec dégradé */}
+                  <div className="bg-gradient-to-r from-[#0D1B3E] to-[#1a2e5a] p-8 text-white">
+                    <div className="flex items-start gap-4">
+                      <div className="bg-white/10 backdrop-blur-sm p-4 rounded-xl">
+                        <MapPin className="w-8 h-8" />
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="text-2xl md:text-3xl font-bold mb-2">
+                          LC4 Peinture & Décoration
+                        </h3>
+                        <p className="text-blue-100 text-lg">
+                          Votre partenaire expert en Alsace
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Contenu de la carte */}
+                  <div className="p-8 md:p-10">
+                    <div className="space-y-6">
+                      {/* Adresse */}
+                      <div className="flex items-start gap-4 group">
+                        <div className="bg-blue-50 p-3 rounded-lg group-hover:bg-blue-100 transition-colors">
+                          <MapPin className="w-6 h-6 text-[#0D1B3E]" />
+                        </div>
+                        <div className="flex-1">
+                          <h4 className="font-semibold text-[#0D1B3E] mb-1 text-lg">
+                            Adresse
+                          </h4>
+                          <p className="text-gray-600 text-lg leading-relaxed">
+                            3 Rue Alexandre Volta<br />
+                            67450 Mundolsheim
+                          </p>
+                        </div>
+                      </div>
+
+                      {/* Téléphone */}
+                      <div className="flex items-start gap-4 group">
+                        <div className="bg-blue-50 p-3 rounded-lg group-hover:bg-blue-100 transition-colors">
+                          <Phone className="w-6 h-6 text-[#0D1B3E]" />
+                        </div>
+                        <div className="flex-1">
+                          <h4 className="font-semibold text-[#0D1B3E] mb-1 text-lg">
+                            Téléphone
+                          </h4>
+                          <a 
+                            href="tel:0388047196"
+                            className="text-gray-600 text-lg hover:text-[#0D1B3E] transition-colors font-medium"
+                          >
+                            03 88 04 71 96
+                          </a>
+                        </div>
+                      </div>
+
+                      {/* Horaires */}
+                      <div className="flex items-start gap-4 group">
+                        <div className="bg-blue-50 p-3 rounded-lg group-hover:bg-blue-100 transition-colors">
+                          <svg className="w-6 h-6 text-[#0D1B3E]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                          </svg>
+                        </div>
+                        <div className="flex-1">
+                          <h4 className="font-semibold text-[#0D1B3E] mb-2 text-lg">
+                            Horaires d'ouverture
+                          </h4>
+                          <div className="space-y-1 text-gray-600">
+                            <p className="flex justify-between">
+                              <span className="font-medium">Lundi - Vendredi</span>
+                              <span>8h00 - 18h00</span>
+                            </p>
+                            <p className="flex justify-between">
+                              <span className="font-medium">Samedi</span>
+                              <span>9h00 - 12h00</span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Bouton d'action */}
+                    <div className="mt-8 pt-6 border-t border-gray-100">
+                      <a
+                        href="/contact"
+                        className="w-full inline-flex items-center justify-center gap-2 bg-[#0D1B3E] text-white px-8 py-4 rounded-xl font-semibold hover:bg-[#1a2744] transition-all shadow-lg hover:shadow-xl text-lg"
+                      >
+                        <Phone className="w-5 h-5" />
+                        Nous contacter
+                        <ArrowRight className="w-5 h-5" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Texte informatif sous la carte */}
+                <div className="mt-8 text-center">
+                  <p className="text-gray-600 text-base">
+                    <span className="font-semibold text-[#0D1B3E]">Secteur géographique :</span> Strasbourg, Souffelweyersheim, Haguenau, Schweighouse et environs
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
         </ScrollReveal>
       </main>
 
