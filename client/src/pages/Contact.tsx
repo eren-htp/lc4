@@ -263,12 +263,12 @@ const Contact: React.FC = () => {
             {/* Accès et commodités */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
               <div className="p-6 border rounded-lg shadow-md">
-                <Car className="w-8 h-8 mx-auto mb-2 text-yellow-600" />
+                <Car className="w-8 h-8 mx-auto mb-2 text-[#0D1B3E]" />
                 <h4 className="font-semibold">Parking gratuit</h4>
                 <p className="text-gray-600">Stationnement facile sur place</p>
               </div>
               <div className="p-6 border rounded-lg shadow-md">
-                <Accessibility className="w-8 h-8 mx-auto mb-2 text-green-600" />
+                <Accessibility className="w-8 h-8 mx-auto mb-2 text-[#0D1B3E]" />
                 <h4 className="font-semibold">Accès PMR</h4>
                 <p className="text-gray-600">Locaux accessibles à tous</p>
               </div>
