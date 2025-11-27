@@ -11,40 +11,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import PartnerLogoSlider from "@/components/PartnerLogoSlider";
 
-const partnerLogos = [
-  '/images/partners/adfordslogo.png',
-  '/images/partners/alsafloo.png',
-  '/images/partners/astral-logo.jpg',
-  '/images/partners/beissierlogo.png',
-  '/images/partners/blanchonlogo.png',
-  '/images/partners/bostiklogo.png',
-  '/images/partners/brennenstuhllogo.png',
-  '/images/partners/cimentol-logo.png',
-  '/images/partners/ciretfrance-logo.png',
-  '/images/partners/decotriclogo.png',
-  '/images/partners/domaterralogo.png',
-  '/images/partners/dulary-logo.png',
-  '/images/partners/erfurt-logo.png',
-  '/images/partners/euromairlogo.png',
-  '/images/partners/festoollogo.png',
-  '/images/partners/logo-dorken.jpg',
-  '/images/partners/logo.png',
-  '/images/partners/logo-blancolor.png',
-  '/images/partners/loutilparfaitlogo.png',
-  '/images/partners/marbuglogo.png',
-  '/images/partners/montecolino-logo.jpg',
-  '/images/partners/nmc.png',
-  '/images/partners/noel-marquet.png',
-  '/images/partners/prblogo.png',
-  '/images/partners/primexlogo.png',
-  '/images/partners/romus-logo.png',
-  '/images/partners/saint-gobain-logo.png',
-  '/images/partners/seminlogo.png',
-  '/images/partners/sikkenslogo.png',
-  '/images/partners/tarkettlogo.png',
-  '/images/partners/theard-logo-noir-2023.png',
-  '/images/partners/vepro.png',
-];
+
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -129,11 +96,8 @@ Magasin de Peinture & Décoration
 				        {/* SECTION PARTENAIRES */}
 		        <ScrollReveal direction="up" delay={0.2}>
 		          <section className="py-12 bg-white bg-gradient-animated-slow">
-		          <div className="container mx-auto px-4 text-center">
-		            <h2 className="text-3xl md:text-4xl font-bold text-[#0D1B3E] mb-8">
-		              Nos partenaires
-		            </h2>
-		            <PartnerLogoSlider logos={partnerLogos} />
+          <div className="container mx-auto px-4">
+            <PartnerLogoSlider />
 					           			          </div>
 					        </section>
 		        </ScrollReveal>
