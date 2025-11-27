@@ -1,4 +1,4 @@
-import { PAINT_CATEGORIES } from "./const";
+// Import removed to avoid circular dependency
 
 export type PaintProduct = {
   id: string;

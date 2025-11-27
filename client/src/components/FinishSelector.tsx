@@ -1,4 +1,4 @@
-'''import { Link } from "wouter";
+import { Link } from "wouter";
 import ScrollReveal from "./ScrollReveal";
 
 interface FinishOption {
@@ -89,4 +89,3 @@ export default function FinishSelector() {
     </div>
   );
 }
-'''
