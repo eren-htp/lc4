@@ -91,28 +91,28 @@ const Contact: React.FC = () => {
 	              icon={<Phone className="w-6 h-6" />}
 	              title="Téléphone"
 	              content={<>LC4 du lundi au vendredi<br /><span className="text-2xl font-bold text-blue-600">{COMPANY_INFO.phone}</span></>}
-	              color="bg-yellow-50"
+	              color="bg-blue-50"
 	              href={`tel:${COMPANY_INFO.phone.replace(/\s/g, '')}`}
 	            />
 	            <ClickableContactCard
 	              icon={<Mail className="w-6 h-6" />}
 	              title="Email"
 	              content={<>Écrivez-nous à tout moment<br /><span className="text-blue-600">contact@lc4peinture.fr</span></>}
-	              color="bg-purple-50"
+	              color="bg-blue-50"
 	              href={`mailto:${COMPANY_INFO.email}`}
 	            />
 	            <ClickableContactCard
 	              icon={<MapPin className="w-6 h-6" />}
 	              title="Adresse"
 	              content={<>Visitez notre agence principale<br />{COMPANY_INFO.address.split(',').map((line, index) => <span key={index} className="block">{line.trim()}</span>)}</>}
-	              color="bg-green-50"
+	              color="bg-blue-50"
 	              href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(mapAddress)}`}
 	            />
 	            <ClickableContactCard
 	              icon={<Star className="w-6 h-6" />}
 	              title="Avis Google"
 	              content={<>Note moyenne sur {COMPANY_INFO.googleReviews.count} avis<br /><span className="text-2xl font-bold text-green-600">{COMPANY_INFO.googleReviews.rating} / 5</span></>}
-	              color="bg-pink-50"
+	              color="bg-blue-50"
 	              href="https://www.google.com/search?q=LC4+PEINTURE+%26+DECORATION+Avis"
 	            />
 	          </div>       <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
@@ -181,7 +181,7 @@ const Contact: React.FC = () => {
                   </button>
                   <button type="button"
                     onClick={() => setIsModalOpen(true)}
-                    className="w-full sm:w-auto inline-flex justify-center items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-yellow-500 hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-yellow-500"
+                    className="w-full sm:w-auto inline-flex justify-center items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-[#0D1B3E] hover:bg-[#1a2744] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
                   >
                     <Phone className="w-5 h-5 mr-2" /> Être rappelé
                   </button>
@@ -192,9 +192,9 @@ const Contact: React.FC = () => {
             {/* Informations complémentaires */}
             <div className="space-y-8">
               {/* Horaires d'ouverture */}
-              <div className="p-6 border rounded-lg shadow-md bg-yellow-50">
+              <div className="p-6 border rounded-lg shadow-md bg-blue-50">
                 <h3 className="text-xl font-bold mb-4 flex items-center">
-                  <Clock className="w-6 h-6 mr-2 text-yellow-600" /> Horaires d'ouverture
+                  <Clock className="w-6 h-6 mr-2 text-[#0D1B3E]" /> Horaires d'ouverture
                 </h3>
                 <div className="space-y-2">
                   <div className="flex justify-between">
@@ -213,14 +213,14 @@ const Contact: React.FC = () => {
               </div>
 
               {/* Zone d'intervention */}
-              <div className="p-6 border rounded-lg shadow-md bg-green-50">
+              <div className="p-6 border rounded-lg shadow-md bg-blue-50">
                 <h3 className="text-xl font-bold mb-4 flex items-center">
-                  <Map className="w-6 h-6 mr-2 text-green-600" /> Service de livraison express
+                  <Map className="w-6 h-6 mr-2 text-[#0D1B3E]" /> Service de livraison express
                 </h3>
                 <p className="mb-3">Nous livrons dans les communes suivantes :</p>
                 <ul className="space-y-1">
                   {["Mundolsheim", "Strasbourg", "Souffelweyersheim", "Haguenau", "Schweighouse", "Molsheim", "Sélestat", "Colmar", "Schirmeck", "Saverne"].map((city, index) => (
-                    <li key={index} className="flex items-center"><Check className="w-4 h-4 text-green-500 mr-2" />{city}</li>
+                    <li key={index} className="flex items-center"><Check className="w-4 h-4 text-blue-600 mr-2" />{city}</li>
                   ))}
                 </ul>
               </div>
@@ -228,14 +228,14 @@ const Contact: React.FC = () => {
               {/* Pourquoi nous contacter ? */}
               <div className="p-6 border rounded-lg shadow-md bg-blue-50">
                 <h3 className="text-xl font-bold mb-4 flex items-center">
-                  <Lightbulb className="w-6 h-6 mr-2 text-blue-600" /> Pourquoi nous contacter ?
+                  <Lightbulb className="w-6 h-6 mr-2 text-[#0D1B3E]" /> Pourquoi nous contacter ?
                 </h3>
                 <ul className="space-y-2">
-                  <li className="flex items-center"><Check className="w-4 h-4 text-blue-500 mr-2" />Devis gratuit et sans engagement</li>
-                  <li className="flex items-center"><Check className="w-4 h-4 text-blue-500 mr-2" />Conseils personnalisés par nos experts</li>
-                  <li className="flex items-center"><Check className="w-4 h-4 text-blue-500 mr-2" />Réponse rapide</li>
-                  <li className="flex items-center"><Check className="w-4 h-4 text-blue-500 mr-2" />Visite sur site possible</li>
-                  <li className="flex items-center"><Check className="w-4 h-4 text-blue-500 mr-2" />Plus de 10 ans d'expérience</li>
+                  <li className="flex items-center"><Check className="w-4 h-4 text-blue-600 mr-2" />Devis gratuit et sans engagement</li>
+                  <li className="flex items-center"><Check className="w-4 h-4 text-blue-600 mr-2" />Conseils personnalisés par nos experts</li>
+                  <li className="flex items-center"><Check className="w-4 h-4 text-blue-600 mr-2" />Réponse rapide</li>
+                  <li className="flex items-center"><Check className="w-4 h-4 text-blue-600 mr-2" />Visite sur site possible</li>
+                  <li className="flex items-center"><Check className="w-4 h-4 text-blue-600 mr-2" />Plus de 10 ans d'expérience</li>
                 </ul>
               </div>
             </div>
