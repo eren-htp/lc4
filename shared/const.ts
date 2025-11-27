@@ -9,7 +9,7 @@ export const COMPANY_INFO = {
   slogan: "LC4 Peinture & Décoration à Mundolsheim",
   description: "LC4 Peinture & Décoration : L'achat, la vente, la distribution de tous produits et accessoires permettant tous travaux intérieurs ou extérieures, sur tout support, et toute matières et de tout produits du second œuvre. Nous sommes notés 5 étoiles sur 5 avec 73 avis Google.",
   phone: "03 88 04 71 96",
-  email: "contact@lc4-peinture.fr",
+  email: "contact@lc4.fr",
   address: "3 Rue Alexandre Volta, 67450 Mundolsheim",
   googleReviews: {
     rating: 5,
@@ -39,35 +39,35 @@ export const AGENCIES = [
     name: "Mundolsheim",
     address: "3 Rue Alexandre Volta, 67450 Mundolsheim",
     phone: "03 88 04 71 96",
-    email: "contact@lc4-peinture.fr",
+    email: "contact@lc4.fr",
   },
   {
     id: 2,
     name: "Strasbourg",
     address: "67000 Strasbourg",
     phone: "03 88 04 71 96", // Utilisation du nouveau numéro
-    email: "contact@lc4-peinture.fr", // Utilisation du nouvel email
+    email: "contact@lc4.fr", // Utilisation du nouvel email
   },
   {
     id: 3,
     name: "Souffelweyersheim",
     address: "67460 Souffelweyersheim",
     phone: "03 88 04 71 96",
-    email: "contact@lc4-peinture.fr",
+    email: "contact@lc4.fr",
   },
   {
     id: 4,
     name: "Haguenau",
     address: "67500 Haguenau",
     phone: "03 88 04 71 96",
-    email: "contact@lc4-peinture.fr",
+    email: "contact@lc4.fr",
   },
   {
     id: 5,
     name: "Schweighouse",
     address: "67590 Schweighouse-sur-Moder",
     phone: "03 88 04 71 96",
-    email: "contact@lc4-peinture.fr",
+    email: "contact@lc4.fr",
   },
 ];
 
