@@ -119,7 +119,7 @@ Magasin de Peinture & Décoration
               </p>
 		              
               <p className="text-lg text-gray-600 leading-relaxed">
-                Basés à Mundolsheim, nous bénéficions de partenariats solides et d'exclusivités dans notre secteur géographique, notamment à Strasbourg, Souffelweyersheim, Haguenau et Schweighouse, ce qui nous permet de proposer des produits et services parfaitement adaptés aux besoins locaux.
+                Basés à Mundolsheim, nous bénéficions de partenariats solides et d'exclusivités dans notre secteur géographique, notamment à Strasbourg, Souffelweyersheim, Haguenau, Vendenheim et Molsheim, ce qui nous permet de proposer des produits et services parfaitement adaptés aux besoins locaux.
               </p>
 			            </div>
 			            
@@ -400,7 +400,7 @@ Magasin de Peinture & Décoration
                 {/* Texte informatif sous la carte */}
                 <div className="mt-8 text-center">
                   <p className="text-gray-600 text-base">
-                    <span className="font-semibold text-[#0D1B3E]">Secteur géographique :</span> Strasbourg, Souffelweyersheim, Haguenau, Schweighouse et environs
+                    <span className="font-semibold text-[#0D1B3E]">Secteur géographique :</span> Strasbourg, Souffelweyersheim, Haguenau, Vendenheim, Molsheim et environs
                   </p>
                 </div>
               </div>
