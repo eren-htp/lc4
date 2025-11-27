@@ -1,4 +1,5 @@
 import { Link } from "wouter";
+import ScrollReveal from "@/components/ScrollReveal";
 import { PAINT_CATEGORIES } from "@/const";
 import { ArrowRight, PaintBucket, CheckCircle, Palette, Leaf, Users } from "lucide-react";
 import Header from "@/components/Header";
@@ -31,7 +32,7 @@ export default function Peintures() {
 	        </section>
 
 		        {/* Introduction */}
-		        <section className="py-20">
+		        <section className="bg-gradient-animated py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-4xl font-bold mb-6 text-[#0D1B3E]">Notre gamme de peintures</h2>
@@ -52,7 +53,7 @@ export default function Peintures() {
 
 
 	        {/* Catégories de peintures */}
-	        <section className="py-20 bg-gray-50">
+	        <section className="bg-gradient-animated py-20 bg-gray-50">
           <div className="container mx-auto px-4">
             <h2 className="text-4xl font-bold mb-12 text-[#0D1B3E] text-center">Nos catégories de peintures</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -86,7 +87,7 @@ export default function Peintures() {
 	        </section>
 
 	        {/* Avantages */}
-	        <section className="py-20">
+	        <section className="bg-gradient-animated py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-4xl font-bold mb-12 text-[#0D1B3E] text-center">Pourquoi choisir nos peintures ?</h2>

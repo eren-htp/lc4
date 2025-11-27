@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import ScrollReveal from '../components/ScrollReveal';
 import { COMPANY_INFO, AGENCIES, OPENING_HOURS } from '@shared/const';
 import { Phone, Mail, MapPin, Star, Clock, Map, Check, Lightbulb, Car, Accessibility } from 'lucide-react';
 import ModalRappel from '../components/ModalRappel';
@@ -18,7 +19,7 @@ const serviceOptions = [
 
 // Composant pour les cartes d'information (style inspiré de LED Alsace)
 const ContactCard: React.FC<{ icon: React.ReactNode, title: string, content: React.ReactNode, color: string }> = ({ icon, title, content, color }) => (
-  <div className={`p-6 rounded-lg shadow-xl flex flex-col items-center text-center justify-center h-full ${color} border border-gray-200`}>
+  <div className={`p-6 rounded-lg shadow-xl flex flex-col items-center text-center justify-center h-full ${color} border border-gray-200 card-animate hover-lift transition-all`}>
     <div className="text-4xl mb-4 p-3 rounded-full bg-white shadow-md text-blue-600">{icon}</div>
     <h3 className="text-xl font-semibold mb-2">{title}</h3>
     <div className="text-gray-600">{content}</div>
@@ -37,7 +38,7 @@ const ClickableContactCard: React.FC<{
     href={href} 
     target="_blank" 
     rel="noopener noreferrer" 
-    className="block relative transition-all duration-300 hover:shadow-2xl h-full"
+    className="block relative transition-all duration-300 hover:shadow-2xl h-full hover-lift card-animate"
   >
     <ContactCard icon={icon} title={title} content={content} color={color} />
   </a>
@@ -66,11 +67,11 @@ const Contact: React.FC = () => {
   };
 
   // Informations LC4
-  const mainAgency = AGENCIES.find(agency => agency.isMain);
-  const otherZones = AGENCIES.filter(agency => !agency.isMain).map(agency => agency.name);
+  const mainAgency = AGENCIES.find(agency => agency.id === 1);
+  const otherZones = AGENCIES.filter(agency => agency.id !== 1).map(agency => agency.name);
 
   // Utiliser l'adresse de l'agence principale pour la carte
-  const mapAddress = mainAgency ? `${mainAgency.address}, ${mainAgency.zipCode} ${mainAgency.city}` : COMPANY_INFO.address;
+  const mapAddress = mainAgency ? `${mainAgency.address}` : COMPANY_INFO.address;
 
   return (
     <div className="min-h-screen flex flex-col">

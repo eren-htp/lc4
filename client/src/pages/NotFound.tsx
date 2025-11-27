@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import ScrollReveal from "@/components/ScrollReveal";
 import { Card, CardContent } from "@/components/ui/card";
 import { AlertCircle, Home } from "lucide-react";
 import { useLocation } from "wouter";

@@ -1,0 +1,4374 @@
+/* ========================================
+   ANIMATIONS AVANCÉES ET FLUIDES
+   ======================================== */
+
+/* Keyframes pour les animations principales */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes scaleInUp {
+  from {
+    opacity: 0;
+    transform: scale(0.9) translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes scaleInDown {
+  from {
+    opacity: 0;
+    transform: scale(0.9) translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes rotateIn {
+  from {
+    opacity: 0;
+    transform: rotate(-10deg) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(0) scale(1);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(13, 27, 62, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(13, 27, 62, 0.6);
+  }
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes backgroundMove {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+@keyframes slideInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideOutToBottom {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+}
+
+@keyframes expandWidth {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes expandHeight {
+  from {
+    height: 0;
+    opacity: 0;
+  }
+  to {
+    height: auto;
+    opacity: 1;
+  }
+}
+
+@keyframes borderPulse {
+  0%, 100% {
+    border-color: rgba(13, 27, 62, 0.3);
+  }
+  50% {
+    border-color: rgba(13, 27, 62, 0.8);
+  }
+}
+
+@keyframes shadowExpand {
+  0% {
+    box-shadow: 0 0 0px rgba(13, 27, 62, 0.2);
+  }
+  100% {
+    box-shadow: 0 10px 30px rgba(13, 27, 62, 0.2);
+  }
+}
+
+@keyframes slideUnderline {
+  from {
+    width: 0;
+    left: 0;
+  }
+  to {
+    width: 100%;
+    left: 0;
+  }
+}
+
+@keyframes blink {
+  0%, 49%, 100% {
+    opacity: 1;
+  }
+  50%, 99% {
+    opacity: 0;
+  }
+}
+
+/* Classes d'animation réutilisables */
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.animate-fade-in-down {
+  animation: fadeInDown 0.6s ease-out forwards;
+}
+
+.animate-fade-in-left {
+  animation: fadeInLeft 0.6s ease-out forwards;
+}
+
+.animate-fade-in-right {
+  animation: fadeInRight 0.6s ease-out forwards;
+}
+
+.animate-slide-in-up {
+  animation: slideInUp 0.7s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.animate-slide-in-down {
+  animation: slideInDown 0.7s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 0.7s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.7s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.5s ease-out forwards;
+}
+
+.animate-scale-in-up {
+  animation: scaleInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.animate-scale-in-down {
+  animation: scaleInDown 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.animate-rotate-in {
+  animation: rotateIn 0.6s ease-out forwards;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: floatSlow 4s ease-in-out infinite;
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite;
+}
+
+.animate-gradient-shift {
+  animation: gradientShift 3s ease infinite;
+  background-size: 200% 200%;
+}
+
+.animate-background-move {
+  animation: backgroundMove 20s linear infinite;
+  background-size: 200% 200%;
+}
+
+.animate-pulse-soft {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.animate-shimmer {
+  animation: shimmer 2s infinite;
+  background-size: 1000px 100%;
+}
+
+.animate-slide-in-from-bottom {
+  animation: slideInFromBottom 0.7s ease-out forwards;
+}
+
+.animate-slide-out-to-bottom {
+  animation: slideOutToBottom 0.7s ease-in forwards;
+}
+
+.animate-expand-width {
+  animation: expandWidth 0.5s ease-out forwards;
+}
+
+.animate-expand-height {
+  animation: expandHeight 0.5s ease-out forwards;
+}
+
+.animate-border-pulse {
+  animation: borderPulse 2s ease-in-out infinite;
+}
+
+.animate-shadow-expand {
+  animation: shadowExpand 0.6s ease-out forwards;
+}
+
+.animate-slide-underline {
+  animation: slideUnderline 0.4s ease-out forwards;
+}
+
+.animate-blink {
+  animation: blink 1s steps(2, start) infinite;
+}
+
+/* Délais d'animation */
+
+.delay-100 {
+  animation-delay: 100ms;
+}
+
+.delay-200 {
+  animation-delay: 200ms;
+}
+
+.delay-300 {
+  animation-delay: 300ms;
+}
+
+.delay-400 {
+  animation-delay: 400ms;
+}
+
+.delay-500 {
+  animation-delay: 500ms;
+}
+
+.delay-600 {
+  animation-delay: 600ms;
+}
+
+.delay-700 {
+  animation-delay: 700ms;
+}
+
+.delay-800 {
+  animation-delay: 800ms;
+}
+
+.delay-900 {
+  animation-delay: 900ms;
+}
+
+.delay-1000 {
+  animation-delay: 1000ms;
+}
+
+/* Transitions fluides */
+
+.transition-smooth {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.transition-smooth-lg {
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.transition-smooth-xl {
+  transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.transition-bounce {
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Effets de survol */
+
+.hover-lift {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(13, 27, 62, 0.15);
+}
+
+.hover-lift-sm {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-lift-sm:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(13, 27, 62, 0.1);
+}
+
+.hover-lift-lg {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-lift-lg:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(13, 27, 62, 0.2);
+}
+
+.hover-scale {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+.hover-scale-sm {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-scale-sm:hover {
+  transform: scale(1.02);
+}
+
+.hover-scale-lg {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-scale-lg:hover {
+  transform: scale(1.1);
+}
+
+.hover-glow {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-glow:hover {
+  box-shadow: 0 0 20px rgba(13, 27, 62, 0.3);
+}
+
+.hover-text-glow {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-text-glow:hover {
+  text-shadow: 0 0 10px rgba(13, 27, 62, 0.3);
+}
+
+.hover-rotate {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-rotate:hover {
+  transform: rotate(5deg);
+}
+
+.hover-rotate-reverse {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-rotate-reverse:hover {
+  transform: rotate(-5deg);
+}
+
+.hover-brightness {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-brightness:hover {
+  filter: brightness(1.1);
+}
+
+.hover-color-shift {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-color-shift:hover {
+  color: #0D1B3E;
+}
+
+/* Effets de fond animés */
+
+.bg-gradient-animated {
+  background: linear-gradient(
+    -45deg,
+    rgba(13, 27, 62, 0.05),
+    rgba(13, 27, 62, 0.02),
+    rgba(13, 27, 62, 0.05)
+  );
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+}
+
+.bg-gradient-animated-slow {
+  background: linear-gradient(
+    -45deg,
+    rgba(13, 27, 62, 0.03),
+    rgba(13, 27, 62, 0.01),
+    rgba(13, 27, 62, 0.03)
+  );
+  background-size: 400% 400%;
+  animation: gradientShift 25s ease infinite;
+}
+
+.bg-gradient-animated-dark {
+  background: linear-gradient(
+    -45deg,
+    rgba(13, 27, 62, 0.1),
+    rgba(13, 27, 62, 0.05),
+    rgba(13, 27, 62, 0.1)
+  );
+  background-size: 400% 400%;
+  animation: gradientShift 20s ease infinite;
+}
+
+/* Effets de révélation au scroll */
+
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal-on-scroll.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-on-scroll-left {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal-on-scroll-left.revealed {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-on-scroll-right {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal-on-scroll-right.revealed {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-on-scroll-scale {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal-on-scroll-scale.revealed {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Effets de ligne */
+
+.underline-animated {
+  position: relative;
+  display: inline-block;
+}
+
+.underline-animated::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #0D1B3E;
+  transition: width 0.3s ease-out;
+}
+
+.underline-animated:hover::after {
+  width: 100%;
+}
+
+/* Effets de bordure */
+
+.border-animated {
+  position: relative;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  transition: all 0.3s ease-out;
+}
+
+.border-animated::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, #0D1B3E, #0D1B3E);
+  border-radius: inherit;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+
+.border-animated:hover::before {
+  opacity: 0.2;
+}
+
+/* Staggered animations pour les listes */
+
+.stagger-item {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.stagger-item:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.stagger-item:nth-child(2) {
+  animation-delay: 100ms;
+}
+
+.stagger-item:nth-child(3) {
+  animation-delay: 200ms;
+}
+
+.stagger-item:nth-child(4) {
+  animation-delay: 300ms;
+}
+
+.stagger-item:nth-child(5) {
+  animation-delay: 400ms;
+}
+
+.stagger-item:nth-child(6) {
+  animation-delay: 500ms;
+}
+
+.stagger-item:nth-child(n+7) {
+  animation-delay: calc((var(--index, 1) - 1) * 100ms);
+}
+
+/* Animations pour les boutons */
+
+.btn-animate {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease-out;
+}
+
+.btn-animate::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.btn-animate:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+/* Animations pour les images */
+
+.img-animate {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.img-animate:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+.img-animate-blur {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.img-animate-blur:hover {
+  filter: blur(2px) brightness(0.9);
+}
+
+/* Animations pour les cartes */
+
+.card-animate {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 2px solid transparent;
+}
+
+.card-animate:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(13, 27, 62, 0.15);
+  border-color: rgba(13, 27, 62, 0.1);
+}
+
+/* Animations pour les textes */
+
+.text-animate {
+  background: linear-gradient(90deg, #0D1B3E, #0D1B3E, #0D1B3E);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 3s linear infinite;
+}
+
+/* Animations pour les sections */
+
+.section-animate {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.section-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.section-animate:nth-child(2) {
+  animation-delay: 100ms;
+}
+
+.section-animate:nth-child(3) {
+  animation-delay: 200ms;
+}
+
+.section-animate:nth-child(n+4) {
+  animation-delay: calc((var(--index, 1) - 1) * 100ms);
+}
+
+/* Animations pour les formulaires */
+
+.input-animate {
+  transition: all 0.3s ease-out;
+  border-bottom: 2px solid rgba(13, 27, 62, 0.2);
+}
+
+.input-animate:focus {
+  border-bottom-color: #0D1B3E;
+  box-shadow: 0 2px 8px rgba(13, 27, 62, 0.1);
+}
+
+.input-animate::placeholder {
+  transition: all 0.3s ease-out;
+}
+
+.input-animate:focus::placeholder {
+  opacity: 0.5;
+}
+
+/* Animations pour les icônes */
+
+.icon-animate {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-animate:hover {
+  transform: rotate(10deg) scale(1.1);
+}
+
+.icon-animate-spin {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Animations pour les listes */
+
+.list-item-animate {
+  animation: fadeInLeft 0.5s ease-out forwards;
+}
+
+.list-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.list-item-animate:nth-child(2) {
+  animation-delay: 80ms;
+}
+
+.list-item-animate:nth-child(3) {
+  animation-delay: 160ms;
+}
+
+.list-item-animate:nth-child(4) {
+  animation-delay: 240ms;
+}
+
+.list-item-animate:nth-child(5) {
+  animation-delay: 320ms;
+}
+
+.list-item-animate:nth-child(n+6) {
+  animation-delay: calc((var(--index, 1) - 1) * 80ms);
+}
+
+/* Animations pour les en-têtes */
+
+.header-animate {
+  animation: slideInDown 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les pieds de page */
+
+.footer-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les modales */
+
+.modal-animate {
+  animation: scaleIn 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.modal-backdrop-animate {
+  animation: fadeInUp 0.3s ease-out forwards;
+}
+
+/* Animations pour les dropdowns */
+
+.dropdown-animate {
+  animation: slideInDown 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les toasts */
+
+.toast-animate {
+  animation: slideInFromBottom 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.toast-animate-out {
+  animation: slideOutToBottom 0.4s ease-in forwards;
+}
+
+/* Animations pour les accordéons */
+
+.accordion-animate {
+  animation: expandHeight 0.3s ease-out forwards;
+}
+
+/* Animations pour les onglets */
+
+.tab-animate {
+  animation: fadeInUp 0.3s ease-out forwards;
+}
+
+.tab-indicator-animate {
+  animation: expandWidth 0.3s ease-out forwards;
+}
+
+/* Animations pour les carrousels */
+
+.carousel-item-animate {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.carousel-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.carousel-item-animate:nth-child(2) {
+  animation-delay: 100ms;
+}
+
+.carousel-item-animate:nth-child(3) {
+  animation-delay: 200ms;
+}
+
+/* Animations pour les badges */
+
+.badge-animate {
+  animation: scaleIn 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les compteurs */
+
+.counter-animate {
+  animation: slideInUp 0.6s ease-out forwards;
+}
+
+/* Animations pour les progressions */
+
+.progress-animate {
+  animation: expandWidth 0.8s ease-out forwards;
+}
+
+/* Animations pour les notifications */
+
+.notification-animate {
+  animation: slideInRight 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les popups */
+
+.popup-animate {
+  animation: scaleInUp 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les tooltips */
+
+.tooltip-animate {
+  animation: fadeInUp 0.2s ease-out forwards;
+}
+
+/* Animations pour les breadcrumbs */
+
+.breadcrumb-animate {
+  animation: fadeInLeft 0.4s ease-out forwards;
+}
+
+.breadcrumb-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.breadcrumb-animate:nth-child(2) {
+  animation-delay: 80ms;
+}
+
+.breadcrumb-animate:nth-child(3) {
+  animation-delay: 160ms;
+}
+
+.breadcrumb-animate:nth-child(4) {
+  animation-delay: 240ms;
+}
+
+/* Animations pour les pagination */
+
+.pagination-animate {
+  animation: fadeInUp 0.4s ease-out forwards;
+}
+
+.pagination-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.pagination-animate:nth-child(2) {
+  animation-delay: 80ms;
+}
+
+.pagination-animate:nth-child(3) {
+  animation-delay: 160ms;
+}
+
+/* Animations pour les spinners */
+
+.spinner-animate {
+  animation: spin 1s linear infinite;
+}
+
+/* Animations pour les skeletons */
+
+.skeleton-animate {
+  animation: shimmer 2s infinite;
+  background: linear-gradient(
+    90deg,
+    rgba(13, 27, 62, 0.05),
+    rgba(13, 27, 62, 0.1),
+    rgba(13, 27, 62, 0.05)
+  );
+  background-size: 1000px 100%;
+}
+
+/* Animations pour les dividers */
+
+.divider-animate {
+  animation: expandWidth 0.5s ease-out forwards;
+}
+
+/* Animations pour les separateurs */
+
+.separator-animate {
+  animation: expandWidth 0.4s ease-out forwards;
+}
+
+/* Animations pour les liens */
+
+.link-animate {
+  position: relative;
+  transition: color 0.3s ease-out;
+}
+
+.link-animate::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #0D1B3E;
+  transition: width 0.3s ease-out;
+}
+
+.link-animate:hover::after {
+  width: 100%;
+}
+
+/* Animations pour les labels */
+
+.label-animate {
+  transition: all 0.3s ease-out;
+}
+
+.label-animate.active {
+  transform: translateY(-24px) scale(0.85);
+  color: #0D1B3E;
+}
+
+/* Animations pour les checkboxes */
+
+.checkbox-animate {
+  transition: all 0.3s ease-out;
+}
+
+.checkbox-animate:checked {
+  animation: scaleIn 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Animations pour les radio buttons */
+
+.radio-animate {
+  transition: all 0.3s ease-out;
+}
+
+.radio-animate:checked {
+  animation: scaleIn 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Animations pour les switches */
+
+.switch-animate {
+  transition: all 0.3s ease-out;
+}
+
+.switch-animate:checked {
+  animation: slideInRight 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Animations pour les sliders */
+
+.slider-animate {
+  transition: all 0.2s ease-out;
+}
+
+.slider-animate:hover {
+  transform: scale(1.1);
+}
+
+/* Animations pour les toggles */
+
+.toggle-animate {
+  transition: all 0.3s ease-out;
+}
+
+.toggle-animate.active {
+  animation: scaleIn 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Animations pour les menus */
+
+.menu-animate {
+  animation: slideInDown 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.menu-item-animate {
+  animation: fadeInLeft 0.3s ease-out forwards;
+}
+
+.menu-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.menu-item-animate:nth-child(2) {
+  animation-delay: 80ms;
+}
+
+.menu-item-animate:nth-child(3) {
+  animation-delay: 160ms;
+}
+
+.menu-item-animate:nth-child(4) {
+  animation-delay: 240ms;
+}
+
+.menu-item-animate:nth-child(n+5) {
+  animation-delay: calc((var(--index, 1) - 1) * 80ms);
+}
+
+/* Animations pour les navbars */
+
+.navbar-animate {
+  animation: slideInDown 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les sidebars */
+
+.sidebar-animate {
+  animation: slideInLeft 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les drawers */
+
+.drawer-animate {
+  animation: slideInLeft 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.drawer-backdrop-animate {
+  animation: fadeInUp 0.3s ease-out forwards;
+}
+
+/* Animations pour les sheets */
+
+.sheet-animate {
+  animation: slideInUp 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.sheet-backdrop-animate {
+  animation: fadeInUp 0.3s ease-out forwards;
+}
+
+/* Animations pour les dialogs */
+
+.dialog-animate {
+  animation: scaleIn 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.dialog-backdrop-animate {
+  animation: fadeInUp 0.3s ease-out forwards;
+}
+
+/* Animations pour les popovers */
+
+.popover-animate {
+  animation: scaleInUp 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les hover cards */
+
+.hover-card-animate {
+  animation: scaleInUp 0.2s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les context menus */
+
+.context-menu-animate {
+  animation: scaleIn 0.2s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les navigation menus */
+
+.navigation-menu-animate {
+  animation: fadeInDown 0.3s ease-out forwards;
+}
+
+/* Animations pour les command palettes */
+
+.command-animate {
+  animation: scaleInDown 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les searchbars */
+
+.searchbar-animate {
+  transition: all 0.3s ease-out;
+}
+
+.searchbar-animate:focus-within {
+  box-shadow: 0 0 0 3px rgba(13, 27, 62, 0.1);
+}
+
+/* Animations pour les tables */
+
+.table-row-animate {
+  animation: fadeInUp 0.4s ease-out forwards;
+}
+
+.table-row-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.table-row-animate:nth-child(2) {
+  animation-delay: 80ms;
+}
+
+.table-row-animate:nth-child(3) {
+  animation-delay: 160ms;
+}
+
+.table-row-animate:nth-child(4) {
+  animation-delay: 240ms;
+}
+
+.table-row-animate:nth-child(5) {
+  animation-delay: 320ms;
+}
+
+.table-row-animate:nth-child(n+6) {
+  animation-delay: calc((var(--index, 1) - 1) * 80ms);
+}
+
+/* Animations pour les grilles */
+
+.grid-item-animate {
+  animation: scaleInUp 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.grid-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.grid-item-animate:nth-child(2) {
+  animation-delay: 100ms;
+}
+
+.grid-item-animate:nth-child(3) {
+  animation-delay: 200ms;
+}
+
+.grid-item-animate:nth-child(4) {
+  animation-delay: 300ms;
+}
+
+.grid-item-animate:nth-child(5) {
+  animation-delay: 400ms;
+}
+
+.grid-item-animate:nth-child(6) {
+  animation-delay: 500ms;
+}
+
+.grid-item-animate:nth-child(n+7) {
+  animation-delay: calc((var(--index, 1) - 1) * 100ms);
+}
+
+/* Animations pour les flex containers */
+
+.flex-item-animate {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.flex-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.flex-item-animate:nth-child(2) {
+  animation-delay: 100ms;
+}
+
+.flex-item-animate:nth-child(3) {
+  animation-delay: 200ms;
+}
+
+.flex-item-animate:nth-child(4) {
+  animation-delay: 300ms;
+}
+
+.flex-item-animate:nth-child(n+5) {
+  animation-delay: calc((var(--index, 1) - 1) * 100ms);
+}
+
+/* Animations pour les conteneurs */
+
+.container-animate {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Animations pour les sections héros */
+
+.hero-animate {
+  animation: slideInDown 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.hero-subtitle-animate {
+  animation: fadeInUp 0.8s ease-out 0.2s forwards;
+  opacity: 0;
+}
+
+.hero-cta-animate {
+  animation: scaleInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) 0.4s forwards;
+  opacity: 0;
+}
+
+/* Animations pour les sections features */
+
+.feature-animate {
+  animation: scaleInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.feature-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.feature-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.feature-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+.feature-animate:nth-child(4) {
+  animation-delay: 450ms;
+}
+
+/* Animations pour les sections testimonials */
+
+.testimonial-animate {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.testimonial-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.testimonial-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.testimonial-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections pricing */
+
+.pricing-card-animate {
+  animation: scaleInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.pricing-card-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.pricing-card-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.pricing-card-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections CTA */
+
+.cta-animate {
+  animation: slideInUp 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.cta-button-animate {
+  animation: scaleInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) 0.3s forwards;
+  opacity: 0;
+}
+
+/* Animations pour les sections FAQ */
+
+.faq-item-animate {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.faq-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.faq-item-animate:nth-child(2) {
+  animation-delay: 100ms;
+}
+
+.faq-item-animate:nth-child(3) {
+  animation-delay: 200ms;
+}
+
+.faq-item-animate:nth-child(4) {
+  animation-delay: 300ms;
+}
+
+.faq-item-animate:nth-child(5) {
+  animation-delay: 400ms;
+}
+
+/* Animations pour les sections contact */
+
+.contact-form-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.contact-info-animate {
+  animation: slideInLeft 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les sections galerie */
+
+.gallery-item-animate {
+  animation: scaleInUp 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.gallery-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.gallery-item-animate:nth-child(2) {
+  animation-delay: 100ms;
+}
+
+.gallery-item-animate:nth-child(3) {
+  animation-delay: 200ms;
+}
+
+.gallery-item-animate:nth-child(4) {
+  animation-delay: 300ms;
+}
+
+.gallery-item-animate:nth-child(5) {
+  animation-delay: 400ms;
+}
+
+.gallery-item-animate:nth-child(6) {
+  animation-delay: 500ms;
+}
+
+/* Animations pour les sections blog */
+
+.blog-post-animate {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.blog-post-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.blog-post-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.blog-post-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections équipe */
+
+.team-member-animate {
+  animation: scaleInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.team-member-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.team-member-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.team-member-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+.team-member-animate:nth-child(4) {
+  animation-delay: 450ms;
+}
+
+/* Animations pour les sections partenaires */
+
+.partner-logo-animate {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.partner-logo-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.partner-logo-animate:nth-child(2) {
+  animation-delay: 100ms;
+}
+
+.partner-logo-animate:nth-child(3) {
+  animation-delay: 200ms;
+}
+
+.partner-logo-animate:nth-child(4) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections statistiques */
+
+.stat-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.stat-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.stat-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.stat-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+.stat-animate:nth-child(4) {
+  animation-delay: 450ms;
+}
+
+/* Animations pour les sections processus */
+
+.process-step-animate {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.process-step-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.process-step-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.process-step-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+.process-step-animate:nth-child(4) {
+  animation-delay: 450ms;
+}
+
+/* Animations pour les sections intégrations */
+
+.integration-animate {
+  animation: scaleInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.integration-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.integration-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.integration-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections avantages */
+
+.benefit-animate {
+  animation: slideInLeft 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.benefit-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.benefit-animate:nth-child(2) {
+  animation-delay: 100ms;
+}
+
+.benefit-animate:nth-child(3) {
+  animation-delay: 200ms;
+}
+
+.benefit-animate:nth-child(4) {
+  animation-delay: 300ms;
+}
+
+.benefit-animate:nth-child(5) {
+  animation-delay: 400ms;
+}
+
+/* Animations pour les sections appels à l'action */
+
+.action-animate {
+  animation: scaleInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les sections témoignages */
+
+.review-animate {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.review-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.review-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.review-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections comparaison */
+
+.comparison-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les sections roadmap */
+
+.roadmap-item-animate {
+  animation: fadeInLeft 0.6s ease-out forwards;
+}
+
+.roadmap-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.roadmap-item-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.roadmap-item-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections timeline */
+
+.timeline-item-animate {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.timeline-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.timeline-item-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.timeline-item-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+.timeline-item-animate:nth-child(4) {
+  animation-delay: 450ms;
+}
+
+/* Animations pour les sections graphiques */
+
+.chart-animate {
+  animation: slideInUp 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les sections cartes */
+
+.map-animate {
+  animation: slideInUp 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les sections vidéos */
+
+.video-animate {
+  animation: scaleInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les sections iframes */
+
+.iframe-animate {
+  animation: slideInUp 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les sections embeds */
+
+.embed-animate {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Animations pour les sections code */
+
+.code-animate {
+  animation: slideInLeft 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les sections citations */
+
+.quote-animate {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.quote-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.quote-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+/* Animations pour les sections alertes */
+
+.alert-animate {
+  animation: slideInDown 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les sections bannières */
+
+.banner-animate {
+  animation: slideInDown 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les sections breadcrumbs */
+
+.breadcrumb-item-animate {
+  animation: fadeInLeft 0.3s ease-out forwards;
+}
+
+.breadcrumb-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.breadcrumb-item-animate:nth-child(2) {
+  animation-delay: 80ms;
+}
+
+.breadcrumb-item-animate:nth-child(3) {
+  animation-delay: 160ms;
+}
+
+/* Animations pour les sections tags */
+
+.tag-animate {
+  animation: scaleIn 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.tag-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.tag-animate:nth-child(2) {
+  animation-delay: 80ms;
+}
+
+.tag-animate:nth-child(3) {
+  animation-delay: 160ms;
+}
+
+.tag-animate:nth-child(4) {
+  animation-delay: 240ms;
+}
+
+.tag-animate:nth-child(n+5) {
+  animation-delay: calc((var(--index, 1) - 1) * 80ms);
+}
+
+/* Animations pour les sections catégories */
+
+.category-animate {
+  animation: scaleInUp 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.category-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.category-animate:nth-child(2) {
+  animation-delay: 100ms;
+}
+
+.category-animate:nth-child(3) {
+  animation-delay: 200ms;
+}
+
+.category-animate:nth-child(4) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections filtres */
+
+.filter-animate {
+  animation: slideInLeft 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.filter-item-animate {
+  animation: fadeInUp 0.3s ease-out forwards;
+}
+
+.filter-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.filter-item-animate:nth-child(2) {
+  animation-delay: 80ms;
+}
+
+.filter-item-animate:nth-child(3) {
+  animation-delay: 160ms;
+}
+
+/* Animations pour les sections résultats */
+
+.result-animate {
+  animation: fadeInUp 0.4s ease-out forwards;
+}
+
+.result-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.result-animate:nth-child(2) {
+  animation-delay: 100ms;
+}
+
+.result-animate:nth-child(3) {
+  animation-delay: 200ms;
+}
+
+/* Animations pour les sections erreurs */
+
+.error-animate {
+  animation: slideInDown 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les sections succès */
+
+.success-animate {
+  animation: slideInUp 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les sections avertissements */
+
+.warning-animate {
+  animation: slideInDown 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les sections informations */
+
+.info-animate {
+  animation: slideInDown 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les sections chargement */
+
+.loading-animate {
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+/* Animations pour les sections vides */
+
+.empty-animate {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Animations pour les sections 404 */
+
+.not-found-animate {
+  animation: scaleInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les sections 500 */
+
+.error-500-animate {
+  animation: slideInDown 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les sections maintenance */
+
+.maintenance-animate {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Animations pour les sections coming soon */
+
+.coming-soon-animate {
+  animation: scaleInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les sections splash */
+
+.splash-animate {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Animations pour les sections onboarding */
+
+.onboarding-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.onboarding-step-animate {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.onboarding-step-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.onboarding-step-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.onboarding-step-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections tutoriels */
+
+.tutorial-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.tutorial-step-animate {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.tutorial-step-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.tutorial-step-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.tutorial-step-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections guides */
+
+.guide-animate {
+  animation: slideInLeft 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.guide-section-animate {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.guide-section-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.guide-section-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.guide-section-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections documentation */
+
+.documentation-animate {
+  animation: slideInRight 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.documentation-item-animate {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.documentation-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.documentation-item-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.documentation-item-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections API */
+
+.api-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.api-endpoint-animate {
+  animation: fadeInLeft 0.5s ease-out forwards;
+}
+
+.api-endpoint-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.api-endpoint-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.api-endpoint-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections SDK */
+
+.sdk-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les sections exemples */
+
+.example-animate {
+  animation: slideInLeft 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.example-code-animate {
+  animation: slideInRight 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les sections ressources */
+
+.resource-animate {
+  animation: scaleInUp 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.resource-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.resource-animate:nth-child(2) {
+  animation-delay: 100ms;
+}
+
+.resource-animate:nth-child(3) {
+  animation-delay: 200ms;
+}
+
+.resource-animate:nth-child(4) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections téléchargements */
+
+.download-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.download-item-animate {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.download-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.download-item-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.download-item-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections changelog */
+
+.changelog-animate {
+  animation: slideInLeft 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.changelog-item-animate {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.changelog-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.changelog-item-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.changelog-item-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections roadmap */
+
+.roadmap-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les sections statut */
+
+.status-animate {
+  animation: slideInDown 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.status-item-animate {
+  animation: fadeInUp 0.3s ease-out forwards;
+}
+
+.status-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.status-item-animate:nth-child(2) {
+  animation-delay: 80ms;
+}
+
+.status-item-animate:nth-child(3) {
+  animation-delay: 160ms;
+}
+
+/* Animations pour les sections incidents */
+
+.incident-animate {
+  animation: slideInDown 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.incident-item-animate {
+  animation: fadeInUp 0.3s ease-out forwards;
+}
+
+.incident-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.incident-item-animate:nth-child(2) {
+  animation-delay: 80ms;
+}
+
+.incident-item-animate:nth-child(3) {
+  animation-delay: 160ms;
+}
+
+/* Animations pour les sections maintenances */
+
+.maintenance-schedule-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.maintenance-item-animate {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.maintenance-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.maintenance-item-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.maintenance-item-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections SLA */
+
+.sla-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les sections sécurité */
+
+.security-animate {
+  animation: slideInLeft 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.security-feature-animate {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.security-feature-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.security-feature-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.security-feature-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections conformité */
+
+.compliance-animate {
+  animation: slideInRight 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.compliance-item-animate {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.compliance-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.compliance-item-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.compliance-item-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections certifications */
+
+.certification-animate {
+  animation: scaleInUp 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.certification-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.certification-animate:nth-child(2) {
+  animation-delay: 100ms;
+}
+
+.certification-animate:nth-child(3) {
+  animation-delay: 200ms;
+}
+
+.certification-animate:nth-child(4) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections prix */
+
+.price-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les sections plans */
+
+.plan-animate {
+  animation: scaleInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.plan-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.plan-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.plan-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections options */
+
+.option-animate {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.option-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.option-animate:nth-child(2) {
+  animation-delay: 100ms;
+}
+
+.option-animate:nth-child(3) {
+  animation-delay: 200ms;
+}
+
+/* Animations pour les sections add-ons */
+
+.addon-animate {
+  animation: scaleIn 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.addon-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.addon-animate:nth-child(2) {
+  animation-delay: 80ms;
+}
+
+.addon-animate:nth-child(3) {
+  animation-delay: 160ms;
+}
+
+.addon-animate:nth-child(4) {
+  animation-delay: 240ms;
+}
+
+/* Animations pour les sections comparaison de plans */
+
+.plan-comparison-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les sections FAQ de prix */
+
+.pricing-faq-animate {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.pricing-faq-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.pricing-faq-animate:nth-child(2) {
+  animation-delay: 100ms;
+}
+
+.pricing-faq-animate:nth-child(3) {
+  animation-delay: 200ms;
+}
+
+.pricing-faq-animate:nth-child(4) {
+  animation-delay: 300ms;
+}
+
+.pricing-faq-animate:nth-child(5) {
+  animation-delay: 400ms;
+}
+
+/* Animations pour les sections calculatrices */
+
+.calculator-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les sections devis */
+
+.quote-request-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les sections essai gratuit */
+
+.trial-animate {
+  animation: scaleInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les sections inscription */
+
+.signup-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.signup-form-animate {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.signup-form-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.signup-form-animate:nth-child(2) {
+  animation-delay: 100ms;
+}
+
+.signup-form-animate:nth-child(3) {
+  animation-delay: 200ms;
+}
+
+/* Animations pour les sections connexion */
+
+.login-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.login-form-animate {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.login-form-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.login-form-animate:nth-child(2) {
+  animation-delay: 100ms;
+}
+
+/* Animations pour les sections réinitialisation de mot de passe */
+
+.password-reset-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les sections profil */
+
+.profile-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.profile-section-animate {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.profile-section-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.profile-section-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.profile-section-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections paramètres */
+
+.settings-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.settings-section-animate {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.settings-section-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.settings-section-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.settings-section-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections tableau de bord */
+
+.dashboard-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.dashboard-card-animate {
+  animation: scaleInUp 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.dashboard-card-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.dashboard-card-animate:nth-child(2) {
+  animation-delay: 100ms;
+}
+
+.dashboard-card-animate:nth-child(3) {
+  animation-delay: 200ms;
+}
+
+.dashboard-card-animate:nth-child(4) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections widgets */
+
+.widget-animate {
+  animation: scaleInUp 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.widget-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.widget-animate:nth-child(2) {
+  animation-delay: 100ms;
+}
+
+.widget-animate:nth-child(3) {
+  animation-delay: 200ms;
+}
+
+/* Animations pour les sections rapports */
+
+.report-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.report-section-animate {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.report-section-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.report-section-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.report-section-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections analyses */
+
+.analytics-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.analytics-chart-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.analytics-chart-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.analytics-chart-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.analytics-chart-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections données */
+
+.data-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les sections exportation */
+
+.export-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.export-option-animate {
+  animation: fadeInUp 0.4s ease-out forwards;
+}
+
+.export-option-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.export-option-animate:nth-child(2) {
+  animation-delay: 100ms;
+}
+
+.export-option-animate:nth-child(3) {
+  animation-delay: 200ms;
+}
+
+/* Animations pour les sections importation */
+
+.import-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les sections synchronisation */
+
+.sync-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.sync-status-animate {
+  animation: fadeInUp 0.4s ease-out forwards;
+}
+
+.sync-status-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.sync-status-animate:nth-child(2) {
+  animation-delay: 100ms;
+}
+
+.sync-status-animate:nth-child(3) {
+  animation-delay: 200ms;
+}
+
+/* Animations pour les sections intégrations */
+
+.integrations-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.integration-card-animate {
+  animation: scaleInUp 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.integration-card-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.integration-card-animate:nth-child(2) {
+  animation-delay: 100ms;
+}
+
+.integration-card-animate:nth-child(3) {
+  animation-delay: 200ms;
+}
+
+.integration-card-animate:nth-child(4) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections webhooks */
+
+.webhook-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.webhook-item-animate {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.webhook-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.webhook-item-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.webhook-item-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections clés API */
+
+.api-key-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.api-key-item-animate {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.api-key-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.api-key-item-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.api-key-item-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections jetons */
+
+.token-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les sections autorisations */
+
+.permission-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.permission-item-animate {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.permission-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.permission-item-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.permission-item-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections rôles */
+
+.role-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.role-item-animate {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.role-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.role-item-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.role-item-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections utilisateurs */
+
+.user-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.user-item-animate {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.user-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.user-item-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.user-item-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections invitations */
+
+.invitation-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.invitation-item-animate {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.invitation-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.invitation-item-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.invitation-item-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections journaux d'audit */
+
+.audit-log-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.audit-log-item-animate {
+  animation: fadeInUp 0.4s ease-out forwards;
+}
+
+.audit-log-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.audit-log-item-animate:nth-child(2) {
+  animation-delay: 80ms;
+}
+
+.audit-log-item-animate:nth-child(3) {
+  animation-delay: 160ms;
+}
+
+.audit-log-item-animate:nth-child(4) {
+  animation-delay: 240ms;
+}
+
+.audit-log-item-animate:nth-child(5) {
+  animation-delay: 320ms;
+}
+
+/* Animations pour les sections notifications */
+
+.notification-settings-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.notification-setting-item-animate {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.notification-setting-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.notification-setting-item-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.notification-setting-item-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections préférences */
+
+.preferences-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.preference-item-animate {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.preference-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.preference-item-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.preference-item-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections thème */
+
+.theme-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.theme-option-animate {
+  animation: scaleIn 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.theme-option-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.theme-option-animate:nth-child(2) {
+  animation-delay: 80ms;
+}
+
+.theme-option-animate:nth-child(3) {
+  animation-delay: 160ms;
+}
+
+/* Animations pour les sections langue */
+
+.language-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.language-option-animate {
+  animation: fadeInUp 0.4s ease-out forwards;
+}
+
+.language-option-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.language-option-animate:nth-child(2) {
+  animation-delay: 100ms;
+}
+
+.language-option-animate:nth-child(3) {
+  animation-delay: 200ms;
+}
+
+/* Animations pour les sections fuseau horaire */
+
+.timezone-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les sections devise */
+
+.currency-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les sections accessibilité */
+
+.accessibility-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.accessibility-option-animate {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.accessibility-option-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.accessibility-option-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.accessibility-option-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections confidentialité */
+
+.privacy-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.privacy-item-animate {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.privacy-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.privacy-item-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.privacy-item-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections conditions d'utilisation */
+
+.terms-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.terms-section-animate {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.terms-section-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.terms-section-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.terms-section-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections suppression de compte */
+
+.account-deletion-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les sections déconnexion */
+
+.logout-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les sections aide */
+
+.help-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.help-item-animate {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.help-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.help-item-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.help-item-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections support */
+
+.support-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.support-option-animate {
+  animation: scaleInUp 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.support-option-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.support-option-animate:nth-child(2) {
+  animation-delay: 100ms;
+}
+
+.support-option-animate:nth-child(3) {
+  animation-delay: 200ms;
+}
+
+.support-option-animate:nth-child(4) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections feedback */
+
+.feedback-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.feedback-item-animate {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.feedback-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.feedback-item-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.feedback-item-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections bug reports */
+
+.bug-report-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les sections feature requests */
+
+.feature-request-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les sections suggestions */
+
+.suggestion-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les sections sondages */
+
+.survey-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.survey-question-animate {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.survey-question-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.survey-question-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.survey-question-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections tests A/B */
+
+.ab-test-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.ab-test-variant-animate {
+  animation: scaleInUp 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.ab-test-variant-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.ab-test-variant-animate:nth-child(2) {
+  animation-delay: 100ms;
+}
+
+.ab-test-variant-animate:nth-child(3) {
+  animation-delay: 200ms;
+}
+
+/* Animations pour les sections expériences */
+
+.experiment-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.experiment-item-animate {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.experiment-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.experiment-item-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.experiment-item-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections résultats */
+
+.results-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.results-chart-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.results-chart-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.results-chart-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.results-chart-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections insights */
+
+.insights-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.insights-item-animate {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.insights-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.insights-item-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.insights-item-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections recommandations */
+
+.recommendations-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.recommendation-item-animate {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.recommendation-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.recommendation-item-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.recommendation-item-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections actions */
+
+.actions-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.action-item-animate {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.action-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.action-item-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.action-item-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections tâches */
+
+.tasks-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.task-item-animate {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.task-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.task-item-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.task-item-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections projets */
+
+.projects-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.project-item-animate {
+  animation: scaleInUp 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.project-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.project-item-animate:nth-child(2) {
+  animation-delay: 100ms;
+}
+
+.project-item-animate:nth-child(3) {
+  animation-delay: 200ms;
+}
+
+.project-item-animate:nth-child(4) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections équipes */
+
+.teams-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.team-item-animate {
+  animation: scaleInUp 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.team-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.team-item-animate:nth-child(2) {
+  animation-delay: 100ms;
+}
+
+.team-item-animate:nth-child(3) {
+  animation-delay: 200ms;
+}
+
+/* Animations pour les sections espaces */
+
+.spaces-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.space-item-animate {
+  animation: scaleInUp 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.space-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.space-item-animate:nth-child(2) {
+  animation-delay: 100ms;
+}
+
+.space-item-animate:nth-child(3) {
+  animation-delay: 200ms;
+}
+
+/* Animations pour les sections canaux */
+
+.channels-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.channel-item-animate {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.channel-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.channel-item-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.channel-item-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections messages */
+
+.messages-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.message-item-animate {
+  animation: fadeInUp 0.4s ease-out forwards;
+}
+
+.message-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.message-item-animate:nth-child(2) {
+  animation-delay: 80ms;
+}
+
+.message-item-animate:nth-child(3) {
+  animation-delay: 160ms;
+}
+
+.message-item-animate:nth-child(4) {
+  animation-delay: 240ms;
+}
+
+.message-item-animate:nth-child(5) {
+  animation-delay: 320ms;
+}
+
+/* Animations pour les sections conversations */
+
+.conversations-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.conversation-item-animate {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.conversation-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.conversation-item-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.conversation-item-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections fichiers */
+
+.files-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.file-item-animate {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.file-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.file-item-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.file-item-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections dossiers */
+
+.folders-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.folder-item-animate {
+  animation: scaleInUp 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.folder-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.folder-item-animate:nth-child(2) {
+  animation-delay: 100ms;
+}
+
+.folder-item-animate:nth-child(3) {
+  animation-delay: 200ms;
+}
+
+/* Animations pour les sections stockage */
+
+.storage-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les sections sauvegarde */
+
+.backup-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.backup-item-animate {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.backup-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.backup-item-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.backup-item-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections restauration */
+
+.restore-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les sections archivage */
+
+.archive-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.archive-item-animate {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.archive-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.archive-item-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.archive-item-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections suppression */
+
+.deletion-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les sections corbeille */
+
+.trash-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.trash-item-animate {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.trash-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.trash-item-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.trash-item-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections historique */
+
+.history-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.history-item-animate {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.history-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.history-item-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.history-item-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections versions */
+
+.versions-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.version-item-animate {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.version-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.version-item-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.version-item-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections modifications */
+
+.changes-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.change-item-animate {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.change-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.change-item-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.change-item-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections collaborateurs */
+
+.collaborators-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.collaborator-item-animate {
+  animation: scaleInUp 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.collaborator-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.collaborator-item-animate:nth-child(2) {
+  animation-delay: 100ms;
+}
+
+.collaborator-item-animate:nth-child(3) {
+  animation-delay: 200ms;
+}
+
+.collaborator-item-animate:nth-child(4) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections commentaires */
+
+.comments-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.comment-item-animate {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.comment-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.comment-item-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.comment-item-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections réactions */
+
+.reactions-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.reaction-item-animate {
+  animation: scaleIn 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.reaction-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.reaction-item-animate:nth-child(2) {
+  animation-delay: 80ms;
+}
+
+.reaction-item-animate:nth-child(3) {
+  animation-delay: 160ms;
+}
+
+.reaction-item-animate:nth-child(4) {
+  animation-delay: 240ms;
+}
+
+.reaction-item-animate:nth-child(5) {
+  animation-delay: 320ms;
+}
+
+/* Animations pour les sections mentions */
+
+.mentions-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.mention-item-animate {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.mention-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.mention-item-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.mention-item-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections hashtags */
+
+.hashtags-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.hashtag-item-animate {
+  animation: scaleIn 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.hashtag-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.hashtag-item-animate:nth-child(2) {
+  animation-delay: 80ms;
+}
+
+.hashtag-item-animate:nth-child(3) {
+  animation-delay: 160ms;
+}
+
+.hashtag-item-animate:nth-child(4) {
+  animation-delay: 240ms;
+}
+
+.hashtag-item-animate:nth-child(n+5) {
+  animation-delay: calc((var(--index, 1) - 1) * 80ms);
+}
+
+/* Animations pour les sections trending */
+
+.trending-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.trending-item-animate {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.trending-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.trending-item-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.trending-item-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+.trending-item-animate:nth-child(4) {
+  animation-delay: 450ms;
+}
+
+.trending-item-animate:nth-child(5) {
+  animation-delay: 600ms;
+}
+
+/* Animations pour les sections recherche */
+
+.search-results-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.search-result-item-animate {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.search-result-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.search-result-item-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.search-result-item-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections filtrage */
+
+.filtered-results-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les sections tri */
+
+.sorted-results-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les sections pagination */
+
+.paginated-results-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les sections infini scroll */
+
+.infinite-scroll-item-animate {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.infinite-scroll-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.infinite-scroll-item-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.infinite-scroll-item-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+.infinite-scroll-item-animate:nth-child(4) {
+  animation-delay: 450ms;
+}
+
+.infinite-scroll-item-animate:nth-child(5) {
+  animation-delay: 600ms;
+}
+
+/* Animations pour les sections virtuel scroll */
+
+.virtual-scroll-item-animate {
+  animation: fadeInUp 0.4s ease-out forwards;
+}
+
+.virtual-scroll-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.virtual-scroll-item-animate:nth-child(2) {
+  animation-delay: 100ms;
+}
+
+.virtual-scroll-item-animate:nth-child(3) {
+  animation-delay: 200ms;
+}
+
+.virtual-scroll-item-animate:nth-child(4) {
+  animation-delay: 300ms;
+}
+
+.virtual-scroll-item-animate:nth-child(5) {
+  animation-delay: 400ms;
+}
+
+/* Animations pour les sections lazy loading */
+
+.lazy-load-item-animate {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+/* Animations pour les sections skeleton loading */
+
+.skeleton-item-animate {
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+/* Animations pour les sections progressive enhancement */
+
+.progressive-enhancement-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les sections fallback */
+
+.fallback-animate {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Animations pour les sections retry */
+
+.retry-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les sections timeout */
+
+.timeout-animate {
+  animation: slideInDown 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les sections offline */
+
+.offline-animate {
+  animation: slideInDown 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les sections online */
+
+.online-animate {
+  animation: slideInUp 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les sections synchronisation */
+
+.sync-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les sections mise en cache */
+
+.cache-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les sections actualisation */
+
+.refresh-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.refresh-icon-animate {
+  animation: spin 1s linear infinite;
+}
+
+/* Animations pour les sections rechargement */
+
+.reload-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.reload-icon-animate {
+  animation: spin 1s linear infinite;
+}
+
+/* Animations pour les sections chargement de page */
+
+.page-load-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les sections transition de page */
+
+.page-transition-animate {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Animations pour les sections navigation */
+
+.navigation-animate {
+  animation: slideInDown 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les sections breadcrumbs */
+
+.breadcrumbs-animate {
+  animation: slideInLeft 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les sections tabs */
+
+.tabs-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.tab-content-animate {
+  animation: fadeInUp 0.4s ease-out forwards;
+}
+
+/* Animations pour les sections accordéons */
+
+.accordions-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.accordion-content-animate {
+  animation: expandHeight 0.3s ease-out forwards;
+}
+
+/* Animations pour les sections carousels */
+
+.carousels-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.carousel-content-animate {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+/* Animations pour les sections modales */
+
+.modals-animate {
+  animation: scaleIn 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.modal-content-animate {
+  animation: fadeInUp 0.3s ease-out forwards;
+}
+
+/* Animations pour les sections drawers */
+
+.drawers-animate {
+  animation: slideInLeft 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.drawer-content-animate {
+  animation: fadeInUp 0.3s ease-out forwards;
+}
+
+/* Animations pour les sections popovers */
+
+.popovers-animate {
+  animation: scaleInUp 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les sections tooltips */
+
+.tooltips-animate {
+  animation: fadeInUp 0.2s ease-out forwards;
+}
+
+/* Animations pour les sections dropdowns */
+
+.dropdowns-animate {
+  animation: slideInDown 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.dropdown-content-animate {
+  animation: fadeInUp 0.3s ease-out forwards;
+}
+
+.dropdown-content-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.dropdown-content-animate:nth-child(2) {
+  animation-delay: 80ms;
+}
+
+.dropdown-content-animate:nth-child(3) {
+  animation-delay: 160ms;
+}
+
+.dropdown-content-animate:nth-child(4) {
+  animation-delay: 240ms;
+}
+
+.dropdown-content-animate:nth-child(5) {
+  animation-delay: 320ms;
+}
+
+/* Animations pour les sections menus contextes */
+
+.context-menus-animate {
+  animation: scaleIn 0.2s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.context-menu-item-animate {
+  animation: fadeInUp 0.2s ease-out forwards;
+}
+
+.context-menu-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.context-menu-item-animate:nth-child(2) {
+  animation-delay: 60ms;
+}
+
+.context-menu-item-animate:nth-child(3) {
+  animation-delay: 120ms;
+}
+
+.context-menu-item-animate:nth-child(4) {
+  animation-delay: 180ms;
+}
+
+.context-menu-item-animate:nth-child(5) {
+  animation-delay: 240ms;
+}
+
+/* Animations pour les sections menus de navigation */
+
+.navigation-menus-animate {
+  animation: fadeInDown 0.3s ease-out forwards;
+}
+
+.navigation-menu-item-animate {
+  animation: fadeInUp 0.3s ease-out forwards;
+}
+
+.navigation-menu-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.navigation-menu-item-animate:nth-child(2) {
+  animation-delay: 80ms;
+}
+
+.navigation-menu-item-animate:nth-child(3) {
+  animation-delay: 160ms;
+}
+
+.navigation-menu-item-animate:nth-child(4) {
+  animation-delay: 240ms;
+}
+
+.navigation-menu-item-animate:nth-child(5) {
+  animation-delay: 320ms;
+}
+
+/* Animations pour les sections barres de menu */
+
+.menubars-animate {
+  animation: slideInDown 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.menubar-item-animate {
+  animation: fadeInUp 0.4s ease-out forwards;
+}
+
+.menubar-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.menubar-item-animate:nth-child(2) {
+  animation-delay: 100ms;
+}
+
+.menubar-item-animate:nth-child(3) {
+  animation-delay: 200ms;
+}
+
+.menubar-item-animate:nth-child(4) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections barres d'outils */
+
+.toolbars-animate {
+  animation: slideInDown 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.toolbar-item-animate {
+  animation: fadeInUp 0.4s ease-out forwards;
+}
+
+.toolbar-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.toolbar-item-animate:nth-child(2) {
+  animation-delay: 100ms;
+}
+
+.toolbar-item-animate:nth-child(3) {
+  animation-delay: 200ms;
+}
+
+.toolbar-item-animate:nth-child(4) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections barres latérales */
+
+.sidebars-animate {
+  animation: slideInLeft 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.sidebar-item-animate {
+  animation: fadeInLeft 0.4s ease-out forwards;
+}
+
+.sidebar-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.sidebar-item-animate:nth-child(2) {
+  animation-delay: 100ms;
+}
+
+.sidebar-item-animate:nth-child(3) {
+  animation-delay: 200ms;
+}
+
+.sidebar-item-animate:nth-child(4) {
+  animation-delay: 300ms;
+}
+
+.sidebar-item-animate:nth-child(5) {
+  animation-delay: 400ms;
+}
+
+/* Animations pour les sections barres de navigation */
+
+.navbars-animate {
+  animation: slideInDown 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.navbar-item-animate {
+  animation: fadeInUp 0.4s ease-out forwards;
+}
+
+.navbar-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.navbar-item-animate:nth-child(2) {
+  animation-delay: 100ms;
+}
+
+.navbar-item-animate:nth-child(3) {
+  animation-delay: 200ms;
+}
+
+.navbar-item-animate:nth-child(4) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections pieds de page */
+
+.footers-animate {
+  animation: slideInUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.footer-section-animate {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.footer-section-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.footer-section-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.footer-section-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+.footer-section-animate:nth-child(4) {
+  animation-delay: 450ms;
+}
+
+/* Animations pour les sections en-têtes */
+
+.headers-animate {
+  animation: slideInDown 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.header-section-animate {
+  animation: fadeInDown 0.5s ease-out forwards;
+}
+
+.header-section-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.header-section-animate:nth-child(2) {
+  animation-delay: 150ms;
+}
+
+.header-section-animate:nth-child(3) {
+  animation-delay: 300ms;
+}
+
+/* Animations pour les sections bannières */
+
+.banners-animate {
+  animation: slideInDown 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les sections alertes */
+
+.alerts-animate {
+  animation: slideInDown 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les sections notifications */
+
+.notifications-animate {
+  animation: slideInRight 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.notification-item-animate {
+  animation: slideInRight 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.notification-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.notification-item-animate:nth-child(2) {
+  animation-delay: 100ms;
+}
+
+.notification-item-animate:nth-child(3) {
+  animation-delay: 200ms;
+}
+
+/* Animations pour les sections toasts */
+
+.toasts-animate {
+  animation: slideInUp 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.toast-item-animate {
+  animation: slideInUp 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.toast-item-animate:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.toast-item-animate:nth-child(2) {
+  animation-delay: 100ms;
+}
+
+.toast-item-animate:nth-child(3) {
+  animation-delay: 200ms;
+}
+
+/* Animations pour les sections snackbars */
+
+.snackbars-animate {
+  animation: slideInUp 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Animations pour les sections dialogues */
+
+.dialogs-animate {
+  animation: scaleIn 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.dialog-content-animate {
+  animation: fadeInUp 0.3s ease-out forwards;
+}
+
+/* Animations pour les sections feuilles */
+
+.sheets-animate {
+  animation: slideInUp 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.sheet-content-animate {
+  animation: fadeInUp 0.3s ease-out forwards;
+}
+
+/* Animations pour les sections alertes de dialogue */
+
+.alert-dialogs-animate {
+  animation: scaleIn 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.alert-dialog-content

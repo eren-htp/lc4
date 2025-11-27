@@ -1,4 +1,5 @@
 import { COMPANY_INFO } from "@/const";
+import ScrollReveal from "@/components/ScrollReveal";
 import { Wrench, Paintbrush, Ruler, ShoppingBag } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -53,7 +54,7 @@ export default function MatérielOutillage() {
         </section>
 
         {/* Introduction */}
-        <section className="py-20">
+        <section className="bg-gradient-animated py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-4xl font-bold mb-6 text-[#0D1B3E]">Votre fournisseur en matériel professionnel</h2>
@@ -71,7 +72,7 @@ export default function MatérielOutillage() {
         </section>
 
         {/* Catégories */}
-        <section className="py-20 bg-gray-50">
+        <section className="bg-gradient-animated py-20 bg-gray-50">
           <div className="container mx-auto px-4">
             <h2 className="text-4xl font-bold mb-12 text-[#0D1B3E] text-center">Nos catégories de matériel</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
@@ -98,7 +99,7 @@ export default function MatérielOutillage() {
         </section>
 
         {/* Avantages */}
-        <section className="py-20">
+        <section className="bg-gradient-animated py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-4xl font-bold mb-12 text-[#0D1B3E] text-center">Pourquoi choisir notre matériel ?</h2>
@@ -130,7 +131,7 @@ export default function MatérielOutillage() {
         </section>
 
         {/* Marques */}
-        <section className="py-20 bg-gray-50">
+        <section className="bg-gradient-animated py-20 bg-gray-50">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-4xl font-bold mb-6 text-[#0D1B3E]">Nos marques partenaires</h2>
@@ -155,7 +156,7 @@ export default function MatérielOutillage() {
         </section>
 
         {/* CTA */}
-        <section className="py-20">
+        <section className="bg-gradient-animated py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto bg-[#0D1B3E] text-white p-12 rounded-lg text-center">
               <h2 className="text-4xl font-bold mb-6">Besoin de matériel pour votre projet ?</h2>

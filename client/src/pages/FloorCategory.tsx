@@ -1,4 +1,5 @@
 import { useRoute } from "wouter";
+import ScrollReveal from "@/components/ScrollReveal";
 import { FLOOR_CATEGORIES } from "@/const";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -46,7 +47,7 @@ export default function FloorCategory() {
         </section>
 
         {/* Contenu */}
-        <section className="py-20">
+        <section className="bg-gradient-animated py-20">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
               <div className="prose prose-lg max-w-none text-gray-700">

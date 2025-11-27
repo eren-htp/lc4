@@ -15,6 +15,7 @@ import FloorCategory from "./pages/FloorCategory";
 import RevêtementsMuraux from "./pages/RevêtementsMuraux";
 import WallCategory from "./pages/WallCategory";
 import MatérielOutillage from "./pages/MatérielOutillage";
+import PaintFinishPage from "./pages/PaintFinishPage";
 
 function Router() {
   return (
@@ -23,6 +24,7 @@ function Router() {
       <Route path={"/qui-sommes-nous"} component={QuiSommesNous} />
       <Route path={"/contact"} component={Contact} />
       <Route path={"/peintures"} component={Peintures} />
+      <Route path={"/peintures/peintures-interieures/:finishSlug"} component={PaintFinishPage} />
       <Route path={"/peintures/:slug"} component={PeintureCategory} />
       <Route path={"/revetements-sols"} component={RevêtementsSols} />
       <Route path={"/revetements-sols/:slug"} component={FloorCategory} />

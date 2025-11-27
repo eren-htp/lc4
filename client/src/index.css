@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+@import "./animations.css";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -154,6 +155,99 @@ html {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #1a2d5f;
+}
+
+/* Animations fluides et modernes */
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+}
+
+/* Animations pour les sections */
+section {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Animations pour les éléments interactifs */
+button, a, input, select, textarea {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Animations pour les images */
+img {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Animations pour les cartes */
+[role="article"], .card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Animations pour les titres */
+h1, h2, h3, h4, h5, h6 {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Animations pour les paragraphes */
+p {
+  animation: fadeInUp 0.6s ease-out 0.1s forwards;
+  opacity: 0;
+}
+
+/* Animations pour les listes */
+li {
+  animation: fadeInLeft 0.5s ease-out forwards;
+}
+
+li:nth-child(1) { animation-delay: 0ms; }
+li:nth-child(2) { animation-delay: 100ms; }
+li:nth-child(3) { animation-delay: 200ms; }
+li:nth-child(4) { animation-delay: 300ms; }
+li:nth-child(5) { animation-delay: 400ms; }
+li:nth-child(n+6) { animation-delay: calc((var(--index, 1) - 1) * 100ms); }
+
+/* Animations pour les liens */
+	a {
+	  position: relative;
+	}
+	
+	/* Animations pour les boutons */
+button:not(:disabled),
+[role="button"]:not([aria-disabled="true"]),
+[type="button"]:not(:disabled),
+[type="submit"]:not(:disabled),
+[type="reset"]:not(:disabled) {
+  position: relative;
+  overflow: hidden;
+}
+
+button:not(:disabled)::before,
+[role="button"]:not([aria-disabled="true"])::before,
+[type="button"]:not(:disabled)::before,
+[type="submit"]:not(:disabled)::before,
+[type="reset"]:not(:disabled)::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+button:not(:disabled):hover::before,
+[role="button"]:not([aria-disabled="true"]):hover::before,
+[type="button"]:not(:disabled):hover::before,
+[type="submit"]:not(:disabled):hover::before,
+[type="reset"]:not(:disabled):hover::before {
+  width: 300px;
+  height: 300px;
 }
 
 @layer components {

@@ -188,3 +188,5 @@ export const WALL_CATEGORIES = [
     description: "Solutions innovantes de panneaux muraux décoratifs.",
   },
 ];
+
+export { INTERIOR_PAINT_PRODUCTS, PaintProduct } from "./interiorPaints";

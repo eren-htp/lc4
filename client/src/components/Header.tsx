@@ -47,7 +47,7 @@ export default function Header() {
         { name: "Panel Box", href: "/revetements-muraux/panel-box" },
       ],
     },
-    { name: "Matériel & outillage", href: "/materiel-outillage" },
+
     { name: "Contact", href: "/contact" },
   ];
 

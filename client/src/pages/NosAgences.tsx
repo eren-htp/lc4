@@ -1,4 +1,5 @@
-import { AGENCIES, OPENING_HOURS } from "@/const";
+import { AGENCIES } from "@/const";
+import ScrollReveal from "@/components/ScrollReveal";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -12,7 +13,7 @@ export default function NosAgences() {
       
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative h-[50vh] flex items-center justify-center text-white">
+        <section className="bg-gradient-animated relative h-[50vh] flex items-center justify-center text-white">
           <img 
             src="/images/DSC00161.JPG" 
             alt="Intérieur d'une agence LC4 Peinture" 
@@ -26,7 +27,7 @@ export default function NosAgences() {
         </section>
 
         {/* Carte interactive placeholder */}
-        <section className="py-12 bg-gray-50">
+        <section className="bg-gradient-animated py-12 bg-gray-50">
           <div className="container mx-auto px-4">
             <div className="bg-white rounded-lg shadow-lg p-8 text-center">
               <h2 className="text-2xl font-bold mb-4 text-[#0D1B3E]">Trouvez l'agence la plus proche</h2>
@@ -42,7 +43,7 @@ export default function NosAgences() {
         </section>
 
         {/* Liste des agences */}
-        <section className="py-20">
+        <section className="bg-gradient-animated py-20">
           <div className="container mx-auto px-4">
             <h2 className="text-4xl font-bold mb-12 text-[#0D1B3E] text-center">Nos {AGENCIES.length} agences et zones de livraison</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
@@ -67,7 +68,7 @@ export default function NosAgences() {
                       <Phone className="h-5 w-5 text-[#0D1B3E] mt-0.5 flex-shrink-0" />
                       <div>
                         <p className="font-semibold text-gray-900">Téléphone</p>
-                        <a href={`tel:${agency.phone}`} className="text-[#0D1B3E] hover:underline">
+                        <a href={`tel:${agency.phone}`} className="text-[#0D1B3E]">
                           {agency.phone}
                         </a>
                       </div>
@@ -77,7 +78,7 @@ export default function NosAgences() {
                       <Mail className="h-5 w-5 text-[#0D1B3E] mt-0.5 flex-shrink-0" />
                       <div>
                         <p className="font-semibold text-gray-900">Email</p>
-                        <a href={`mailto:${agency.email}`} className="text-[#0D1B3E] hover:underline">
+                        <a href={`mailto:${agency.email}`} className="text-[#0D1B3E]">
                           {agency.email}
                         </a>
                       </div>
@@ -88,11 +89,10 @@ export default function NosAgences() {
                       <div>
                         <p className="font-semibold text-gray-900">Horaires</p>
                         {agency.id === 1 ? (
-                          Object.entries(OPENING_HOURS).map(([day, hours]) => (
-                            <p key={day} className="text-gray-600 capitalize">
-                              {day} : {hours}
-                            </p>
-                          ))
+                          <>
+                            <p className="text-gray-600">Lundi - Vendredi : 8h00 - 18h00</p>
+                            <p className="text-gray-600">Samedi : 9h00 - 12h00</p>
+                          </>
                         ) : (
                           <>
                             <p className="text-gray-600">Lundi - Vendredi : 8h00 - 18h00</p>
@@ -122,7 +122,7 @@ export default function NosAgences() {
         </section>
 
         {/* Info supplémentaire */}
-        <section className="py-20 bg-gray-50">
+        <section className="bg-gradient-animated py-20 bg-gray-50">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="grid md:grid-cols-2 gap-12 items-center">
