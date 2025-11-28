@@ -97,7 +97,7 @@ const Contact: React.FC = () => {
 	            <ClickableContactCard
 	              icon={<Mail className="w-6 h-6" />}
 	              title="Email"
-	              content={<>Écrivez-nous à tout moment<br /><span className="text-blue-600">contact@lc4peinture.fr</span></>}
+	              content={<>Écrivez-nous à tout moment<br /><span className="text-blue-600">{COMPANY_INFO.email}</span></>}
 	              color="bg-blue-50"
 	              href={`mailto:${COMPANY_INFO.email}`}
 	            />
