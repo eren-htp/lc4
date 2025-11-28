@@ -303,11 +303,15 @@ Magasin de Peinture & Décoration
                           <div className="space-y-1 text-gray-600">
                             <p className="flex justify-between">
                               <span className="font-medium">Lundi - Vendredi</span>
-                              <span>8h00 - 18h00</span>
+                              <span>07h00 - 17h00</span>
                             </p>
                             <p className="flex justify-between">
                               <span className="font-medium">Samedi</span>
-                              <span>9h00 - 12h00</span>
+                              <span>07h30 - 12h00</span>
+                            </p>
+                            <p className="flex justify-between">
+                              <span className="font-medium">Dimanche</span>
+                              <span>Fermé</span>
                             </p>
                           </div>
                         </div>
@@ -328,12 +332,7 @@ Magasin de Peinture & Décoration
                   </div>
                 </div>
 
-                {/* Texte informatif sous la carte */}
-                <div className="mt-8 text-center">
-                  <p className="text-gray-600 text-base">
-                    <span className="font-semibold text-[#0D1B3E]">Secteur géographique :</span> Strasbourg, Souffelweyersheim, Haguenau, Vendenheim, Molsheim et environs
-                  </p>
-                </div>
+
               </div>
             </div>
           </section>
