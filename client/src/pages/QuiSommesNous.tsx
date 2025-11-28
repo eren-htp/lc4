@@ -108,10 +108,9 @@ export default function QuiSommesNous() {
 	            <div className="max-w-4xl mx-auto">
 	              <h2 className="text-4xl font-bold mb-8 text-[#0D1B3E] text-center">Notre expertise</h2>
 	              <div className="prose prose-lg max-w-none text-gray-700">
-	                <p className="text-lg leading-relaxed mb-6">
-	                  Fort de plusieurs décennies d'expérience, {APP_TITLE} a développé une expertise reconnue dans 
-	                  trois domaines complémentaires qui constituent le cœur de notre activité.
-	                </p>
+                <p className="text-lg leading-relaxed mb-6">
+                  Depuis sa fondation, {APP_TITLE} a rapidement acquis une expertise reconnue dans trois domaines clés, qui constituent le fondement de notre activité et guident chacune de nos actions.
+                </p>
 	                <div className="grid md:grid-cols-3 gap-6 my-8">
 		                  <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300">
 		                    <PaintBucket className="h-10 w-10 text-[#0D1B3E] mb-4" />
