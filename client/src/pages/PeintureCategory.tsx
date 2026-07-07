@@ -1,12 +1,13 @@
-import { useRoute } from "wouter";
+import { useRoute, Link } from "wouter";
 import ScrollReveal from "@/components/ScrollReveal";
 import { PAINT_CATEGORIES } from "@/const";
+import { BRAND_LOGOS } from "@shared/brandLogos";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { COMPANY_INFO } from "@/const";
 import FinishSelector from "@/components/FinishSelector";
-import { ChevronDown, Home, MapPin, Phone, Mail } from "lucide-react";
+import { ArrowLeft, ChevronDown, Home, MapPin, Phone, Mail } from "lucide-react";
 import { useState } from "react";
 
 export default function PeintureCategory() {
@@ -33,8 +34,136 @@ export default function PeintureCategory() {
     );
   }
 
+  // Afficher les sous-catégories (marques) pour les catégories qui en possèdent
+  if ((category as any).subcategories) {
+    const subcategories = (category as any).subcategories as { id: string; name: string; slug: string; description: string }[];
+    return (
+      <div className="min-h-screen flex flex-col">
+        <Header />
+
+        <main className="flex-1">
+          {/* Breadcrumb */}
+          <section className="bg-gray-50 border-b border-gray-200">
+            <div className="container mx-auto px-4 py-3">
+              <div className="flex items-center gap-2 text-sm text-gray-600">
+                <Home className="h-4 w-4" />
+                <span>Accueil</span>
+                <span>/</span>
+                <span>Peintures</span>
+                <span>/</span>
+                <span className="text-[#0D1B3E] font-semibold">{category.name}</span>
+              </div>
+            </div>
+          </section>
+
+          {/* Bouton Retour */}
+          <div className="container mx-auto px-4 py-4">
+            <Link href="/peintures">
+              <Button variant="ghost" className="text-[#0D1B3E] hover:bg-gray-100 gap-2">
+                <ArrowLeft className="h-4 w-4" />
+                Retour aux Peintures
+              </Button>
+            </Link>
+          </div>
+
+          {/* Hero Section */}
+          <section
+            className="relative h-[50vh] flex items-center justify-center text-white"
+            style={{
+              backgroundImage: `url('https://placehold.co/1920x600/0D1B3E/FFFFFF?text=${encodeURIComponent(category.name)}')`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          >
+            <div className="absolute inset-0 bg-[#0D1B3E]/70"></div>
+            <div className="relative z-10 text-center px-4">
+              <h1 className="text-5xl md:text-6xl font-bold mb-4">{category.name}</h1>
+              <p className="text-xl md:text-2xl max-w-3xl mx-auto">{category.description}</p>
+            </div>
+          </section>
+
+          {/* Sous-catégories (Marques) */}
+          <section className="py-20 bg-white">
+            <div className="container mx-auto px-4">
+              <div className="text-center mb-16">
+                <h2 className="text-4xl font-extrabold text-[#0D1B3E] mb-4">Nos gammes</h2>
+                <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                  Découvrez nos produits {category.name.toLowerCase()} par gamme.
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-3xl mx-auto">
+                {subcategories.map((sub, index) => (
+                  <ScrollReveal key={sub.id} delay={index * 0.15}>
+                    <Link href={category.slug === "impressions" ? `/peintures/impressions/produits?marque=${encodeURIComponent(sub.name)}` : category.slug === "peinture-sols" ? `/peintures/peinture-sols/produits?marque=${encodeURIComponent(sub.name)}` : category.slug === "metal" ? `/peintures/metal/produits?marque=${encodeURIComponent(sub.name)}` : category.slug === "bois" ? `/peintures/bois/produits?sous_categorie=${encodeURIComponent(sub.slug)}` : category.slug === "peinture-interieur" ? `/peintures/peinture-interieur/produits?marque=${encodeURIComponent(sub.name)}` : category.slug === "peintures-laques-tendu" ? `/peintures/peintures-laques-tendu/produits?marque=${encodeURIComponent(sub.name)}` : `#`}>
+                      <div className="bg-white rounded-xl shadow-lg overflow-hidden transition-all duration-500 transform hover:shadow-2xl hover:-translate-y-1 border border-gray-100 h-full flex flex-col cursor-pointer">
+                        <div className="w-full h-48 bg-[#0D1B3E] flex items-center justify-center p-6">
+                          {BRAND_LOGOS[sub.slug] ? (
+                            <img src={BRAND_LOGOS[sub.slug]} alt={sub.name} className="max-h-24 max-w-[80%] object-contain brightness-0 invert" />
+                          ) : (
+                            <span className="text-4xl font-bold text-white tracking-wider">{sub.name}</span>
+                          )}
+                        </div>
+                        <div className="p-6 flex flex-col flex-grow">
+                          <h3 className="text-2xl font-bold text-[#0D1B3E] mb-2">{sub.name}</h3>
+                          <p className="text-base text-gray-600 flex-grow">{sub.description}</p>
+                          <div className="mt-4">
+                            <span className="text-[#0D1B3E] font-semibold inline-flex items-center gap-1 group-hover:underline">
+                              Voir les produits &rarr;
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </Link>
+                  </ScrollReveal>
+                ))}
+              </div>
+
+              {/* Bouton voir tous les produits */}
+              {(category.slug === "impressions" || category.slug === "peinture-sols" || category.slug === "metal" || category.slug === "bois" || category.slug === "peinture-interieur" || category.slug === "peintures-laques-tendu") && (
+                <div className="text-center mt-12">
+                  <Link href={`/peintures/${category.slug}/produits`}>
+                    <Button size="lg" className="bg-[#0D1B3E] hover:bg-[#0D1B3E]/90 text-lg px-8 py-6">
+                      Voir tous les produits {category.name}
+                    </Button>
+                  </Link>
+                </div>
+              )}
+            </div>
+          </section>
+
+          {/* CTA Section */}
+          <section className="bg-[#0D1B3E] text-white py-16">
+            <div className="container mx-auto px-4 text-center">
+              <h2 className="text-3xl font-bold mb-4">Besoin de conseils ?</h2>
+              <p className="text-lg mb-8 max-w-2xl mx-auto">
+                Nos experts sont à votre disposition pour vous accompagner dans le choix de vos produits {category.name.toLowerCase()}.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href={`tel:${COMPANY_INFO.phone}`}>
+                  <Button size="lg" className="bg-white text-[#0D1B3E] hover:bg-gray-100">
+                    <Phone className="h-5 w-5 mr-2" />
+                    Appelez-nous
+                  </Button>
+                </a>
+                <a href={`mailto:${COMPANY_INFO.email}`}>
+                  <Button size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-[#0D1B3E]">
+                    <Mail className="h-5 w-5 mr-2" />
+                    Envoyez un email
+                  </Button>
+                </a>
+              </div>
+            </div>
+          </section>
+        </main>
+
+        <Footer />
+      </div>
+    );
+  }
+
   // Afficher le sélecteur de finition pour les peintures intérieures
-  if (category.slug === "peintures-interieures") {
+  if (category.slug === "peinture-interieur") {
     return (
       <div className="min-h-screen flex flex-col">
         <Header />
@@ -393,8 +522,8 @@ export default function PeintureCategory() {
         <section
           className="relative h-[50vh] flex items-center justify-center text-white"
           style={{
-            backgroundImage: category.image
-              ? `url('${category.image}')`
+            backgroundImage: (category as any).image
+              ? `url('${(category as any).image}')`
               : `url('https://placehold.co/1920x600/0D1B3E/FFFFFF?text=${encodeURIComponent(
                   category.name
                 )}')`,

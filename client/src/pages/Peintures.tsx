@@ -59,12 +59,8 @@ export default function Peintures() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {PAINT_CATEGORIES.map((category) => (
                 <Card key={category.id} className="hover:shadow-xl transition-shadow">
-<div className="aspect-video overflow-hidden rounded-t-lg">
-                    <img 
-                      src={`https://placehold.co/800x600/0D1B3E/FFFFFF?text=${encodeURIComponent(category.name)}`}
-                      alt={category.name}
-                      className="w-full h-full object-cover"
-                    />
+<div className="aspect-video overflow-hidden rounded-t-lg bg-[#0D1B3E] flex items-center justify-center">
+                    <span className="text-white text-2xl md:text-3xl font-bold text-center px-4 font-sans">{category.name}</span>
                   </div>
                   <CardHeader>
                     <CardTitle className="text-xl">{category.name}</CardTitle>

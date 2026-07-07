@@ -77,6 +77,7 @@ export default function Footer() {
 
         <div className="border-t border-white/20 mt-8 pt-8 text-center text-gray-300 text-sm">
           <p>&copy; {new Date().getFullYear()} LC4. Tous droits réservés.</p>
+          <p className="mt-2">Réalisé par <a href="https://www.netzinformatique.fr/" target="_blank" rel="noopener noreferrer" className="underline hover:text-white">Netz Informatique</a></p>
         </div>
       </div>
     </footer>

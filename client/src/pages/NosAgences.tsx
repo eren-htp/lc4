@@ -15,7 +15,7 @@ export default function NosAgences() {
         {/* Hero Section */}
         <section className="bg-gradient-animated relative h-[50vh] flex items-center justify-center text-white">
           <img 
-            src="/images/DSC00161.JPG" 
+            src="https://d2xsxph8kpxj0f.cloudfront.net/310519663063275076/HiQJLLj6n2QfeF6Jg4yqqM/DSC00161_2e98e8a2.JPG" 
             alt="Intérieur d'une agence LC4 Peinture" 
             className="absolute inset-0 w-full h-full object-cover"
           />
@@ -127,7 +127,7 @@ export default function NosAgences() {
             <div className="max-w-6xl mx-auto">
               <div className="grid md:grid-cols-2 gap-12 items-center">
                 <img 
-                  src="/images/DSC00163.JPG" 
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663063275076/HiQJLLj6n2QfeF6Jg4yqqM/DSC00163_7de04fab.JPG" 
                   alt="Rayon de peintures LC4 Peinture" 
                   className="w-full h-auto object-cover rounded-lg shadow-xl"
                 />

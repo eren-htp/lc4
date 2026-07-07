@@ -57,7 +57,7 @@ export default function Home() {
         <section className="relative min-h-[500px] md:min-h-[600px] flex items-center justify-center overflow-hidden h-[70vh] md:h-[80vh] bg-gradient-animated-dark">
           {/* Background Image */}
           <img 
-            src="/images/DSC00194.JPG" 
+            src="https://d2xsxph8kpxj0f.cloudfront.net/310519663063275076/HiQJLLj6n2QfeF6Jg4yqqM/DSC00194_b3834949.JPG" 
             alt="Intérieur du magasin LC4 Peinture avec des pots de peinture" 
             className="absolute inset-0 w-full h-full object-cover"
           />
@@ -66,7 +66,7 @@ export default function Home() {
           {/* Contenu */}
           <div className="relative z-10 container mx-auto px-4 text-center">
             <h1 className={`text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 transition-all duration-1000 hero-animate ${isHeroVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
-              <img src="/logo.png" alt="" className="h-16 md:h-20 lg:h-24 w-auto mx-auto" />
+              <img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663063275076/HiQJLLj6n2QfeF6Jg4yqqM/lc4-logo_110547f3.png" alt="" className="h-16 md:h-20 lg:h-24 w-auto mx-auto" />
             </h1>
             
             <p className={`text-lg md:text-2xl text-gray-200 max-w-3xl mx-auto mb-6 leading-relaxed transition-all duration-1000 delay-200 hero-subtitle-animate ${isHeroVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}`}>
@@ -156,7 +156,7 @@ Magasin de Peinture & Décoration
                 return (
                   <div 
                     key={service.title}
-                    className="bg-white border-2 border-gray-200 rounded-xl p-6 hover:shadow-xl hover:scale-105 transition-all duration-300 feature-animate card-animate"
+                    className="bg-white border-2 border-gray-200 rounded-xl p-6 hover:shadow-xl hover:scale-105 transition-all duration-300 feature-animate card-animate flex flex-col"
                     style={{ animationDelay: `${index * 150}ms` }}
                   >
 		                    {/* Icône */}
@@ -177,7 +177,7 @@ Magasin de Peinture & Décoration
 		                    {/* Bouton */}
 		                    <Link 
 		                      href={service.href}
-		                      className="block w-full text-center border-2 border-[#0D1B3E] text-[#0D1B3E] py-2 px-4 rounded-lg font-medium hover:bg-[#0D1B3E] hover:text-white transition-all"
+		                      className="block w-full text-center border-2 border-[#0D1B3E] text-[#0D1B3E] py-2 px-4 rounded-lg font-medium hover:bg-[#0D1B3E] hover:text-white transition-all mt-auto"
 		                    >
 		                      Découvrir
 		                    </Link>

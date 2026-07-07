@@ -15,14 +15,14 @@ export default function Header() {
       name: "Peintures",
       href: "/peintures",
       submenu: [
-        { name: "Peintures labellisées", href: "/peintures/peintures-labellisees" },
-        { name: "Peintures intérieures", href: "/peintures/peintures-interieures" },
-        { name: "Peintures laques tendues", href: "/peintures/peintures-laques-tendues" },
-        { name: "Façades", href: "/peintures/facades" },
-        { name: "Bois", href: "/peintures/bois" },
+        { name: "Impressions", href: "/peintures/impressions" },
+        { name: "Toiture Bardage", href: "/peintures/toiture-bardage" },
+        { name: "Peinture Sols", href: "/peintures/peinture-sols" },
         { name: "Métal", href: "/peintures/metal" },
-        { name: "Peintures sols", href: "/peintures/peintures-sols" },
-        { name: "Toiture – Bardages", href: "/peintures/toiture-bardages" },
+        { name: "Bois", href: "/peintures/bois" },
+        { name: "Facades", href: "/peintures/facades" },
+        { name: "Peintures Laques Tendu", href: "/peintures/peintures-laques-tendu" },
+        { name: "Peinture Intérieur", href: "/peintures/peinture-interieur" },
       ],
     },
     {
@@ -58,7 +58,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
             <img 
-              src="/logo.png" 
+              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663063275076/HiQJLLj6n2QfeF6Jg4yqqM/lc4-logo_110547f3.png" 
               alt="LC4 PEINTURE & DECORATION" 
               className="h-12 w-auto" />
             

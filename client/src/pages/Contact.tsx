@@ -59,11 +59,38 @@ const Contact: React.FC = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitSuccess, setSubmitSuccess] = useState(false);
+  const [submitError, setSubmitError] = useState('');
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Logique de soumission du formulaire (à implémenter)
-    console.log('Form submitted:', formData);
-    alert("Formulaire soumis (la soumission réelle n'est pas encore implémentée).");
+    setIsSubmitting(true);
+    setSubmitError('');
+    try {
+      const response = await fetch('https://formspree.io/f/xvzjyeep', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          prénom: formData.firstName,
+          nom: formData.lastName,
+          email: formData.email,
+          téléphone: formData.phone,
+          service: formData.service,
+          message: formData.message,
+        }),
+      });
+      if (response.ok) {
+        setSubmitSuccess(true);
+        setFormData({ firstName: '', lastName: '', email: '', phone: '', service: serviceOptions[0], message: '' });
+      } else {
+        setSubmitError('Une erreur est survenue. Veuillez réessayer.');
+      }
+    } catch (err) {
+      setSubmitError('Erreur de connexion. Veuillez réessayer.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   // Informations LC4
@@ -78,7 +105,7 @@ const Contact: React.FC = () => {
       <Header />
       <main className="flex-1">
         {/* Bannière d'introduction (style similaire à LED Alsace) */}
-        <div className="bg-gray-800 text-white py-20 px-4 text-center" style={{ backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/hero-contact.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <div className="bg-gray-800 text-white py-20 px-4 text-center" style={{ backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://d2xsxph8kpxj0f.cloudfront.net/310519663063275076/HiQJLLj6n2QfeF6Jg4yqqM/DSC00165_8cdb9c96.JPG)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
           <h1 className="text-5xl font-bold mb-4">Contactez-nous</h1>
           <p className="text-xl max-w-3xl mx-auto">
             Notre équipe est à votre écoute pour répondre à toutes vos questions et vous accompagner dans vos projets de peinture et décoration.
@@ -173,11 +200,21 @@ const Contact: React.FC = () => {
                     className="mt-1 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
                   ></textarea>
                 </div>
+                {submitSuccess && (
+                  <div className="p-4 bg-green-100 border border-green-300 rounded-md text-green-800">
+                    Votre demande a bien été envoyée ! Nous vous recontacterons rapidement.
+                  </div>
+                )}
+                {submitError && (
+                  <div className="p-4 bg-red-100 border border-red-300 rounded-md text-red-800">
+                    {submitError}
+                  </div>
+                )}
                 <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                  <button type="submit"
-                    className="w-full sm:w-auto inline-flex justify-center items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+                  <button type="submit" disabled={isSubmitting}
+                    className="w-full sm:w-auto inline-flex justify-center items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed"
                   >
-                    <Mail className="w-5 h-5 mr-2" /> Envoyer ma demande
+                    <Mail className="w-5 h-5 mr-2" /> {isSubmitting ? 'Envoi en cours...' : 'Envoyer ma demande'}
                   </button>
                   <button type="button"
                     onClick={() => setIsModalOpen(true)}

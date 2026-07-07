@@ -1,5 +1,5 @@
 import { createRoot } from "react-dom/client";
-import LC4 from "./App";
+import App from "./App";
 import "./index.css";
 
-createRoot(document.getElementById("root")!).render(<LC4 />);
+createRoot(document.getElementById("root")!).render(<App />);

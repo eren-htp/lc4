@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { INTERIOR_PAINT_PRODUCTS, PaintProduct } from "@shared/const";
+import { INTERIOR_PAINT_PRODUCTS } from "@shared/const";
+import type { PaintProduct } from "@shared/const";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { X } from "lucide-react";

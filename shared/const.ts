@@ -2,18 +2,18 @@ export const COOKIE_NAME = "app_session_id";
 export const ONE_YEAR_MS = 1000 * 60 * 60 * 24 * 365;
 
 export const APP_TITLE = "LC4"
-export const APP_LOGO = "/logo.svg";
+export const APP_LOGO = "https://d2xsxph8kpxj0f.cloudfront.net/310519663063275076/HiQJLLj6n2QfeF6Jg4yqqM/lc4-logo_110547f3.png";
 
 export const COMPANY_INFO = {
   name: "LC4 PEINTURE & DECORATION",
   slogan: "LC4 Peinture & Décoration à Mundolsheim",
-  description: "LC4 Peinture & Décoration : L'achat, la vente, la distribution de tous produits et accessoires permettant tous travaux intérieurs ou extérieures, sur tout support, et toute matières et de tout produits du second œuvre. Nous sommes notés 5 étoiles sur 5 avec 73 avis Google.",
+  description: "LC4 Peinture & Décoration : L'achat, la vente, la distribution de tous produits et accessoires permettant tous travaux intérieurs ou extérieures, sur tout support, et toute matières et de tout produits du second œuvre. Nous sommes notés 5 étoiles sur 5 avec 175 avis Google.",
   phone: "03 88 04 71 96",
   email: "contact@lc4.fr",
   address: "3 Rue Alexandre Volta, 67450 Mundolsheim",
   googleReviews: {
     rating: 5,
-    count: 73,
+    count: 175,
   },
 };
 
@@ -73,53 +73,80 @@ export const AGENCIES = [
 
 export const PAINT_CATEGORIES = [
   {
-    id: "labellisees",
-    name: "Peintures labellisées",
-    slug: "peintures-labellisees",
-    description: "Peintures certifiées et labellisées pour des projets respectueux de l'environnement.",
+    id: "impressions",
+    name: "Impressions",
+    slug: "impressions",
+    description: "Sous-couches et impressions pour préparer vos surfaces avant la peinture de finition.",
+    subcategories: [
+      { id: "blancolor", name: "Blancolor", slug: "blancolor", description: "Impressions et sous-couches de la marque Blancolor." },
+      { id: "astral", name: "Astral", slug: "astral", description: "Impressions et sous-couches de la marque Astral." },
+    ],
   },
   {
-    id: "interieures",
-    name: "Peintures intérieures",
-    slug: "peintures-interieures",
-    description: "Large gamme de peintures pour tous vos projets d'intérieur.",
-    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/rksFZWGuVeCThLSg.png",
+    id: "toiture",
+    name: "Toiture Bardage",
+    slug: "toiture-bardage",
+    description: "Protection durable pour toitures et bardages.",
   },
   {
-    id: "laques",
-    name: "Peintures laques tendues",
-    slug: "peintures-laques-tendues",
-    description: "Finitions haut de gamme pour des surfaces parfaitement lisses.",
-  },
-  {
-    id: "facades",
-    name: "Façades",
-    slug: "facades",
-    description: "Solutions professionnelles pour la protection et la décoration de vos façades.",
-  },
-  {
-    id: "bois",
-    name: "Bois",
-    slug: "bois",
-    description: "Peintures et lasures spécialement conçues pour le bois.",
+    id: "sols",
+    name: "Peinture Sols",
+    slug: "peinture-sols",
+    description: "Revêtements résistants pour sols industriels et domestiques.",
+    subcategories: [
+      { id: "cimentol-sols", name: "Cimentol", slug: "cimentol", description: "Peintures de sol et primaires de la marque Cimentol." },
+    ],
   },
   {
     id: "metal",
     name: "Métal",
     slug: "metal",
     description: "Peintures techniques pour tous types de métaux.",
+    subcategories: [
+      { id: "blancolor-metal", name: "Blancolor", slug: "blancolor", description: "Peintures métal de la marque Blancolor." },
+      { id: "cimentol-metal", name: "Cimentol", slug: "cimentol", description: "Peintures métal de la marque Cimentol." },
+    ],
   },
   {
-    id: "sols",
-    name: "Peintures sols",
-    slug: "peintures-sols",
-    description: "Revêtements résistants pour sols industriels et domestiques.",
+    id: "bois",
+    name: "Bois",
+    slug: "bois",
+    description: "Peintures et lasures spécialement conçues pour le bois.",
+    subcategories: [
+      { id: "lasure", name: "Lasure", slug: "lasure", description: "Lasures pour la protection et la mise en valeur du bois." },
+      { id: "laque-boiserie-solvante", name: "Peinture / Laque Boiserie — Solvanté", slug: "solvante", description: "Peintures et laques solvantées pour boiseries intérieures et extérieures." },
+      { id: "laque-boiserie-acrylique", name: "Peinture / Laque Boiserie — Acrylique", slug: "acrylique", description: "Peintures et laques acryliques pour boiseries intérieures et extérieures." },
+    ],
   },
   {
-    id: "toiture",
-    name: "Toiture – Bardages",
-    slug: "toiture-bardages",
-    description: "Protection durable pour toitures et bardages.",
+    id: "facades",
+    name: "Facades",
+    slug: "facades",
+    description: "Solutions professionnelles pour la protection et la décoration de vos façades.",
+    subcategories: [
+      { id: "astral-facades", name: "Astral", slug: "astral", description: "Peintures façades de la marque Astral." },
+      { id: "blancolor-facades", name: "Blancolor", slug: "blancolor", description: "Peintures façades de la marque Blancolor." },
+    ],
+  },
+  {
+    id: "laques",
+    name: "Peintures Laques Tendu",
+    slug: "peintures-laques-tendu",
+    description: "Finitions haut de gamme pour des surfaces parfaitement lisses.",
+    subcategories: [
+      { id: "blancolor-laques", name: "Blancolor", slug: "blancolor", description: "Peintures-laques acryliques, polyur\u00e9thanes et alkydes ur\u00e9thanes Blancolor." },
+      { id: "astral-laques", name: "Astral B\u00e2timent", slug: "astral", description: "Gamme Amplia H\u2082O et HES : laques satin\u00e9es, mates et primaires." },
+    ],
+  },
+  {
+    id: "interieures",
+    name: "Peinture Intérieur",
+    slug: "peinture-interieur",
+    description: "Large gamme de peintures pour tous vos projets d'intérieur.",
+    subcategories: [
+      { id: "blancolor-interieur", name: "Blancolor", slug: "blancolor", description: "Laques et peintures de finition Blancolor pour boiseries, murs et plafonds." },
+      { id: "astral-interieur", name: "Astral Bâtiment", slug: "astral", description: "Gamme Amplia et peintures-laques Astral pour travaux intérieurs et extérieurs." },
+    ],
   },
 ];
 
@@ -189,4 +216,5 @@ export const WALL_CATEGORIES = [
   },
 ];
 
-export { INTERIOR_PAINT_PRODUCTS, PaintProduct } from "./interiorPaints";
+export { INTERIOR_PAINT_PRODUCTS } from "./interiorPaints";
+export type { PaintProduct } from "./interiorPaints";

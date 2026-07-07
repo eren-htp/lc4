@@ -6,8 +6,8 @@
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-    <link rel="icon" type="image/png" href="/favicon.png" />
-    <link rel="apple-touch-icon" href="/favicon.png" />
+    <link rel="icon" type="image/png" href="https://d2xsxph8kpxj0f.cloudfront.net/310519663063275076/HiQJLLj6n2QfeF6Jg4yqqM/lc4-favicon_3580da21.png" />
+    <link rel="apple-touch-icon" href="https://d2xsxph8kpxj0f.cloudfront.net/310519663063275076/HiQJLLj6n2QfeF6Jg4yqqM/lc4-favicon_3580da21.png" />
     <title>LC4 Peinture - Votre spécialiste en peinture et revêtements en Alsace</title>
     <meta name="description" content="LC4 Peinture est votre partenaire de confiance pour tous vos projets de peinture, revêtements de sols et revêtements muraux à Strasbourg et dans toute l'Alsace. 4 agences pour vous servir." />
     <meta name="keywords" content="peinture Strasbourg, peinture Alsace, revêtements sols Strasbourg, revêtements muraux Alsace, peinture professionnelle, parquet Strasbourg, LC4 Peinture" />
@@ -18,14 +18,12 @@
     <meta property="og:url" content="https://lc4-peinture.fr/" />
     <meta property="og:title" content="LC4 Peinture - Votre spécialiste en peinture et revêtements en Alsace" />
     <meta property="og:description" content="LC4 Peinture est votre partenaire de confiance pour tous vos projets de peinture, revêtements de sols et revêtements muraux à Strasbourg et dans toute l'Alsace." />
-    <meta property="og:image" content="https://lc4-peinture.fr/og-image.jpg" />
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://lc4-peinture.fr/" />
     <meta property="twitter:title" content="LC4 Peinture - Votre spécialiste en peinture et revêtements en Alsace" />
     <meta property="twitter:description" content="LC4 Peinture est votre partenaire de confiance pour tous vos projets de peinture, revêtements de sols et revêtements muraux à Strasbourg et dans toute l'Alsace." />
-    <meta property="twitter:image" content="https://lc4-peinture.fr/og-image.jpg" />
     
     <!-- Schema.org structured data -->
     <script type="application/ld+json">
@@ -35,35 +33,37 @@
       "name": "LC4 Peinture",
       "description": "Votre spécialiste en peinture et revêtements en Alsace",
       "url": "https://lc4-peinture.fr",
-      "telephone": "+33388XXXXXX",
-      "email": "contact@lc4-peinture.fr",
+      "telephone": "+33388047196",
+      "email": "contact@lc4.fr",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Strasbourg",
+        "streetAddress": "3 Rue Alexandre Volta",
+        "addressLocality": "Mundolsheim",
+        "postalCode": "67450",
         "addressRegion": "Alsace",
         "addressCountry": "FR"
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": "48.5734",
-        "longitude": "7.7521"
+        "latitude": "48.6419",
+        "longitude": "7.7131"
       },
       "openingHoursSpecification": [
         {
           "@type": "OpeningHoursSpecification",
           "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-          "opens": "08:00",
-          "closes": "18:00"
+          "opens": "07:00",
+          "closes": "17:00"
         },
         {
           "@type": "OpeningHoursSpecification",
           "dayOfWeek": "Saturday",
-          "opens": "09:00",
+          "opens": "07:30",
           "closes": "12:00"
         }
       ],
       "priceRange": "€€",
-      "areaServed": ["Strasbourg", "Souffelweyersheim", "Haguenau", "Schweighouse-sur-Moder", "Alsace"]
+      "areaServed": ["Strasbourg", "Souffelweyersheim", "Haguenau", "Schweighouse-sur-Moder", "Mundolsheim", "Alsace"]
     }
     </script>
     
@@ -76,7 +76,10 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
-    <!-- Analytics script can be added here if needed -->
+    <script
+      defer
+      src="%VITE_ANALYTICS_ENDPOINT%/umami"
+      data-website-id="%VITE_ANALYTICS_WEBSITE_ID%"></script>
   </body>
 
 </html>

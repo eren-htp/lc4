@@ -24,7 +24,7 @@ export default function QuiSommesNous() {
 	        {/* Hero Section */}
 	        <section className="relative h-[50vh] flex items-center justify-center text-white bg-gradient-animated-dark">
 	          <img 
-	            src="/images/DSC00252.JPG" 
+	            src="https://d2xsxph8kpxj0f.cloudfront.net/310519663063275076/HiQJLLj6n2QfeF6Jg4yqqM/DSC00252_5aeb6acd.JPG" 
 	            alt="Showroom LC4 Peinture" 
 	            className="absolute inset-0 w-full h-full object-cover"
 	          />
@@ -43,7 +43,7 @@ export default function QuiSommesNous() {
 	                <div className="grid md:grid-cols-2 gap-20 items-center mb-24">
 	                {/* Texte à droite, Image à gauche */}
 	                <img 
-	                    src="/images/DSC00161.JPG" 
+	                    src="https://d2xsxph8kpxj0f.cloudfront.net/310519663063275076/HiQJLLj6n2QfeF6Jg4yqqM/DSC00161_2e98e8a2.JPG" 
 	                    alt="Comptoir de vente LC4 Peinture" 
 	                    className="w-full h-auto object-cover rounded-lg shadow-xl order-2 md:order-1"
 	                />
@@ -67,7 +67,7 @@ export default function QuiSommesNous() {
                     </p>
 	                </div>
 	                <img 
-	                    src="/images/DSC00169.JPG" 
+	                    src="https://d2xsxph8kpxj0f.cloudfront.net/310519663063275076/HiQJLLj6n2QfeF6Jg4yqqM/DSC00169_ca5d5d0e.JPG" 
 	                    alt="Comptoir de vente LC4 Peinture" 
 	                    className="w-full h-auto object-cover rounded-lg shadow-xl"
 	                />
@@ -79,7 +79,7 @@ export default function QuiSommesNous() {
 	                <div className="grid md:grid-cols-2 gap-20 items-center">
 	                {/* Texte à droite, Image à gauche */}
 	                <img 
-	                    src="/images/DSC00191.JPG" 
+	                    src="https://d2xsxph8kpxj0f.cloudfront.net/310519663063275076/HiQJLLj6n2QfeF6Jg4yqqM/DSC00191_8ee2a60e.JPG" 
 	                    alt="Comptoir de vente LC4 Peinture" 
 	                    className="w-full h-auto object-cover rounded-lg shadow-xl order-2 md:order-1"
 	                />

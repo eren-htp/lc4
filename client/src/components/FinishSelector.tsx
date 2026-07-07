@@ -15,28 +15,28 @@ const FINISH_OPTIONS: FinishOption[] = [
     label: "Impression",
     slug: "impression",
     description: "Pour préparer vos surfaces avant la peinture de finition",
-    image: "/images/finitions/impression.jpg",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663063275076/HiQJLLj6n2QfeF6Jg4yqqM/impression_eb7e3b10.jpg",
   },
   {
     id: "mat",
     label: "Mat",
     slug: "mat",
     description: "Aspect mat profond, idéal pour masquer les imperfections",
-    image: "/images/finitions/mat.jpg",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663063275076/HiQJLLj6n2QfeF6Jg4yqqM/mat_2d266e2b.jpg",
   },
   {
     id: "velours",
     label: "Velours",
     slug: "velours",
     description: "Aspect velouté et chaleureux, résistant aux chocs",
-    image: "/images/finitions/velours.jpg",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663063275076/HiQJLLj6n2QfeF6Jg4yqqM/velours_de7414a7.jpg",
   },
   {
     id: "satin",
     label: "Satin",
     slug: "satin",
     description: "Finition satinée durable, facile d'entretien",
-    image: "/images/finitions/satin.webp",
+    image: "https://d2xsxph8kpxj0f.cloudfront.net/310519663063275076/HiQJLLj6n2QfeF6Jg4yqqM/satin_662cc718.webp",
   },
 ];
 
@@ -56,7 +56,7 @@ export default function FinishSelector() {
         {FINISH_OPTIONS.map((option, index) => (
           <ScrollReveal key={option.id} delay={index * 0.1}>
             <Link
-              href={`/peintures/peintures-interieures/${option.slug}`}
+              href={`/peintures/peinture-interieur/${option.slug}`}
             >
               <a className="block group cursor-pointer h-full">
                 {/* Nouvelle carte moderne */}

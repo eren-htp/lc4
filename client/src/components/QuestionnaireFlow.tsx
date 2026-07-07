@@ -2,7 +2,8 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ChevronRight, ChevronLeft, RotateCcw } from "lucide-react";
-import { INTERIOR_PAINT_PRODUCTS, PaintProduct } from "@shared/interiorPaints";
+import { INTERIOR_PAINT_PRODUCTS } from "@shared/interiorPaints";
+import type { PaintProduct } from "@shared/interiorPaints";
 
 type Question = {
   id: string;

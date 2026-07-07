@@ -2,7 +2,8 @@ import { useRoute, Link } from "wouter";
 import ScrollReveal from "@/components/ScrollReveal";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { INTERIOR_PAINT_PRODUCTS, PaintProduct } from "@shared/interiorPaints";
+import { INTERIOR_PAINT_PRODUCTS } from "@shared/interiorPaints";
+import type { PaintProduct } from "@shared/interiorPaints";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft } from "lucide-react";
@@ -16,7 +17,7 @@ const FINISH_MAP: { [key: string]: PaintProduct['finish'] } = {
 };
 
 export default function PaintFinishPage() {
-  const [, params] = useRoute("/peintures/peintures-interieures/:finishSlug");
+  const [, params] = useRoute("/peintures/peinture-interieur/:finishSlug");
   const finishSlug = params?.finishSlug;
   const finishName = FINISH_MAP[finishSlug as string];
 
@@ -28,7 +29,7 @@ export default function PaintFinishPage() {
           <div className="text-center">
             <h1 className="text-4xl font-bold text-[#0D1B3E] mb-4">Finition non trouvée</h1>
             <p className="text-gray-600">Cette finition de peinture n'existe pas.</p>
-            <Link href="/peintures/peintures-interieures">
+            <Link href="/peintures/peinture-interieur">
               <Button className="mt-6 bg-[#0D1B3E] hover:bg-[#0D1B3E]/90">
                 <ChevronLeft className="w-4 h-4 mr-2" />
                 Retour aux Peintures Intérieures
@@ -72,7 +73,7 @@ export default function PaintFinishPage() {
         <section className="bg-gradient-animated py-20">
           <div className="container mx-auto px-4">
             <div className="mb-12">
-              <Link href="/peintures/peintures-interieures">
+              <Link href="/peintures/peinture-interieur">
                 <Button variant="outline" className="text-[#0D1B3E] border-[#0D1B3E] hover:bg-[#0D1B3E] hover:text-white">
                   <ChevronLeft className="w-4 h-4 mr-2" />
                   Retour à la sélection de finition
