@@ -15,7 +15,7 @@ export const LAQUES_TENDU_PRODUCTS: LaqueTenduProduct[] = [
     name: "Excellia Mat Evolution",
     brand: "Blancolor",
     description: "Peinture-laque acrylique et polyuréthane. Finition mate de haute qualité pour une application tendue et un rendu parfait sur boiseries et murs.",
-    image: "/manus-storage/excellia-mat-evolution.jpg",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/yhzyqkhVdYtFpDBA.png",
     url: "https://www.blancolor.com/produit/excellia-mat-evolution/",
     characteristics: [
       "Peinture-laque acrylique et polyuréthane",
@@ -31,7 +31,7 @@ export const LAQUES_TENDU_PRODUCTS: LaqueTenduProduct[] = [
     name: "Excellia Satin Evolution",
     brand: "Blancolor",
     description: "Peinture-laque aux résines acryliques et polyuréthanes. Finition satinée élégante offrant un aspect lisse et résistant pour les boiseries et menuiseries.",
-    image: "/manus-storage/excellia-satin-evolution.jpg",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/FUAbFwZvBECjtuyT.jpg",
     url: "https://www.blancolor.com/produit/excellia-satin-evolution/",
     characteristics: [
       "Résines acryliques et polyuréthanes",
@@ -47,7 +47,7 @@ export const LAQUES_TENDU_PRODUCTS: LaqueTenduProduct[] = [
     name: "Soyance Évolution",
     brand: "Blancolor",
     description: "Peinture laque aux résines alkydes uréthanes à séchage rapide. Finition brillante et tendue pour un rendu laqué professionnel sur supports bois et métal.",
-    image: "/manus-storage/soyance-evolution.jpg",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/uyrIdbsXxtaZobsC.png",
     url: "https://www.blancolor.com/produit/soyance-evolution/",
     characteristics: [
       "Résines alkydes uréthanes",
@@ -63,7 +63,7 @@ export const LAQUES_TENDU_PRODUCTS: LaqueTenduProduct[] = [
     name: "Amplia H₂O Satin",
     brand: "Astral Bâtiment",
     description: "Laque satinée à base d'eau Amplia H₂O. Excellente opacité et tendu pour une finition satinée haut de gamme sur boiseries et murs intérieurs.",
-    image: "/manus-storage/amplia-h2o-satin-laque.jpg",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/iNhEALFGgUGWGbca.png",
     url: "https://www.astral-batiment.com/fr/fr/produits/amplia-h%E2%82%82o-satin?size=1L",
     characteristics: [
       "Laque à base d'eau",
@@ -79,7 +79,7 @@ export const LAQUES_TENDU_PRODUCTS: LaqueTenduProduct[] = [
     name: "Amplia H₂O Mat Velouté",
     brand: "Astral Bâtiment",
     description: "Laque mate veloutée à base d'eau Amplia H₂O. Aspect mat profond et velouté pour une finition contemporaine et élégante sur boiseries.",
-    image: "/manus-storage/amplia-h2o-mat-veloute-laque.jpg",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/VIiFbfgdYWHLsPHi.png",
     url: "https://www.astral-batiment.com/fr/fr/produits/amplia-h%E2%82%82o-mat-velout%C3%A9?size=1L",
     characteristics: [
       "Laque à base d'eau",
@@ -95,7 +95,7 @@ export const LAQUES_TENDU_PRODUCTS: LaqueTenduProduct[] = [
     name: "Amplia H₂O Prim",
     brand: "Astral Bâtiment",
     description: "Primaire laque à base d'eau Amplia H₂O. Sous-couche d'accrochage haute performance pour préparer les supports avant application de la laque de finition.",
-    image: "/manus-storage/amplia-h2o-prim-laque.jpg",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/MwAENGbWQyeRvoxC.png",
     url: "https://www.astral-batiment.com/fr/fr/produits/amplia-h%E2%82%82o-prim?size=1L",
     characteristics: [
       "Primaire à base d'eau",
@@ -111,7 +111,7 @@ export const LAQUES_TENDU_PRODUCTS: LaqueTenduProduct[] = [
     name: "Amplia Satin HES",
     brand: "Astral Bâtiment",
     description: "Laque satinée Amplia Satin HES (Haut Extrait Sec). Formule concentrée pour un pouvoir couvrant exceptionnel et une finition satinée durable et résistante.",
-    image: "/manus-storage/amplia-satin-hes.jpg",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/VvbcDhqNlEWGYPTV.png",
     url: "https://www.astral-batiment.com/fr/fr/produits/amplia-satin-hes?size=1L",
     characteristics: [
       "Haut Extrait Sec (HES)",

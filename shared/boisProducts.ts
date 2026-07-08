@@ -26,7 +26,7 @@ export const BOIS_PRODUCTS: BoisProduct[] = [
     nom: "Saturateur Bardage Opaque",
     marque: "Blanchon",
     url_produit: "https://www.blanchon.com/professionnels/saturateur-bardage-opaque.html",
-    image: "/manus-storage/saturateur-bardage-opaque_53a5c3e3.png",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/rnYtudHLaPgEcvpZ.png",
     description_courte: "Imprégnation opaque mate très haute durabilité pour bois extérieurs verticaux",
     description_longue: "Imprégnation opaque mate pénétrante non filmogène pour bardages, portails, volets, claustras et palissades. Application 2 couches frais sur frais, séchage 20 min entre couches. Idéale pour bois peu imprégnables (mélèze, douglas, red cedar). Non écaillable, entretien sans ponçage.",
     caracteristiques: [
@@ -59,7 +59,7 @@ export const BOIS_PRODUCTS: BoisProduct[] = [
     nom: "Vernis EXP",
     marque: "Blanchon",
     url_produit: "https://www.blanchon.com/professionnels/vernis-exp.html",
-    image: "/manus-storage/vernis-exp_70c8824a.png",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/RSHJSCRJSWxFYcam.png",
     description_courte: "Vernis polyuréthane phase aqueuse — haute protection boiseries et menuiseries, incolore ou teinté",
     description_longue: "Vernis haute protection pour boiseries et menuiseries intérieures et extérieures. Résines polyuréthanes en phase aqueuse. Haute résistance aux UV et aux intempéries. Film souple résistant aux variations dimensionnelles du bois. Finition incolore ou teintée, séchage rapide.",
     caracteristiques: [
@@ -92,7 +92,7 @@ export const BOIS_PRODUCTS: BoisProduct[] = [
     nom: "SOYANCE ÉVOLUTION",
     marque: "Blancolor",
     url_produit: "https://www.blancolor.com/produit/soyance-evolution/",
-    image: "/manus-storage/soyance-evolution_386bbfbf.png",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/APcYSlzfCNAlojlg.png",
     description_courte: "Peinture pour menuiseries et structures métalliques — aspect tendu, grande dureté",
     description_longue: "Peinture pour menuiseries, structures et éléments métalliques en intérieur et extérieur. Aspect tendu, grande dureté, excellente adhérence. Recouvrable en 8h.",
     caracteristiques: [
@@ -121,7 +121,7 @@ export const BOIS_PRODUCTS: BoisProduct[] = [
     nom: "Amplia Satin HES",
     marque: "Astral Bâtiment",
     url_produit: "https://www.astral-batiment.com/fr/fr/produits/amplia-satin-hes",
-    image: "/manus-storage/amplia-satin-hes_4b5575d2.png",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/tLsJpqqcsaMvcpYL.png",
     description_courte: "Peinture-laque alkydes solvantée haut extrait sec — brillance et tenue exceptionnelles",
     description_longue: "Peinture-laque alkydes en phase solvant à haut extrait sec pour travaux courants intérieur et extérieur. Haute couvrance et brillance, excellent lissé. Lavable et facile d'entretien. Temps ouvert prolongé.",
     caracteristiques: [
@@ -152,7 +152,7 @@ export const BOIS_PRODUCTS: BoisProduct[] = [
     nom: "RESPIR'BOIS SATIN",
     marque: "Blancolor",
     url_produit: "https://www.blancolor.com/produit/respiro-bois-satin/",
-    image: "/manus-storage/respir-bois-satin_952e752d.png",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/jAyramOjmDmxOFkb.png",
     description_courte: "Peinture bois mono-produit impression + finition — souplesse, protection UV et intempéries",
     description_longue: "Peinture bois mono-produit faisant office d'impression et de finition. Souplesse du feuil, protection contre les intempéries et les UV, excellente couvrance. Application intérieur et extérieur sur tous ouvrages et structures en bois.",
     caracteristiques: [
@@ -182,7 +182,7 @@ export const BOIS_PRODUCTS: BoisProduct[] = [
     nom: "Amplia H₂O Satin",
     marque: "Astral Bâtiment",
     url_produit: "https://www.astral-batiment.com/fr/fr/produits/amplia-h%E2%82%82o-satin",
-    image: "/manus-storage/amplia-h2o-satin_c8fc585e.png",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/IuWQDZtXqdFvYaPZ.png",
     description_courte: "Peinture-laque acrylique garnissante phase aqueuse — faible odeur, bonne lavabilité",
     description_longue: "Peinture-laque garnissante à base de copolymères acryliques en dispersion aqueuse. Bon équilibre couvrance et tension de surface, masque les petites irrégularités. Faible odeur, facile d'entretien, bonne résistance au lessivage.",
     caracteristiques: [
@@ -212,7 +212,7 @@ export const BOIS_PRODUCTS: BoisProduct[] = [
     nom: "RESPIR'O BOIS",
     marque: "Blancolor",
     url_produit: "https://www.blancolor.com/produit/respiro-bois/",
-    image: "/manus-storage/respir-o-bois_4a98dcfa.png",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/xtzjZPbRGUcsBLgA.png",
     description_courte: "Peinture bois microporeuse — excellent garnissant, durabilité remarquable, grande souplesse",
     description_longue: "Peinture de protection microporeuse pour tous ouvrages et structures en bois intérieurs et extérieurs. Excellent garnissant, durabilité remarquable, haute microporosité et grande souplesse. Phase aqueuse.",
     caracteristiques: [

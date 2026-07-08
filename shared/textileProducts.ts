@@ -15,7 +15,7 @@ export const TEXTILE_PRODUCTS: TextileProduct[] = [
     name: "Arcade DESSO",
     brand: "Tarkett",
     description: "Dalle de moquette DESSO Arcade par Tarkett. Conçue pour les espaces à fort trafic avec une base EcoBase 100% recyclable contenant jusqu'à 91% de contenu recyclé et biosourcé.",
-    image: "/manus-storage/arcade_71da7c4b.jpg",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/tSJJRguULKhJDEQE.jpg",
     url: "https://professionnels.tarkett.fr/fr_FR/collection-C001030-arcade?backing=EcoBase%20-%20100%25%20recyclable%2C%20contient%20jusqu%27%C3%A0%2091%25%20de%20contenu%20recycl%C3%A9%20et%20biosourc%C3%A9",
     characteristics: [
       "Dalle de moquette",
@@ -31,7 +31,7 @@ export const TEXTILE_PRODUCTS: TextileProduct[] = [
     name: "Desert DESSO",
     brand: "Tarkett",
     description: "Dalle de moquette DESSO Desert par Tarkett. Design durable avec absorption acoustique supérieure, idéale pour les espaces de travail modernes et les environnements commerciaux.",
-    image: "/manus-storage/desert_83307d3c.jpg",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/emdAWojvfVRlhanW.jpg",
     url: "https://professionnels.tarkett.fr/fr_FR/collection-C001036-desert",
     characteristics: [
       "Dalle de moquette",
@@ -47,7 +47,7 @@ export const TEXTILE_PRODUCTS: TextileProduct[] = [
     name: "Essence DESSO",
     brand: "Tarkett",
     description: "Dalle de moquette DESSO Essence par Tarkett. Collection polyvalente permettant le mix and match pour créer des designs uniques. Idéale pour personnaliser les espaces professionnels.",
-    image: "/manus-storage/essence_66ff6c3e.jpg",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/FLxHwsSFlVVsrUCi.jpg",
     url: "https://professionnels.tarkett.fr/fr_FR/collection-C001039-essence",
     characteristics: [
       "Dalle de moquette",

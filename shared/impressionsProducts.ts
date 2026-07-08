@@ -31,7 +31,7 @@ export const IMPRESSIONS_PRODUCTS: ImpressionProduct[] = [
     nom: "CORSIPRIM ÉVOLUTION",
     marque: "Blancolor",
     url_produit: "https://www.blancolor.com/produit/corsiprim/",
-    image: "/manus-storage/corsiprim-evolution_29da4bb2.png",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/CAeRKHxrjBqPfPWu.png",
     description_courte: "Impression multi-supports consolidante pour intérieur et extérieur",
     description_longue: "Apprêt multi-supports destiné aux applications intérieures et extérieures. Consolide les fonds, opacifiant et garnissant. Séchage rapide en 2 à 3 heures.",
     caracteristiques: [
@@ -64,7 +64,7 @@ export const IMPRESSIONS_PRODUCTS: ImpressionProduct[] = [
     nom: "EXTRAGRIP",
     marque: "Blancolor",
     url_produit: "https://www.blancolor.com/produit/extra-grip/",
-    image: "/manus-storage/extragrip_c73b2355.png",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/ajSARahIPEWyPHuT.png",
     description_courte: "Apprêt universel adhérence tous supports — métal, bois, plastique, carrelage",
     description_longue: "Apprêt universel pour intérieur et extérieur sur métallerie, menuiserie et supports variés. Contient un inhibiteur de corrosion. Excellente adhérence sur tous supports, y compris les surfaces peu poreuses.",
     caracteristiques: [
@@ -97,7 +97,7 @@ export const IMPRESSIONS_PRODUCTS: ImpressionProduct[] = [
     nom: "EXTRAPRIMER ÉVOLUTION",
     marque: "Blancolor",
     url_produit: "https://www.blancolor.com/produit/extraprimer-evolution-2/",
-    image: "/manus-storage/extraprimer-evolution_c833473d.png",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/YbXGxPzpLONfCMLY.png",
     description_courte: "Apprêt universel eau intérieur/extérieur — isole les taches, idéal bois tanniques",
     description_longue: "Apprêt universel en phase aqueuse pour intérieur et extérieur. Isole les taches persistantes, excellente adhérence, compatible toutes finitions. Particulièrement adapté aux bois tanniques. Fabriqué en France par Blancolor (Groupe Allios).",
     caracteristiques: [
@@ -134,7 +134,7 @@ export const IMPRESSIONS_PRODUCTS: ImpressionProduct[] = [
     nom: "BLANCOPRIM",
     marque: "Blancolor",
     url_produit: "https://www.blancolor.com/produit/blancoprim/",
-    image: "/manus-storage/blancoprim_50c5c7a5.png",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/xYXfJEsFeCrihSAP.png",
     description_courte: "Apprêt universel eau — homogénéise la porosité, anti-rouille flash",
     description_longue: "Apprêt universel en phase aqueuse pour intérieur et extérieur. Homogénéise la porosité et régule l'absorption des supports. Forte adhérence sur supports bloquants. Propriétés anti-rouille flash. Fabriqué en France par Blancolor (Groupe Allios).",
     caracteristiques: [
@@ -169,7 +169,7 @@ export const IMPRESSIONS_PRODUCTS: ImpressionProduct[] = [
     nom: "CORSIMUR ÉVOLUTION",
     marque: "Blancolor",
     url_produit: "https://www.blancolor.com/produit/corsimur/",
-    image: "/manus-storage/corsimur-evolution_c2b288c8.png",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/VnrtYULBHaBQuySi.png",
     description_courte: "Impression intérieure rénovation des fonds tachés — isolation des taches, opacité excellente",
     description_longue: "Peinture d'impression intérieure spécialement conçue pour la rénovation des fonds tachés (fumée, suie, humidité, nicotine). Application mouillée sur mouillée possible. Excellente opacité. Compatible plafonds et murs intérieurs.",
     caracteristiques: [
@@ -204,7 +204,7 @@ export const IMPRESSIONS_PRODUCTS: ImpressionProduct[] = [
     nom: "CORSIMUR HYDRO",
     marque: "Blancolor",
     url_produit: "https://www.blancolor.com/produit/corsimur-hydro/",
-    image: "/manus-storage/corsimur-hydro_010f1fd2.png",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/FohKqDVJrEBwlgwb.png",
     description_courte: "Impression intérieure tapissable — préparation réduite, anti-taches, mouillé sur mouillé",
     description_longue: "Apprêt intérieur en phase aqueuse. Réduit la préparation des fonds, application mouillée sur mouillée, tapissable. Propriétés anti-taches. Compatible murs et plafonds intérieurs sur de nombreux supports.",
     caracteristiques: [

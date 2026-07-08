@@ -15,7 +15,7 @@ export const TARKETT_COLLECTIONS: TarkettCollection[] = [
     id: "legende-162",
     name: "Légende 162",
     description: "La nouvelle gamme de décors vous offre un choix de parquet de qualité pour un intérieur chaleureux. Les designs intemporels répondent à un large éventail de besoins avec ces lames plus larges pour davantage de caractère.",
-    image: "/manus-storage/legende-162_657c101b.jpg",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/NmRKTXncnSRBJrVe.jpg",
     url: "https://professionnels.tarkett.fr/fr_FR/collection-C001353-legende-162/chene-nature-plank-1-strip",
     characteristics: [
       "Fabriqué en Europe",
@@ -49,7 +49,7 @@ export const TARKETT_COLLECTIONS: TarkettCollection[] = [
     id: "segno",
     name: "Segno",
     description: "Créez votre propre parquet avec une approche plus moderne. Segno vous donne la possibilité de créer votre propre agencement de sol avec une technologie modulaire ouvrant la voie à un nombre illimité de possibilités créatives. Choisissez parmi les 5 couleurs disponibles en finition huilée, et mixez les planches droites et gauches pour créer votre propre motif en bâton rompu.",
-    image: "/manus-storage/segno_664dcd8f.jpg",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/ItFGAMTVDwfaIbXz.jpg",
     url: "https://professionnels.tarkett.fr/fr_FR/collection-C001674-segno",
     characteristics: [
       "Fabriqué en Europe",
@@ -80,7 +80,7 @@ export const TARKETT_COLLECTIONS: TarkettCollection[] = [
     id: "distinction-190",
     name: "Distinction 190",
     description: "La gamme Distinction 190 célèbre la création de la nature, la force intrinsèque du bois et sa capacité à résister à l'épreuve du temps. Une palette de teintes de caractère, allant du foncé au clair, constitue la base d'une gamme qui permet à tout intérieur de sortir de l'ordinaire. Distinction 190 propose un brossage encore plus profond sur certaines teintes et finitions huilées pour une plus grande authenticité.",
-    image: "/manus-storage/distinction-190_b9b2b749.jpg",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/nVwaJVIhPUFwpfsC.jpg",
     url: "https://professionnels.tarkett.fr/fr_FR/collection-C002930-distinction-190",
     characteristics: [
       "Fabriqué en Europe",
@@ -113,7 +113,7 @@ export const TARKETT_COLLECTIONS: TarkettCollection[] = [
     id: "origine-194",
     name: "Origine 194 – 3 Frises",
     description: "La nouvelle collection Origine 194, simple, efficace, accessible, vous propose une gamme de produits en 3 frises, alliant beauté de décors et taille de lames idéale pour les pièces petites à moyennes. La palette de couleurs offre des nuances allant du naturel à des couleurs plus dynamiques.",
-    image: "/manus-storage/origine-194_5d84bb90.jpg",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/XFHpOxPcPnpUhYUw.jpg",
     url: "https://professionnels.tarkett.fr/fr_FR/collection-C001351-origine-194-3-frises",
     characteristics: [
       "Fabriqué en Europe",
@@ -141,7 +141,7 @@ export const TARKETT_COLLECTIONS: TarkettCollection[] = [
     id: "tradition-134",
     name: "Tradition 134",
     description: "Avec ses décors monolames et ses dimensions moyennes, la collection Tradition allie charme et raffinement. Cette gamme est idéale pour créer une décoration élégante et chaleureuse. Les motifs authentiques de la nature mettent en valeur et préservent le caractère unique de chaque planche, pour un revêtement de sol qui ne se démodera jamais.",
-    image: "/manus-storage/tradition-134_49352843.jpg",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/cmXzmxTIRyIbwcrb.jpg",
     url: "https://professionnels.tarkett.fr/fr_FR/collection-C001352-tradition-134",
     characteristics: [
       "Fabriqué en Europe",

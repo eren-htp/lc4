@@ -15,7 +15,7 @@ export const PVC_PRODUCTS: PvcProduct[] = [
     name: "Elegance Rigid 55",
     brand: "Tarkett",
     description: "Revêtement de sol PVC rigide clipsable haute performance. La collection Elegance Rigid 55 offre des designs réalistes et une résistance exceptionnelle pour les espaces résidentiels et commerciaux.",
-    image: "/manus-storage/elegance-rigid-55_28b2d70b.jpg",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/XAFZLdDGKBjGTpRm.jpg",
     url: "https://professionnels.tarkett.fr/fr_FR/collection-C002563-elegance-rigid-55",
     characteristics: [
       "Sol rigide clipsable",
@@ -31,7 +31,7 @@ export const PVC_PRODUCTS: PvcProduct[] = [
     name: "Néo Click 30",
     brand: "Tarkett",
     description: "Sol PVC clipsable de la gamme Néo Click, épaisseur 30. Solution idéale pour les pièces à trafic modéré avec un excellent rapport qualité-prix.",
-    image: "/manus-storage/neo-click-30_c6da2bce.jpg",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/iDrjkNvbeqFPqzlb.jpg",
     url: "https://www.les-parquets-de-louest.fr/wp-content/uploads/2024/07/Fiche-produit-neo-click-30-dalle.pdf",
     characteristics: [
       "Sol PVC clipsable",
@@ -47,7 +47,7 @@ export const PVC_PRODUCTS: PvcProduct[] = [
     name: "Néo Click 55",
     brand: "Tarkett",
     description: "Sol PVC clipsable de la gamme Néo Click, épaisseur 55. Conçu pour les espaces à trafic intense avec une résistance supérieure et des finitions haut de gamme.",
-    image: "/manus-storage/neo-click-55_7b8c7dd8.jpg",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/TMzWqIicIEKaOIUg.jpg",
     url: "https://www.les-parquets-de-louest.fr/wp-content/uploads/2024/07/Fiche-produit-neo-click-55-lame-1.pdf",
     characteristics: [
       "Sol PVC clipsable",
@@ -63,7 +63,7 @@ export const PVC_PRODUCTS: PvcProduct[] = [
     name: "Évasion",
     brand: "Alsafloor",
     description: "Collection de sols vinyles Évasion par Alsafloor. Des décors variés et tendance pour personnaliser vos intérieurs avec un revêtement PVC de qualité.",
-    image: "/manus-storage/evasion_6048084b.png",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/QQeUwFQuBSNtaIlQ.png",
     url: "https://www.alsaflooring.com/vinyles/?type=&formData=&page=1",
     characteristics: [
       "Sol vinyle",
@@ -79,7 +79,7 @@ export const PVC_PRODUCTS: PvcProduct[] = [
     name: "iD Click Ultimate 30",
     brand: "Tarkett",
     description: "Sol vinyle modulaire clipsable iD Click Ultimate 30. Designs naturels et performances ultimes pour un usage résidentiel confortable.",
-    image: "/manus-storage/id-click-ultimate-30_d0171ea9.jpg",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/RTbBiojisulviTzM.jpg",
     url: "https://professionnels.tarkett.fr/fr_FR/collection-C002067-id-click-ultimate-30",
     characteristics: [
       "Sol vinyle modulaire clipsable",
@@ -95,7 +95,7 @@ export const PVC_PRODUCTS: PvcProduct[] = [
     name: "iD Click Ultimate 55",
     brand: "Tarkett",
     description: "Sol vinyle modulaire clipsable iD Click Ultimate 55. Performance renforcée pour les espaces à trafic modéré à intense, avec des designs authentiques.",
-    image: "/manus-storage/id-click-ultimate-55_79f18297.jpg",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/rDQGlGtNHqszhzlF.jpg",
     url: "https://professionnels.tarkett.fr/fr_FR/collection-C001616-id-click-ultimate-55",
     characteristics: [
       "Sol vinyle modulaire clipsable",
@@ -111,7 +111,7 @@ export const PVC_PRODUCTS: PvcProduct[] = [
     name: "iD Click Ultimate 70",
     brand: "Tarkett",
     description: "Sol vinyle modulaire clipsable iD Click Ultimate 70. La référence pour les espaces à très fort trafic avec une résistance maximale et des finitions premium.",
-    image: "/manus-storage/id-click-ultimate-70_0abab4bd.jpg",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/iZGOGTETxZiwTwDT.jpg",
     url: "https://professionnels.tarkett.fr/fr_FR/collection-C001340-id-click-ultimate-70",
     characteristics: [
       "Sol vinyle modulaire clipsable",
@@ -127,7 +127,7 @@ export const PVC_PRODUCTS: PvcProduct[] = [
     name: "TX Habitat",
     brand: "Tarkett",
     description: "Revêtement de sol PVC en lés TX Habitat par Tarkett. Solution économique et performante pour les logements collectifs et individuels.",
-    image: "/manus-storage/tx-habitat_c3b77205.jpg",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/dDLTSFMOITimaFYp.jpg",
     url: "https://professionnels.tarkett.fr/fr_FR/collection-C001889-tx-habitat",
     characteristics: [
       "Sol PVC en lés",
@@ -143,7 +143,7 @@ export const PVC_PRODUCTS: PvcProduct[] = [
     name: "Excellence",
     brand: "Tarkett",
     description: "Revêtement de sol PVC hétérogène Excellence par Tarkett. Gamme professionnelle pour les établissements recevant du public avec des performances acoustiques et une grande durabilité.",
-    image: "/manus-storage/excellence_beb9b4d4.jpg",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/HqgmecvTnfAeUmKR.jpg",
     url: "https://media.tarkett.com/docs/BR_FR_Excellence_Prescription_2018.pdf",
     characteristics: [
       "Sol PVC hétérogène",

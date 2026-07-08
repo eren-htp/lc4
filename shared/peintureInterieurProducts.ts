@@ -21,7 +21,7 @@ export const PEINTURE_INTERIEUR_PRODUCTS: PeintureInterieurProduct[] = [
     type: "Peinture-laque acrylique et polyuréthane",
     description: "Peinture-laque acrylique et polyuréthane pour boiseries et menuiseries intérieures. Aspect tendu, grande dureté après séchage, excellent rendement et lessivable (Classe 1).",
     usage: ["Intérieur"],
-    image: "/manus-storage/excellia-mat-evolution_b8daa31a.png",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/tlCLzwjhkfWwBaXf.png",
     url: "https://www.blancolor.com/produit/excellia-mat-evolution/",
     advantages: [
       "Aspect tendu",
@@ -44,7 +44,7 @@ export const PEINTURE_INTERIEUR_PRODUCTS: PeintureInterieurProduct[] = [
     type: "Peinture-laque aux résines acryliques et polyuréthanes",
     description: "Peinture-laque aux résines acryliques et polyuréthanes pour murs, plafonds et boiseries en intérieur et extérieur. Polyvalence des supports, bonne résistance mécanique et lessivable (Classe 1).",
     usage: ["Intérieur", "Extérieur"],
-    image: "/manus-storage/excellia-satin-evolution_1db8ca48.jpg",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/gxaTCnKzwOwcWphR.jpg",
     url: "https://www.blancolor.com/produit/excellia-satin-evolution/",
     advantages: [
       "Polyvalence des supports",
@@ -67,7 +67,7 @@ export const PEINTURE_INTERIEUR_PRODUCTS: PeintureInterieurProduct[] = [
     type: "Peinture laque aux résines alkydes uréthanes à séchage rapide",
     description: "Peinture laque aux résines alkydes uréthanes à séchage rapide pour menuiseries, structures et éléments de serrureries métalliques, boiseries. Recouvrable en 8h, aspect tendu, grande dureté et excellente adhérence.",
     usage: ["Intérieur", "Extérieur"],
-    image: "/manus-storage/soyance-evolution_03ff6895.png",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/vpUhjpUEIqbYZENP.png",
     url: "https://www.blancolor.com/produit/soyance-evolution/",
     advantages: [
       "Recouvrable en 8h",
@@ -90,7 +90,7 @@ export const PEINTURE_INTERIEUR_PRODUCTS: PeintureInterieurProduct[] = [
     type: "Peinture laque garnissante à base de copolymères acryliques en dispersion aqueuse",
     description: "Peinture laque garnissante à base de copolymères acryliques en dispersion aqueuse. Bon compromis entre le garnissant et la tension, masque les irrégularités du support, faible odeur et facile d'application.",
     usage: ["Intérieur"],
-    image: "/manus-storage/amplia-h2o-satin_44125195.png",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/LWCWPaxNvrLdEprH.png",
     url: "https://www.astral-batiment.com/fr/fr/produits/amplia-h%E2%82%82o-satin?size=1L",
     advantages: [
       "Bon compromis entre le garnissant et la tension",
@@ -115,7 +115,7 @@ export const PEINTURE_INTERIEUR_PRODUCTS: PeintureInterieurProduct[] = [
     type: "Peinture laque garnissante à base de copolymères acryliques en dispersion aqueuse",
     description: "Peinture laque garnissante à base de copolymères acryliques en dispersion aqueuse. Bon compromis entre le garnissant et la tension, masque les irrégularités du support, faible odeur et recouvrable dans la journée.",
     usage: ["Intérieur"],
-    image: "/manus-storage/amplia-h2o-mat-veloute_7d018c80.png",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/azgJbxUfEmOUzamH.png",
     url: "https://www.astral-batiment.com/fr/fr/produits/amplia-h%E2%82%82o-mat-velout%C3%A9?size=1L",
     advantages: [
       "Bon compromis entre le garnissant et la tension",
@@ -142,7 +142,7 @@ export const PEINTURE_INTERIEUR_PRODUCTS: PeintureInterieurProduct[] = [
     type: "Couche primaire garnissante à base de résine acrylique en phase aqueuse",
     description: "Couche primaire garnissante à base de résine acrylique en phase aqueuse. Primaire pour les finitions Amplia H₂O Mat Velouté et Amplia H₂O Satin. Bon garnissant, bel arrondi et enrobage des arêtes.",
     usage: ["Intérieur", "Extérieur"],
-    image: "/manus-storage/amplia-h2o-prim_7da3ef51.png",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/ODlLddkPOanwvVmo.png",
     url: "https://www.astral-batiment.com/fr/fr/produits/amplia-h%E2%82%82o-prim?size=1L",
     advantages: [
       "Primaire pour les finitions Amplia H₂O Mat Velouté et Amplia H₂O Satin",
@@ -166,7 +166,7 @@ export const PEINTURE_INTERIEUR_PRODUCTS: PeintureInterieurProduct[] = [
     type: "Peinture-laque alkyde en phase solvant, à Haut Extrait Sec",
     description: "Peinture-laque alkyde en phase solvant, à Haut Extrait Sec, pour travaux courants. Très garnissant et d'une grande blancheur, excellente tension et bel arrondi, lessivable et facile d'entretien.",
     usage: ["Intérieur", "Extérieur"],
-    image: "/manus-storage/amplia-satin-hes_25b916c5.png",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/cbOVJvxWOLboSrar.png",
     url: "https://www.astral-batiment.com/fr/fr/produits/amplia-satin-hes?size=1L",
     advantages: [
       "Très garnissant et d'une grande blancheur",

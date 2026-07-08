@@ -1,12 +1,12 @@
 // URLs CDN des logos de marques partenaires
 export const BRAND_LOGOS: Record<string, string> = {
-  blancolor: "/manus-storage/blancolor_3a1d3982.png",
-  "astral b\u00e2timent": "/manus-storage/astral_48774ea7.png",
-  astral: "/manus-storage/astral_48774ea7.png",
-  tarkett: "/manus-storage/tarkett_32fc6dd9.png",
-  alsafloor: "/manus-storage/alsafloor_4d45fc8e.png",
-  desso: "/manus-storage/desso_a47abdfa.png",
-  semin: "/manus-storage/semin_4b0e796b.png",
-  beissier: "/manus-storage/beissier_233ac504.jpg",
-  bagar: "/manus-storage/beissier_233ac504.jpg",
+  blancolor: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/cVIOwutQnskfBTOc.png",
+  "astral b\u00e2timent": "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/nBThqfwxXQXmKifH.png",
+  astral: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/nBThqfwxXQXmKifH.png",
+  tarkett: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/RUoAHdzaKcAbgUgL.png",
+  alsafloor: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/KtTuWtLYYKQentcn.png",
+  desso: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/xSjGgXTMplhgrcfe.png",
+  semin: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/srXhrXKRqshrxguJ.png",
+  beissier: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/MqCfrgyTzrXfDtsR.jpg",
+  bagar: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/MqCfrgyTzrXfDtsR.jpg",
 };

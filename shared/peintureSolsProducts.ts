@@ -27,7 +27,7 @@ export const PEINTURE_SOLS_PRODUCTS: PeintureSolProduct[] = [
     nom: "NEPSOL",
     marque: "Cimentol",
     url_produit: "https://www.cimentol.com/produit/nepsol/",
-    image: "/manus-storage/nepsol_9660f17c.jpg",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/GKMJZuxisuzQNaig.jpg",
     description_courte: "Solution polyvalente pour la préparation des sols : dégraissage, décapage, passivation",
     description_longue: "Produit multi-action pour la préparation des sols. Nettoie, dégraisse et neutralise la laitance de ciment. Dilution 20-30% dans l'eau. Peut être appliqué à la brosse dure, au spray ou au rouleau.",
     caracteristiques: [
@@ -58,7 +58,7 @@ export const PEINTURE_SOLS_PRODUCTS: PeintureSolProduct[] = [
     nom: "WATPRIM",
     marque: "Cimentol",
     url_produit: "https://www.cimentol.com/produit/watprim/",
-    image: "/manus-storage/watprim_41a3505e.jpg",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/MtNjDcqdqDFbeGSH.jpg",
     description_courte: "Primaire d'adhérence époxy bi-composant incolore — tous supports, sans solvant",
     description_longue: "Primaire d'adhérence époxy bi-composant sans solvant, inodore. Excellente performance d'accroche sur fonds bloqués et surfaces humides (non saturées). Consolide les supports crayeux et poudreux. Pot life : 45 minutes après mélange.",
     caracteristiques: [
@@ -93,7 +93,7 @@ export const PEINTURE_SOLS_PRODUCTS: PeintureSolProduct[] = [
     nom: "WATSOL",
     marque: "Cimentol",
     url_produit: "https://www.cimentol.com/produit/watsol/",
-    image: "/manus-storage/watsol_68ad848e.jpg",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/QPivbUDJATdDJnTu.jpg",
     description_courte: "Peinture époxy bi-composant diluable à l'eau — très haute dureté et résistance à l'abrasion",
     description_longue: "Peinture filmogène époxy bi-composant diluable à l'eau pour sols et murs soumis à de fortes contraintes mécaniques et chimiques. Très grande dureté, excellente résistance à l'abrasion. Sans odeur, non inflammable. Certifiée contact alimentaire.",
     caracteristiques: [
@@ -131,7 +131,7 @@ export const PEINTURE_SOLS_PRODUCTS: PeintureSolProduct[] = [
     nom: "EKOSOL",
     marque: "Cimentol",
     url_produit: "https://www.cimentol.com/produit/ekosol/",
-    image: "/manus-storage/ekosol_b9a74a75.jpg",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/bOcxZbCKRxjZcmuy.jpg",
     description_courte: "Peinture polyuréthane bi-composant en phase aqueuse — intérieur/extérieur, faibles COV",
     description_longue: "Peinture filmogène polyuréthane bi-composant en phase aqueuse pour la protection et la décoration des sols et murs. Séchage rapide (recouvrable en 5-6h). Certifiée LEED, contact alimentaire, et norme jouets. Faibles COV.",
     caracteristiques: [
@@ -165,7 +165,7 @@ export const PEINTURE_SOLS_PRODUCTS: PeintureSolProduct[] = [
     nom: "THANOSOL",
     marque: "Cimentol",
     url_produit: "https://www.cimentol.com/produit/thanosol/",
-    image: "/manus-storage/thanosol_4d93c854.jpg",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/jFVtWGMxNgCNXJEO.jpg",
     description_courte: "Peinture polyuréthane mono-composant en phase aqueuse — rénovation sols et murs, prête à l'emploi",
     description_longue: "Peinture polyuréthane mono-composant prête à l'emploi en phase aqueuse pour la rénovation et la décoration des sols et murs. Séchage rapide (recouvrable après 90 min). Sans odeur, certifiée contact alimentaire. Usage domestique.",
     caracteristiques: [
@@ -201,7 +201,7 @@ export const PEINTURE_SOLS_PRODUCTS: PeintureSolProduct[] = [
     nom: "NEXOL",
     marque: "Cimentol",
     url_produit: "https://www.cimentol.com/produit/nexol/",
-    image: "/manus-storage/nexol_79147ad1.png",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/eiNqGVbnepmDcONP.png",
     description_courte: "Peinture polyuréthane mono-composant solvantée — haute résistance, anti-poussière, 18 coloris",
     description_longue: "Peinture mono-composant polyuréthane alkyde-uréthane pour la rénovation et la décoration des sols et murs. Haute résistance aux rayures et à l'abrasion. Séchage rapide, anti-poussière. Conforme directive COV 2010. 18 coloris disponibles.",
     caracteristiques: [

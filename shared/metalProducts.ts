@@ -26,7 +26,7 @@ export const METAL_PRODUCTS: MetalProduct[] = [
     nom: "SOYANCE ÉVOLUTION",
     marque: "Blancolor",
     url_produit: "https://www.blancolor.com/produit/soyance-evolution/",
-    image: "/manus-storage/soyance-evolution_ba068288.png",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/gvcYZBwiCQsLqJZG.png",
     description_courte: "Peinture pour menuiseries et structures métalliques — aspect tendu, grande dureté",
     description_longue: "Peinture pour menuiseries, structures et éléments métalliques en intérieur et extérieur. Aspect tendu, grande dureté, excellente adhérence. Recouvrable en 8h. Fabrication française par Blancolor (Groupe Allios).",
     caracteristiques: [
@@ -61,7 +61,7 @@ export const METAL_PRODUCTS: MetalProduct[] = [
     nom: "PROTECTHAN",
     marque: "Cimentol",
     url_produit: "https://www.cimentol.com/produit/protecthan/",
-    image: "/manus-storage/protecthan_fe1b5120.png",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/JcGEpsgGIZIMaOuX.png",
     description_courte: "Peinture polyuréthane anticorrosion 2-en-1 — primaire + finition, haute résistance UV et brouillard salin",
     description_longue: "Peinture polyuréthane universelle anticorrosion haute performance. Formule 2-en-1 : fait office de primaire et de finition en une seule application. Traite les surfaces rouillées. Haute résistance aux UV, intempéries et au brouillard salin. Certifiée contact alimentaire. Séchage à basse température.",
     caracteristiques: [
@@ -94,7 +94,7 @@ export const METAL_PRODUCTS: MetalProduct[] = [
     nom: "METALAC SOIE",
     marque: "Blancolor",
     url_produit: "https://www.blancolor.com/produit/metalac-soie/",
-    image: "/manus-storage/metalac-soie_9f9e0fa0.png",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/hFyivhYqSUVvRwZm.png",
     description_courte: "Peinture antirouille multi-couche intérieur/extérieur — primaire, intermédiaire et finition en un",
     description_longue: "Peinture alkydes multi-usage pour menuiseries et structures métalliques en intérieur et extérieur. Fonction 3-en-1 : primaire, couche intermédiaire et finition. Antirouille, excellente adhérence et excellente résistance mécanique.",
     caracteristiques: [
