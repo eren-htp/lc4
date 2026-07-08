@@ -236,4 +236,73 @@ export const BOIS_PRODUCTS: BoisProduct[] = [
     prix: null,
     sous_categorie: "acrylique",
   },
+
+  // === LASURE — Sikkens ===
+  {
+    id: "cetol-novatech",
+    nom: "Cetol Novatech",
+    marque: "Sikkens",
+    url_produit: "https://www.sikkens.fr/fr/produits/cetol-novatech?size=1L",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/vvphbHPFkpYzSwBZ.png",
+    description_courte: "Lasure d'imprégnation multicouche haute durabilité — très garnissant, fort pouvoir pénétrant",
+    description_longue: "Lasure d'imprégnation multicouche à base de résines alkyde à haut extrait sec. Impression ou finition haute durabilité pour système 2 couches. Très garnissant avec un fort pouvoir pénétrant, elle offre plus d'épaisseur de film déposé grâce à sa formule à haut extrait sec.",
+    caracteristiques: [
+      "Imprégnation et finition en un seul produit",
+      "Très garnissant, fort pouvoir pénétrant",
+      "Haut extrait sec — plus d'épaisseur de film déposé",
+      "Haute durabilité pour système 2 couches",
+      "Phase solvant",
+      "Séchage environ 8 heures",
+      "Recouvrable environ 24 heures",
+      "Rendement : 15 m²/L"
+    ],
+    domaines_application: [
+      "Bois extérieurs",
+      "Menuiseries extérieures",
+      "Bardages",
+      "Volets et portails",
+      "Portes et fenêtres"
+    ],
+    usage: ["Extérieur"],
+    conditionnements: ["1 L", "2,5 L", "5 L", "15 L"],
+    rendement: "15 m²/L",
+    finition: "Satiné Brillant",
+    couleurs: ["Collection bois AkzoNobel", "L'Essentielle 120 teintes"],
+    prix: null,
+    sous_categorie: "lasure",
+  },
+  {
+    id: "cetol-filter-7",
+    nom: "Cetol Filter 7",
+    marque: "Sikkens",
+    url_produit: "https://www.sikkens.fr/fr/produits/cetol-filter-7?size=1L",
+    image: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663063275076/WqakSgOMTQIKGfIi.png",
+    description_courte: "Lasure de finition d'excellente durabilité — résistante aux intempéries et aux UV",
+    description_longue: "Lasure de finition à base de résines alkydes. Excellente durabilité, résistance aux UV et aux intempéries. Très bonne tension du film avec un bon pouvoir garnissant pour un résultat esthétique durable.",
+    caracteristiques: [
+      "Excellente durabilité",
+      "Résistance aux UV et aux intempéries",
+      "Très bonne tension du film",
+      "Bon pouvoir garnissant",
+      "Résultat esthétique durable",
+      "Phase solvant",
+      "Séchage environ 8 heures",
+      "Recouvrable environ 18 heures",
+      "Rendement : 15-17 m²/L"
+    ],
+    domaines_application: [
+      "Bois extérieurs",
+      "Menuiseries extérieures",
+      "Bardages",
+      "Volets et portails",
+      "Portes et fenêtres"
+    ],
+    usage: ["Extérieur"],
+    conditionnements: ["1 L", "2,5 L", "5 L", "10 L", "15 L"],
+    rendement: "15-17 m²/L",
+    finition: "Satin",
+    couleurs: ["Collection bois AkzoNobel", "Nuancier Sikkens"],
+    prix: null,
+    sous_categorie: "lasure",
+  },
 ];
